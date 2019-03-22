@@ -1,7 +1,7 @@
 <?php
     //设置系统常量
-    define('SITE_URL','http://aaa.jensin.com/');//设置网站根目�&#65533;
-    define('WEB_URL','http://aaa.jensin.com');// 
+    define('SITE_URL','http://dev.aaa.com/');//设置网站根目�&#65533;
+    define('WEB_URL','http://dev.aaa.com');//
     
 	define('PLATFORM', 'esx');
 	define('LIMITEDAMOUNT', '50.23');
