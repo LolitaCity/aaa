@@ -1,0 +1,141 @@
+<!--会员中心-->
+<link type="text/css" rel="stylesheet" href="<?php echo S_CSS;?>laydate.css">
+<div class="sj-zjgl">
+    <div class="sk_notice">
+        <div class="notice fl">
+            <h3>
+                买号审核公告</h3>
+            <div class="ul_scroll">
+                <ul>
+                <?php $notice_article=Article::model()->find('goods_id=209');
+                echo $notice_article->goods_desc?$notice_article->goods_desc:'暂无';?>
+                </ul>
+            </div>
+        </div>
+        <div class="notice fr">
+            <h3>
+                绑定买号公告</h3>
+            <div class="ul_scroll">
+                <ul>
+                    <ul>
+                        <?php $notice_article=Article::model()->find('goods_id=210');
+                        echo $notice_article->goods_desc?$notice_article->goods_desc:'暂无';?>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+<?php
+echo $this->renderPartial('/user/usercenterTopNav');
+$userInfo=User::model()->findByPk(Yii::app()->user->getId());
+?>
+    <div class="zjgl-right">
+        <div class="sk-hygl">
+
+            <div class="errorbox" id="clientValidation" style="display: none; margin-left: 180px;
+                        width: 760px">
+                <ol style="list-style-type: decimal" id="clientValidationOL">
+                </ol>
+            </div>
+            <ul style="margin-top: 20px">
+                <li class="hygl-mh">
+                    <p class="hygl-mh_1" style="font-size: 16px;">
+                        淘宝购物账号</p>
+                    <!--<p id="pAddJDBuyNo">
+                        <input onclick="AddJDBuyNo()" class="input-butto100-xls" type="button" value="绑定新买号"></p>-->
+                </li>
+            </ul>
+            <div class="zjgl-right_2">
+                <table>
+                    <tbody><tr>
+                        <th width="200">
+                            买号名称
+                        </th>
+                        <th width="200">
+                            所属平台
+                        </th>
+                        <th width="200">
+                            状态
+                        </th>
+                        <th width="200">
+                            买号等级
+                        </th>
+                        <th width="200">
+                            可接手数量
+                        </th>
+                        <th width="175">
+                            操作
+                        </th>
+                    </tr>
+                    <script type="text/javascript">
+                        $("#pAddBuyNo").hide();
+                    </script>
+                    <?php if (@$list['wangwang']):?>
+                    <tr>
+                        <td>
+                            <?php echo $list['wangwang'];?>
+                        </td>
+                        <td>
+                            <?php if ($list['platform']==0){echo '淘宝';}?>
+                        </td>
+                        <td>
+                            <!--启用<br>-->
+                            <label>
+                                <?php  switch ($list['statue']){
+                                    case 0:echo '未审核';break;
+                                    case 1:echo '审核通过';break;
+                                    case 4:echo '未通过    | <a alt="'.$list['msg'].'" title="'.$list['msg'].'">查看原因</a>';break;
+                                }?></label>
+                        </td>
+                        <td>
+                            <img src="<?php echo S_IMAGES.$list['level'];?>.gif" title="买号的信誉值为 <?php echo $list['account_info']['xy_val'];?>">
+
+                        </td>
+                        <td>
+                            <label><?php echo $daycount;?></label>
+                        </td>
+                        <td>
+
+                            <input onclick="GetDetail('<?php echo $list['id'];?>')" class="input-butto62-zls" type="button" value="查看详情">
+                            <?php if ($list['statue']==4):?>
+                            <a href="<?=$this->createUrl('user/taobaoBindBuyer',array('wid'=>$list['id']))?>" style="padding: 2px 5px;" class="input-butto62-zhs">重新提交</a>
+                            <?php endif;?>
+                        </td>
+                    </tr>
+                    <?php endif;?>
+                    </tbody></table>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    function GetDetail(id)
+    {
+        $.openWin(600, 530, "<?php echo $this->createUrl('other/showbuyerdetail',array('id'=>$list['id']))?>");
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

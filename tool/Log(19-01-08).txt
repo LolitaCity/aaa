@@ -1,0 +1,23 @@
+
+======2019-01-08 01:54:36======>>>
+Unable to connect to any of the specified MySQL hosts. ==>    在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 UpdateImg.AccessDB_MySql.SelectReader(CommandType commandType, String sql, IDataParameter[] commandParameters, Action`1 callback)==>SELECT * FROM zxjy_user WHERE id=?id
+===============================<<<
+
+======2019-01-08 01:54:36======>>>
+ActionTag==>AddUserTask==>2019-01-08 01:54:36==>操作终止：刷手无效或用户不是一个刷手身份
+===============================<<<
+
+======2019-01-08 02:44:23======>>>
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 UpdateImg.AccessDB_MySql.SelectTable(CommandType commandType, String sql, IDataParameter[] commandParameters)
+===============================<<<
+
+======2019-01-08 02:44:23======>>>
+对未支付佣金(刷手)的补充处理的事件计时-->2019-01-08 02:44:23
+===============================<<<

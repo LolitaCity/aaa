@@ -1,0 +1,1823 @@
+2018/12/30 18:02:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/weui.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/weui.css
+HTTP_REFERER=http://aaa.18zang.com/task/evaltask/usertaskid/3569936.html
+---
+2018/12/30 18:02:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/pic/xiangshang.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/pic/xiangshang.png
+HTTP_REFERER=http://aaa.18zang.com/
+---
+2018/12/30 18:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/fonts/glyphicons-halflings-regular.eot"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/font...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/fonts/glyphicons-halflings-regular.eot?
+HTTP_REFERER=http://aaa.18zang.com/site/Binding.html
+---
+2018/12/30 18:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:02:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/images/pic/f90_jt_dowm.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/images/...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/images/pic/f90_jt_dowm.png
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/selleroutcash.html
+---
+2018/12/30 18:02:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:02:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/weui.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/weui.css
+HTTP_REFERER=http://aaa.18zang.com/task/evaltask/usertaskid/3537338.html
+---
+2018/12/30 18:02:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3676427.html
+---
+2018/12/30 18:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.18zang.com/user/authPerson.html
+---
+2018/12/30 18:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/images/pic/f90_jt_dowm.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/images/...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/images/pic/f90_jt_dowm.png
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/selleroutcash.html
+---
+2018/12/30 18:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3662102.html
+---
+2018/12/30 18:02:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/pic/xiangshang.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/pic/xiangshang.png
+HTTP_REFERER=http://aaa.18zang.com/
+---
+2018/12/30 18:02:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/fonts/glyphicons-halflings-regular.eot"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/font...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/fonts/glyphicons-halflings-regular.eot?
+HTTP_REFERER=http://aaa.18zang.com/site/Binding.html
+---
+2018/12/30 18:02:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/weui.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/weui.css
+HTTP_REFERER=http://aaa.18zang.com/task/evaltask/usertaskid/3489420.html
+---
+2018/12/30 18:03:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.18zang.com/user/authPerson.html
+---
+2018/12/30 18:03:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3621664.html
+---
+2018/12/30 18:03:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3621664.html
+---
+2018/12/30 18:03:11 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:03:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:03:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/pic/xiangshang.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/pic/xiangshang.png
+HTTP_REFERER=http://aaa.18zang.com/
+---
+2018/12/30 18:03:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/fonts/glyphicons-halflings-regular.eot"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/font...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/fonts/glyphicons-halflings-regular.eot?
+HTTP_REFERER=http://aaa.18zang.com/site/Binding.html
+---
+2018/12/30 18:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3676427.html
+---
+2018/12/30 18:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:03:15 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:03:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/site/index.html
+---
+2018/12/30 18:03:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3302281.html
+---
+2018/12/30 18:03:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/images/pic/f90_jt_dowm.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/images/...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/images/pic/f90_jt_dowm.png
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/selleroutcash.html
+---
+2018/12/30 18:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/pic/xiangshang.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/pic/xiangshang.png
+HTTP_REFERER=http://aaa.18zang.com/source/esx/css/user_index.css
+---
+2018/12/30 18:03:31 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:03:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/site/index.html
+---
+2018/12/30 18:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3618744.html
+---
+2018/12/30 18:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.18zang.com/user/authPerson.html
+---
+2018/12/30 18:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "mobile/images/jianto2.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/images/j...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/mobile/images/jianto2.png
+HTTP_REFERER=http://aaa.18zang.com/mobile/css/common2.css
+---
+2018/12/30 18:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "mobile/images/sanjiao.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/images/s...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/mobile/images/sanjiao.png
+HTTP_REFERER=http://aaa.18zang.com/mobile/css/common2.css
+---
+2018/12/30 18:03:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:03:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:03:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/css/xyjf.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/css/...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/css/xyjf.css
+HTTP_REFERER=http://aaa.18zang.com/other/auxiliaryinfo.html
+---
+2018/12/30 18:03:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:04:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3613129.html
+---
+2018/12/30 18:04:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3604892.html
+---
+2018/12/30 18:04:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.18zang.com/user/authPerson.html
+---
+2018/12/30 18:04:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/images/pic/f90_jt_dowm.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/images/...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/images/pic/f90_jt_dowm.png
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/selleroutcash.html
+---
+2018/12/30 18:04:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3518698.html
+---
+2018/12/30 18:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3618824.html
+---
+2018/12/30 18:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/css/xyjf.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/css/...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/css/xyjf.css
+HTTP_REFERER=http://aaa.18zang.com/other/auxiliaryinfo.html
+---
+2018/12/30 18:04:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3604917.html
+---
+2018/12/30 18:04:59 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:04:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:05:03 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:05:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:05:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3583328.html
+---
+2018/12/30 18:05:08 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:05:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.18zang.com/user/userExam/type/1.html
+---
+2018/12/30 18:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1003¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1003\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1003\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/default/...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/default/index.html1003��ʦ��
+---
+2018/12/30 18:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1003¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1003\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1003\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/default/...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/default/index.html1003��ʦ��
+---
+2018/12/30 18:05:13 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:05:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/site/index.html
+---
+2018/12/30 18:05:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3358522.html
+---
+2018/12/30 18:05:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/css/bootstrap.min.css.map"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/css/...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/css/bootstrap.min.css.map
+---
+2018/12/30 18:05:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3653158.html
+---
+2018/12/30 18:05:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3674162.html
+---
+2018/12/30 18:05:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/weui.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/weui.css
+HTTP_REFERER=http://aaa.18zang.com/task/evaltask/usertaskid/3435064.html
+---
+2018/12/30 18:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "taskmanageOne.html1003¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('taskmanageOne.h...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('taskmanageOne.h...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/task/tas...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/task/taskmanageOne.html1003��ʦ��
+---
+2018/12/30 18:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "taskmanageOne.html1003¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('taskmanageOne.h...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('taskmanageOne.h...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/task/tas...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/task/taskmanageOne.html1003��ʦ��
+---
+2018/12/30 18:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "taskmanageOne.html1003¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('taskmanageOne.h...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('taskmanageOne.h...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/task/tas...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/task/taskmanageOne.html1003��ʦ��
+---
+2018/12/30 18:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "taskmanageOne.html1003¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('taskmanageOne.h...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('taskmanageOne.h...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/task/tas...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/task/taskmanageOne.html1003��ʦ��
+---
+2018/12/30 18:05:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:05:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3359376.html
+---
+2018/12/30 18:05:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/pic/xiangshang.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/pic/xiangshang.png
+HTTP_REFERER=http://aaa.18zang.com/source/esx/css/user_index.css
+---
+2018/12/30 18:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/weui.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/weui.css
+HTTP_REFERER=http://aaa.18zang.com/task/evaltask/usertaskid/2675185.html
+---
+2018/12/30 18:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/wk-tu_1.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/wk-tu_1.jpg
+HTTP_REFERER=http://aaa.18zang.com/source/esx/css/index.css
+---
+2018/12/30 18:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/weui.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/weui.css
+HTTP_REFERER=http://aaa.18zang.com/task/evaltask/usertaskid/2675185.html
+---
+2018/12/30 18:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:05:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/.gif"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/.gif
+HTTP_REFERER=http://aaa.18zang.com/user/invitefriends.html
+---
+2018/12/30 18:05:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/wk-tu_2.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/wk-tu_2.jpg
+HTTP_REFERER=http://aaa.18zang.com/source/esx/css/index.css
+---
+2018/12/30 18:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/css/xyjf.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/css/...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/css/xyjf.css
+HTTP_REFERER=http://aaa.18zang.com/other/auxiliaryinfo.html
+---
+2018/12/30 18:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/css/xyjf.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/css/...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/css/xyjf.css
+HTTP_REFERER=http://aaa.18zang.com/other/auxiliaryinfo.html
+---
+2018/12/30 18:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3523538.html
+---
+2018/12/30 18:06:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "mobile/images/sanjiao.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/images/s...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/mobile/images/sanjiao.png
+HTTP_REFERER=http://aaa.18zang.com/mobile/css/common2.css
+---
+2018/12/30 18:06:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "mobile/images/jianto2.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/images/j...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/mobile/images/jianto2.png
+HTTP_REFERER=http://aaa.18zang.com/mobile/css/common2.css
+---
+2018/12/30 18:06:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3673579.html
+---
+2018/12/30 18:06:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/pic/xiangshang.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/pic/xiangshang.png
+HTTP_REFERER=http://aaa.18zang.com/source/esx/css/user_index.css
+---
+2018/12/30 18:06:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3671845.html
+---
+2018/12/30 18:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3669267.html
+---
+2018/12/30 18:06:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:06:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3643955.html
+---
+2018/12/30 18:06:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3661523.html
+---
+2018/12/30 18:06:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3643955.html
+---
+2018/12/30 18:06:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3661523.html
+---
+2018/12/30 18:06:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/pic/xiangshang.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/pic/xiangshang.png
+HTTP_REFERER=http://aaa.18zang.com/source/esx/css/user_index.css
+---
+2018/12/30 18:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3513073.html
+---
+2018/12/30 18:06:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3489228.html
+---
+2018/12/30 18:07:10 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:07:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/
+---
+2018/12/30 18:07:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3614107.html
+---
+2018/12/30 18:07:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3607026.html
+---
+2018/12/30 18:07:18 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:07:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/site/index.html
+---
+2018/12/30 18:07:20 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:07:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/site/index.html
+---
+2018/12/30 18:07:20 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:07:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/site/index.html
+---
+2018/12/30 18:07:24 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:07:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/site/index.html
+---
+2018/12/30 18:07:33 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:07:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+---
+2018/12/30 18:07:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3600638.html
+---
+2018/12/30 18:07:39 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:07:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/site/index.html
+---
+2018/12/30 18:07:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3614107.html
+---
+2018/12/30 18:07:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/images/pic/xiangshang.png"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/imag...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/images/pic/xiangshang.png
+HTTP_REFERER=http://aaa.18zang.com/source/esx/css/user_index.css
+---
+2018/12/30 18:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1002¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1002\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1002\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index.html1002��ʦ��
+---
+2018/12/30 18:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1001¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1001\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1001\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index.html1001��ʦ��
+---
+2018/12/30 18:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1002¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1002\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1002\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index.html1002��ʦ��
+---
+2018/12/30 18:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1002¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1002\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1002\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index.html1002��ʦ��
+---
+2018/12/30 18:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1002¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1002\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1002\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index.html1002��ʦ��
+---
+2018/12/30 18:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1001¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1001\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1001\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index.html1001��ʦ��
+---
+2018/12/30 18:07:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.18zang.com/user/authPerson.html
+---
+2018/12/30 18:07:56 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=.
+in D:\www\aaaX2\protected\controllers\SiteController.php (306)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:07:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select `Status`,`Score` from zxjy_user where id=' in D:\www\aaaX2\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaaX2\framework\db\CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\www\aaaX2\protected\controllers\SiteController.php(306): CDbCommand->queryRow()
+#2 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): SiteController->actionAcceptTask01()
+#3 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\aaaX2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\www\aaaX2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('acceptTask01')
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/acceptTask...')
+#8 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\www\aaaX2\index.php(55): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/acceptTask01.html
+HTTP_REFERER=http://aaa.18zang.com/site/index.html
+---
+2018/12/30 18:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3426069.html
+---
+2018/12/30 18:08:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:08:03 [error] [php] session_regenerate_id(): Session object destruction failed (D:\www\aaaX2\framework\web\CHttpSession.php:185)
+Stack trace:
+#0 D:\www\aaaX2\framework\web\auth\CWebUser.php(235): CWebUser->changeIdentity()
+#1 D:\www\aaaX2\protected\models\LoginForm.php(79): CWebUser->login()
+#2 D:\www\aaaX2\protected\modules\mobile\controllers\UserController.php(38): LoginForm->login()
+#3 D:\www\aaaX2\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#4 D:\www\aaaX2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\www\aaaX2\framework\web\CController.php(286): UserController->runAction()
+#6 D:\www\aaaX2\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 D:\www\aaaX2\framework\web\CWebApplication.php(282): UserController->run()
+#8 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaaX2\index.php(55): CWebApplication->run()
+REQUEST_URI=/mobile/user/login.html
+in D:\www\aaaX2\protected\models\LoginForm.php (79)
+in D:\www\aaaX2\protected\modules\mobile\controllers\UserController.php (38)
+in D:\www\aaaX2\index.php (55)
+2018/12/30 18:08:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.18zang.com/mobile/default/index.html
+---
+2018/12/30 18:08:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "http:/aaa.18zang.com/mobile/images/evalexample.jpg"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('http:/aaa.18zan...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/http:/aaa.18zang.com/mobile/images/evalexample.jpg
+HTTP_REFERER=http://aaa.18zang.com/mobile/task/evaltasktest/usertaskid/3570052.html
+---
+2018/12/30 18:08:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1003¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1003\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1003\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index.html1003��ʦ��
+---
+2018/12/30 18:08:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.html1003¶þÊ¦ÐÖ" 动作.' in D:\www\aaaX2\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CController.php(270): CController->missingAction('index.html1003\xC2...')
+#1 D:\www\aaaX2\framework\web\CWebApplication.php(282): CController->run('index.html1003\xC2...')
+#2 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaaX2\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index.html1003��ʦ��
+---
+2018/12/30 18:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3672761.html
+---
+2018/12/30 18:08:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Content/css/css.css"。' in D:\www\aaaX2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaaX2\framework\web\CWebApplication.php(141): CWebApplication->runController('Content/css/css...')
+#1 D:\www\aaaX2\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaaX2\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/Content/css/css.css?t=4.7
+HTTP_REFERER=http://aaa.18zang.com/mobile/finance/lookinfo/utaskid/3653792.html
+---
+2019/01/08 00:45:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\controllers\OtherController.php (377)
+in D:\www\aaa\index.php (55)
+2019/01/08 00:45:31 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\controllers\OtherController.php(377): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): OtherController->actionAuxiliaryInfo()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('auxiliaryinfo')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('other/auxiliary...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/other/auxiliaryinfo.html
+HTTP_REFERER=http://aaa.jensin.com/user/index.html
+---
+2019/01/08 00:45:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\controllers\OtherController.php (377)
+in D:\www\aaa\index.php (55)
+2019/01/08 00:45:35 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\controllers\OtherController.php(377): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): OtherController->actionAuxiliaryInfo()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('auxiliaryinfo')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('other/auxiliary...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/other/auxiliaryinfo.html
+HTTP_REFERER=http://aaa.jensin.com/user/index.html
+---
+2019/01/08 00:47:07 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 00:47:11 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 00:48:14 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 00:48:17 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 00:48:18 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 00:48:18 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 00:48:19 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 00:51:46 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:00:21 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:00:28 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:00:42 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:21:38 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:21:50 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:21:57 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:22:07 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:26:19 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:15 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:19 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:23 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:24 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:25 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:26 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:27 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:28 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:29 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:29 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:29 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:27:36 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:35:08 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:35:15 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:35:23 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:50:25 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:50:30 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:50:36 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 01:50:40 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:20:54 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:21:01 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/user/authPerson.html
+---
+2019/01/08 02:21:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/user/authPerson.html
+---
+2019/01/08 02:54:50 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:21 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:35 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:39 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:46 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:47 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:49 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:49 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:49 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:50 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:50 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:50 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:51 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:51 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:51 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:52 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:53 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:54 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:55:54 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:56:12 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 02:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "login1" 动作.' in D:\www\aaa\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaa\framework\web\CController.php(270): CController->missingAction('login1')
+#1 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('login1')
+#2 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/user/l...')
+#3 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaa\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/backyard/user/login1.html
+---
+2019/01/08 02:57:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "login1" 动作.' in D:\www\aaa\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaa\framework\web\CController.php(270): CController->missingAction('login1')
+#1 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('login1')
+#2 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/user/l...')
+#3 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaa\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/backyard/user/login1.html
+---
+2019/01/08 03:01:50 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 03:01:57 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 03:05:00 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/08 03:58:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\controllers\OtherController.php (377)
+in D:\www\aaa\index.php (55)
+2019/01/08 03:58:53 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\controllers\OtherController.php(377): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): OtherController->actionAuxiliaryInfo()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('auxiliaryinfo')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('other/auxiliary...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/other/auxiliaryinfo.html
+HTTP_REFERER=http://aaa.jensin.com/other/buyerlist.html
+---
+2019/01/08 04:01:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\controllers\OtherController.php (377)
+in D:\www\aaa\index.php (55)
+2019/01/08 04:01:44 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\controllers\OtherController.php(377): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): OtherController->actionAuxiliaryInfo()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('auxiliaryinfo')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('other/auxiliary...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/other/auxiliaryinfo.html
+HTTP_REFERER=http://aaa.jensin.com/site/index.html
+---
+2019/01/08 22:32:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:30 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:35 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:39 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:45 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:46 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:47 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:47 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:49 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:08:54 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:09:46 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:11:01 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:11:14 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:21:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:22:46 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:22:47 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:22:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:22:49 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:22:49 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:22:49 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:22:50 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:23:10 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:25:10 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:25:13 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:25:14 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:25:15 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:25:15 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:25:16 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:25:17 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:25:59 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:00 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:01 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:02 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:02 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:03 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:03 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:05 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:05 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:06 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:06 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:07 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:08 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:09 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:09 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:12 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:26:13 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:30:08 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:41:36 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = .
+in D:\www\aaa\protected\models\LoginForm.php (79)
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (42)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:41:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = ' in D:\www\aaa\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaa\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\www\aaa\framework\web\auth\CWebUser.php(225): CDbCommand->queryScalar()
+#2 D:\www\aaa\protected\models\LoginForm.php(79): CWebUser->login(Object(UserIdentity))
+#3 D:\www\aaa\protected\modules\backyard\controllers\UserController.php(42): LoginForm->login()
+#4 D:\www\aaa\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#5 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('login')
+#9 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/user/l...')
+#10 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\www\aaa\index.php(55): CApplication->run()
+#12 {main}
+REQUEST_URI=/backyard/user/login.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/user/login.html
+---
+2019/01/09 00:46:34 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = .
+in D:\www\aaa\protected\models\LoginForm.php (79)
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (42)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:46:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = ' in D:\www\aaa\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaa\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\www\aaa\framework\web\auth\CWebUser.php(225): CDbCommand->queryScalar()
+#2 D:\www\aaa\protected\models\LoginForm.php(79): CWebUser->login(Object(UserIdentity))
+#3 D:\www\aaa\protected\modules\backyard\controllers\UserController.php(42): LoginForm->login()
+#4 D:\www\aaa\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#5 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('login')
+#9 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/user/l...')
+#10 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\www\aaa\index.php(55): CApplication->run()
+#12 {main}
+REQUEST_URI=/backyard/user/login.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/user/login.html
+---
+2019/01/09 00:48:14 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = .
+in D:\www\aaa\protected\models\LoginForm.php (79)
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (42)
+in D:\www\aaa\index.php (55)
+2019/01/09 00:48:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = ' in D:\www\aaa\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaa\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\www\aaa\framework\web\auth\CWebUser.php(225): CDbCommand->queryScalar()
+#2 D:\www\aaa\protected\models\LoginForm.php(79): CWebUser->login(Object(UserIdentity))
+#3 D:\www\aaa\protected\modules\backyard\controllers\UserController.php(42): LoginForm->login()
+#4 D:\www\aaa\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#5 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('login')
+#9 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/user/l...')
+#10 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\www\aaa\index.php(55): CApplication->run()
+#12 {main}
+REQUEST_URI=/backyard/user/login.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/user/login.html
+---
+2019/01/09 01:31:49 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 01:31:50 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 01:31:51 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)

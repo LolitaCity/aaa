@@ -1,0 +1,2238 @@
+2019/01/09 01:59:50 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 02:03:03 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 02:07:28 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/09 02:08:24 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/15 22:14:13 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/15 23:22:35 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/15 23:41:46 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/15 23:41:56 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/15 23:56:03 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 00:22:51 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:09:47 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:09:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:09:51 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:09:54 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:09:54 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:10:23 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:10:54 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:11:00 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:11:21 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:13:24 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:21:06 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\www\aaa\index.php (55)
+2019/01/16 02:23:28 [error] [exception.CException] exception 'CException' with message '属性 "LoginForm.pwd" 未被定义.' in D:\www\aaa\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\www\aaa\framework\validators\CRequiredValidator.php(51): CComponent->__get('pwd')
+#1 D:\www\aaa\framework\validators\CValidator.php(213): CRequiredValidator->validateAttribute(Object(LoginForm), 'pwd')
+#2 D:\www\aaa\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#3 D:\www\aaa\protected\modules\backyard\controllers\UserController.php(42): CModel->validate()
+#4 D:\www\aaa\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#5 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('login')
+#9 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/user/l...')
+#10 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\www\aaa\index.php(55): CApplication->run()
+#12 {main}
+REQUEST_URI=/backyard/user/login.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/user/login.html
+---
+2019/01/16 23:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/16 23:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/16 23:51:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/16 23:51:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\www\aaa\protected\models\Articlecatlog.php (21)
+in D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php (16)
+in D:\www\aaa\index.php (55)
+2019/01/16 23:51:59 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\www\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php(16): Articlecatlog::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticlecatalog()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('articlecatalog')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/article/articlecatalog.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/article/articleCatlogAdd.html
+---
+2019/01/16 23:52:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/16 23:54:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/16 23:54:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/16 23:54:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "backyard/admin"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/admin')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/backyard/admin.html
+---
+2019/01/16 23:54:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/16 23:54:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:11:23 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = .
+in D:\www\aaa\protected\modules\backyard\views\user\login.php (38)
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (51)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:11:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = ' in D:\www\aaa\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaa\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\www\aaa\framework\web\auth\CWebUser.php(225): CDbCommand->queryScalar()
+#2 D:\www\aaa\protected\modules\backyard\views\user\login.php(38): CWebUser->login(Object(UserIdentity))
+#3 D:\www\aaa\framework\web\CBaseController.php(126): require('D:\\www\\aaa\\prot...')
+#4 D:\www\aaa\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\www\\aaa\\prot...', Array, true)
+#5 D:\www\aaa\framework\web\CController.php(869): CBaseController->renderFile('D:\\www\\aaa\\prot...', Array, true)
+#6 D:\www\aaa\protected\modules\backyard\controllers\UserController.php(51): CController->renderPartial('login', Array)
+#7 D:\www\aaa\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#8 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('login')
+#12 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/user/l...')
+#13 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\www\aaa\index.php(55): CApplication->run()
+#15 {main}
+REQUEST_URI=/backyard/user/login.html
+---
+2019/01/17 00:29:22 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = .
+in D:\www\aaa\protected\modules\backyard\views\user\login.php (22)
+in D:\www\aaa\protected\modules\backyard\controllers\UserController.php (51)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:29:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: select Opend from zxjy_user where id = ' in D:\www\aaa\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\www\aaa\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\www\aaa\framework\web\auth\CWebUser.php(225): CDbCommand->queryScalar()
+#2 D:\www\aaa\protected\modules\backyard\views\user\login.php(22): CWebUser->login(Object(UserIdentity))
+#3 D:\www\aaa\framework\web\CBaseController.php(126): require('D:\\www\\aaa\\prot...')
+#4 D:\www\aaa\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\www\\aaa\\prot...', Array, true)
+#5 D:\www\aaa\framework\web\CController.php(869): CBaseController->renderFile('D:\\www\\aaa\\prot...', Array, true)
+#6 D:\www\aaa\protected\modules\backyard\controllers\UserController.php(51): CController->renderPartial('login', Array)
+#7 D:\www\aaa\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#8 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('login')
+#12 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/user/l...')
+#13 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\www\aaa\index.php(55): CApplication->run()
+#15 {main}
+REQUEST_URI=/backyard/user/login.html
+---
+2019/01/17 00:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 00:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/tasklist.html
+---
+2019/01/17 00:30:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/complianlist.html
+---
+2019/01/17 00:30:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/compliantransfer.html
+---
+2019/01/17 00:30:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/user/authPerson.html
+---
+2019/01/17 00:30:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/user/authPerson.html
+---
+2019/01/17 00:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/user/authPerson.html
+---
+2019/01/17 00:31:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/user/authPerson.html
+---
+2019/01/17 00:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:33:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\www\aaa\protected\models\Articlecatlog.php (21)
+in D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php (16)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:33:43 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\www\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php(16): Articlecatlog::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticlecatalog()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('articlecatalog')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/article/articlecatalog.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/default/index.html
+---
+2019/01/17 00:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:34:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 00:34:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\www\aaa\protected\models\Articlecatlog.php (21)
+in D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php (16)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:34:07 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\www\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php(16): Articlecatlog::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticlecatalog()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('articlecatalog')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/article/articlecatalog.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/article/articleCatlogAdd.html
+---
+2019/01/17 00:34:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 00:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:34:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\www\aaa\protected\models\Articlecatlog.php (21)
+in D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php (16)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:34:19 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\www\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php(16): Articlecatlog::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticlecatalog()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('articlecatalog')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/article/articlecatalog.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/default/index.html
+---
+2019/01/17 00:34:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:34:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:34:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\www\aaa\protected\models\Articlecatlog.php (21)
+in D:\www\aaa\protected\modules\backyard\views\article\articleList.php (108)
+in D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php (435)
+2019/01/17 00:34:24 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\www\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\www\aaa\protected\modules\backyard\views\article\articleList.php(108): Articlecatlog::model()
+#3 D:\www\aaa\framework\web\CBaseController.php(126): require('D:\\www\\aaa\\prot...')
+#4 D:\www\aaa\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\www\\aaa\\prot...', Array, true)
+#5 D:\www\aaa\framework\web\CController.php(869): CBaseController->renderFile('D:\\www\\aaa\\prot...', Array, true)
+#6 D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php(435): CController->renderPartial('articleList', Array)
+#7 D:\www\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticleList()
+#8 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('articleList')
+#12 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#13 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\www\aaa\index.php(55): CApplication->run()
+#15 {main}
+REQUEST_URI=/backyard/article/articleList.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/default/index.html
+---
+2019/01/17 00:34:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:34:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:34:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/17 00:34:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:34:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php (449)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:34:31 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php(449): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): MembercenterController->actionAddScoreCheck()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('addscorecheck')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/member...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/membercenter/addscorecheck.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:34:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php (449)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:34:37 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php(449): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): MembercenterController->actionAddScoreCheck()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('addscorecheck')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/member...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/membercenter/addscorecheck.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:34:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 00:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/tasklist.html
+---
+2019/01/17 00:34:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/default/loading-0.gif"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/default/loading-0.gif
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/layer/layer.css
+---
+2019/01/17 00:34:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/taskdetail.html?taskid=3781200
+---
+2019/01/17 00:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/taskdetail.html?taskid=3781193
+---
+2019/01/17 00:35:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 00:35:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/tasklist/page/2.html
+---
+2019/01/17 00:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/default/loading-0.gif"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/default/loading-0.gif
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/layer/layer.css
+---
+2019/01/17 00:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/taskdetail.html?taskid=3781179
+---
+2019/01/17 00:35:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/complianlist.html
+---
+2019/01/17 00:36:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/compliantransfer.html
+---
+2019/01/17 00:37:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 00:39:22 [error] [php] include(Shoplist.php): failed to open stream: No such file or directory (D:\www\aaa\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\www\aaa\protected\modules\backyard\controllers\ShopController.php(20): spl_autoload_call()
+#1 D:\www\aaa\framework\web\actions\CInlineAction.php(49): ShopController->actionShoplist()
+#2 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\www\aaa\framework\web\CController.php(286): ShopController->runAction()
+#4 D:\www\aaa\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#5 D:\www\aaa\framework\web\CWebApplication.php(282): ShopController->run()
+#6 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\www\aaa\index.php(55): CWebApplication->run()
+REQUEST_URI=/backyard/shop/shoplist.html
+in D:\www\aaa\protected\modules\backyard\controllers\ShopController.php (20)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:39:30 [error] [php] include(Productlist.php): failed to open stream: No such file or directory (D:\www\aaa\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\www\aaa\protected\modules\backyard\controllers\ProductController.php(20): spl_autoload_call()
+#1 D:\www\aaa\framework\web\actions\CInlineAction.php(49): ProductController->actionProductlist()
+#2 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\www\aaa\framework\web\CController.php(286): ProductController->runAction()
+#4 D:\www\aaa\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#5 D:\www\aaa\framework\web\CWebApplication.php(282): ProductController->run()
+#6 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\www\aaa\index.php(55): CWebApplication->run()
+REQUEST_URI=/backyard/product/productlist.html
+in D:\www\aaa\protected\modules\backyard\controllers\ProductController.php (20)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:39:45 [error] [php] include(Shoplist.php): failed to open stream: No such file or directory (D:\www\aaa\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\www\aaa\protected\modules\backyard\controllers\ShopController.php(20): spl_autoload_call()
+#1 D:\www\aaa\framework\web\actions\CInlineAction.php(49): ShopController->actionShoplist()
+#2 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\www\aaa\framework\web\CController.php(286): ShopController->runAction()
+#4 D:\www\aaa\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#5 D:\www\aaa\framework\web\CWebApplication.php(282): ShopController->run()
+#6 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\www\aaa\index.php(55): CWebApplication->run()
+REQUEST_URI=/backyard/shop/shoplist.html
+in D:\www\aaa\protected\modules\backyard\controllers\ShopController.php (20)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:39:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 00:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 00:39:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 00:40:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\www\aaa\protected\models\Articlecatlog.php (21)
+in D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php (351)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:40:07 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\www\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\www\aaa\protected\modules\backyard\controllers\ArticleController.php(351): Articlecatlog::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticleAdd()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('articleAdd')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/article/articleAdd.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/moneyman/finance/type/1.html
+---
+2019/01/17 00:40:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:40:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/17 00:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:40:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:42:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php (449)
+in D:\www\aaa\index.php (55)
+2019/01/17 00:42:05 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php(449): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): MembercenterController->actionAddScoreCheck()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('addscorecheck')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/member...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/membercenter/addscorecheck.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/17 00:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/17 00:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson/page/2.html
+---
+2019/01/17 00:42:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson/page/3.html
+---
+2019/01/17 00:44:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson/page/4.html
+---
+2019/01/17 00:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson/page/3.html
+---
+2019/01/17 00:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson/page/4.html
+---
+2019/01/17 00:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson/page/5.html
+---
+2019/01/17 00:45:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 00:45:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist/page/2.html
+---
+2019/01/17 00:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist/page/5.html
+---
+2019/01/17 00:46:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist/page/7.html
+---
+2019/01/17 00:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist/page/9.html
+---
+2019/01/17 00:46:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist/page/9.html
+---
+2019/01/17 00:46:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/complianlist.html
+---
+2019/01/17 00:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/compliantransfer.html
+---
+2019/01/17 00:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 01:14:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/17 01:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "mobile" 动作.' in D:\www\aaa\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaa\framework\web\CController.php(270): CController->missingAction('mobile')
+#1 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('mobile')
+#2 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('passport/mobile')
+#3 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaa\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/passport/mobile
+---
+2019/01/17 01:37:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 01:38:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/membeDetailInfos/uid/43954.html
+---
+2019/01/17 01:39:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/user/authPerson.html
+---
+2019/01/17 01:39:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/17 01:39:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/17 01:40:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/17 01:40:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/user/authPerson.html
+---
+2019/01/17 01:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/17 01:41:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/membeDetailInfos/uid/43805.html
+---
+2019/01/17 01:42:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/membeDetailInfos/uid/43805.html
+---
+2019/01/17 01:42:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/17 01:42:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/17 01:42:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 01:42:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 01:42:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 01:42:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "mobile" 动作.' in D:\www\aaa\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaa\framework\web\CController.php(270): CController->missingAction('mobile')
+#1 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('mobile')
+#2 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('passport/mobile')
+#3 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaa\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/passport/mobile
+---
+2019/01/17 01:52:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 01:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/17 01:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/membeDetailInfos/uid/43837.html
+---
+2019/01/17 01:54:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "source/esx/css/bootstrap.min.css.map"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('source/esx/css/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/source/esx/css/bootstrap.min.css.map
+---
+2019/01/17 01:54:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaa\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaa\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user')
+#3 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaa\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user
+---
+2019/01/17 02:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaa\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaa\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaa\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.jensin.com/mobile/default/index.html
+---
+2019/01/17 02:02:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\www\aaa\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\aaa\framework\web\CController.php(270): CController->missingAction('index')
+#1 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('index')
+#2 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('mobile/user/ind...')
+#3 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\aaa\index.php(55): CApplication->run()
+#5 {main}
+REQUEST_URI=/mobile/user/index
+HTTP_REFERER=http://aaa.jensin.com/mobile/default/index.html
+---
+2019/01/26 13:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 13:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 13:47:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 13:47:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 13:48:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/26 13:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/26 13:48:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/membeDetailInfos/uid/43954.html
+---
+2019/01/26 13:49:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/membeDetailInfos/uid/43746.html
+---
+2019/01/26 13:51:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\controllers\OtherController.php (377)
+in D:\www\aaa\index.php (55)
+2019/01/26 13:51:35 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\controllers\OtherController.php(377): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): OtherController->actionAuxiliaryInfo()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('auxiliaryinfo')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('other/auxiliary...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/other/auxiliaryinfo.html
+HTTP_REFERER=http://aaa.jensin.com/site/index.html
+---
+2019/01/26 13:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 13:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 13:52:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/membeDetailInfos/uid/43905.html
+---
+2019/01/26 13:54:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 13:55:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 13:55:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 13:56:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 13:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 13:56:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 13:56:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 13:57:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 13:57:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/tasklist.html
+---
+2019/01/26 13:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/complianlist.html
+---
+2019/01/26 13:57:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/compliantransfer.html
+---
+2019/01/26 13:59:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 14:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 14:02:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 14:02:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php (449)
+in D:\www\aaa\index.php (55)
+2019/01/26 14:02:21 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php(449): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): MembercenterController->actionAddScoreCheck()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('addscorecheck')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/member...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/membercenter/addscorecheck.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/moneyman/finance/type/1.html
+---
+2019/01/26 14:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/26 14:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/01/26 14:03:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson/page/2.html
+---
+2019/01/26 14:03:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson/page/3.html
+---
+2019/01/26 14:03:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/26 14:03:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\www\aaa\protected\models\Addscore.php (23)
+in D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php (449)
+in D:\www\aaa\index.php (55)
+2019/01/26 14:03:31 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\www\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\www\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\www\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\www\aaa\protected\modules\backyard\controllers\MembercenterController.php(449): Addscore::model()
+#3 D:\www\aaa\framework\web\actions\CInlineAction.php(49): MembercenterController->actionAddScoreCheck()
+#4 D:\www\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\www\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\aaa\framework\web\CWebApplication.php(282): CController->run('addscorecheck')
+#8 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/member...')
+#9 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\www\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/membercenter/addscorecheck.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/26 14:03:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/26 14:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 14:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/tasklist.html
+---
+2019/01/26 14:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/default/loading-0.gif"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/default/loading-0.gif
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/layer/layer.css
+---
+2019/01/26 14:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/taskdetail.html?taskid=3781200
+---
+2019/01/26 14:04:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/taskdetail.html?taskid=3781197
+---
+2019/01/26 14:13:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/complianlist.html
+---
+2019/01/26 14:13:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/compliantransfer.html
+---
+2019/01/26 14:13:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/complianlist.html
+---
+2019/01/26 14:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 14:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 14:17:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/membeDetailInfos/uid/43924.html
+---
+2019/01/26 14:25:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/01/26 14:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 14:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/01/26 14:50:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/01/26 14:50:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\www\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\www\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/03/13 22:50:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php:381
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\software\xampp\htdocs\aaa\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\software\xampp\htdocs\aaa\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(27): CModule->__get('db')
+#5 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(281): Controller->init()
+#6 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#7 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/index.html
+---
+2019/03/13 22:50:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php:381
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\software\xampp\htdocs\aaa\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\software\xampp\htdocs\aaa\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(27): CModule->__get('db')
+#5 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(281): Controller->init()
+#6 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#7 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#9 {main}
+REQUEST_URI=/
+---
+2019/03/13 22:50:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php:381
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\software\xampp\htdocs\aaa\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\software\xampp\htdocs\aaa\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(27): CModule->__get('db')
+#5 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(281): Controller->init()
+#6 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#7 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#9 {main}
+REQUEST_URI=/
+---
+2019/03/13 22:50:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php:381
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\software\xampp\htdocs\aaa\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\software\xampp\htdocs\aaa\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\software\xampp\htdocs\aaa\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(27): CModule->__get('db')
+#5 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(281): Controller->init()
+#6 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#7 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#9 {main}
+REQUEST_URI=/
+---
+2019/03/13 22:52:00 [error] [php] include(Redis.php): failed to open stream: No such file or directory (D:\software\xampp\htdocs\aaa\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\protected\extensions\yiiredis\ARedisConnection.php(73): spl_autoload_call()
+#1 D:\software\xampp\htdocs\aaa\protected\extensions\yiiredis\ARedisConnection.php(187): ARedisConnection->getClient()
+#2 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(49): ARedisConnection->__call()
+#3 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(49): ARedisConnection->get()
+#4 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(29): SiteController->cacheSqlQuery()
+#5 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(281): SiteController->init()
+#6 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\software\xampp\htdocs\aaa\index.php(55): CWebApplication->run()
+REQUEST_URI=/
+in D:\software\xampp\htdocs\aaa\protected\extensions\yiiredis\ARedisConnection.php (73)
+in D:\software\xampp\htdocs\aaa\protected\extensions\yiiredis\ARedisConnection.php (187)
+in D:\software\xampp\htdocs\aaa\protected\components\Controller.php (49)
+2019/03/13 23:05:23 [error] [php] include(Redis.php): failed to open stream: No such file or directory (D:\software\xampp\htdocs\aaa\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\protected\extensions\yiiredis\ARedisConnection.php(73): spl_autoload_call()
+#1 D:\software\xampp\htdocs\aaa\protected\extensions\yiiredis\ARedisConnection.php(187): ARedisConnection->getClient()
+#2 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(49): ARedisConnection->__call()
+#3 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(49): ARedisConnection->get()
+#4 D:\software\xampp\htdocs\aaa\protected\components\Controller.php(29): SiteController->cacheSqlQuery()
+#5 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(281): SiteController->init()
+#6 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\software\xampp\htdocs\aaa\index.php(55): CWebApplication->run()
+REQUEST_URI=/
+in D:\software\xampp\htdocs\aaa\protected\extensions\yiiredis\ARedisConnection.php (73)
+in D:\software\xampp\htdocs\aaa\protected\extensions\yiiredis\ARedisConnection.php (187)
+in D:\software\xampp\htdocs\aaa\protected\components\Controller.php (49)
+2019/03/13 23:40:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:40:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:40:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_addscore' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_addscore`.
+in D:\software\xampp\htdocs\aaa\protected\models\Addscore.php (23)
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\MembercenterController.php (449)
+in D:\software\xampp\htdocs\aaa\index.php (55)
+2019/03/13 23:40:23 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Addscore" 对应的 table "{{_addscore}}".' in D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Addscore))
+#1 D:\software\xampp\htdocs\aaa\protected\models\Addscore.php(23): CActiveRecord::model('Addscore')
+#2 D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\MembercenterController.php(449): Addscore::model()
+#3 D:\software\xampp\htdocs\aaa\framework\web\actions\CInlineAction.php(49): MembercenterController->actionAddScoreCheck()
+#4 D:\software\xampp\htdocs\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\software\xampp\htdocs\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\software\xampp\htdocs\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(282): CController->run('addscorecheck')
+#8 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/member...')
+#9 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/membercenter/addscorecheck.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/default/index.html
+---
+2019/03/13 23:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/authperson.html
+---
+2019/03/13 23:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/membercenter/buyerlist.html
+---
+2019/03/13 23:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/03/13 23:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/taskcenter/tasklist.html
+---
+2019/03/13 23:40:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/complianlist.html
+---
+2019/03/13 23:40:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/layer/skin/layer.css"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/laye...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/layer/skin/layer.css
+HTTP_REFERER=http://aaa.jensin.com/backyard/compliancenter/compliantransfer.html
+---
+2019/03/13 23:42:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/03/13 23:43:05 [error] [php] include(Shoplist.php): failed to open stream: No such file or directory (D:\software\xampp\htdocs\aaa\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ShopController.php(20): spl_autoload_call()
+#1 D:\software\xampp\htdocs\aaa\framework\web\actions\CInlineAction.php(49): ShopController->actionShoplist()
+#2 D:\software\xampp\htdocs\aaa\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\software\xampp\htdocs\aaa\framework\web\CController.php(286): ShopController->runAction()
+#4 D:\software\xampp\htdocs\aaa\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#5 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(282): ShopController->run()
+#6 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\software\xampp\htdocs\aaa\index.php(55): CWebApplication->run()
+REQUEST_URI=/backyard/shop/shoplist.html
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ShopController.php (20)
+in D:\software\xampp\htdocs\aaa\index.php (55)
+2019/03/13 23:43:21 [error] [php] include(Productlist.php): failed to open stream: No such file or directory (D:\software\xampp\htdocs\aaa\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ProductController.php(20): spl_autoload_call()
+#1 D:\software\xampp\htdocs\aaa\framework\web\actions\CInlineAction.php(49): ProductController->actionProductlist()
+#2 D:\software\xampp\htdocs\aaa\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\software\xampp\htdocs\aaa\framework\web\CController.php(286): ProductController->runAction()
+#4 D:\software\xampp\htdocs\aaa\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#5 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(282): ProductController->run()
+#6 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\software\xampp\htdocs\aaa\index.php(55): CWebApplication->run()
+REQUEST_URI=/backyard/product/productlist.html
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ProductController.php (20)
+in D:\software\xampp\htdocs\aaa\index.php (55)
+2019/03/13 23:43:42 [error] [php] include(Shoplist.php): failed to open stream: No such file or directory (D:\software\xampp\htdocs\aaa\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ShopController.php(20): spl_autoload_call()
+#1 D:\software\xampp\htdocs\aaa\framework\web\actions\CInlineAction.php(49): ShopController->actionShoplist()
+#2 D:\software\xampp\htdocs\aaa\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\software\xampp\htdocs\aaa\framework\web\CController.php(286): ShopController->runAction()
+#4 D:\software\xampp\htdocs\aaa\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#5 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(282): ShopController->run()
+#6 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\software\xampp\htdocs\aaa\index.php(55): CWebApplication->run()
+REQUEST_URI=/backyard/shop/shoplist.html
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ShopController.php (20)
+in D:\software\xampp\htdocs\aaa\index.php (55)
+2019/03/13 23:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:44:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\software\xampp\htdocs\aaa\protected\models\Articlecatlog.php (21)
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\views\article\articleList.php (108)
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ArticleController.php (435)
+2019/03/13 23:44:07 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\software\xampp\htdocs\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\software\xampp\htdocs\aaa\protected\modules\backyard\views\article\articleList.php(108): Articlecatlog::model()
+#3 D:\software\xampp\htdocs\aaa\framework\web\CBaseController.php(126): require('D:\\software\\xam...')
+#4 D:\software\xampp\htdocs\aaa\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\software\\xam...', Array, true)
+#5 D:\software\xampp\htdocs\aaa\framework\web\CController.php(869): CBaseController->renderFile('D:\\software\\xam...', Array, true)
+#6 D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ArticleController.php(435): CController->renderPartial('articleList', Array)
+#7 D:\software\xampp\htdocs\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticleList()
+#8 D:\software\xampp\htdocs\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\software\xampp\htdocs\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\software\xampp\htdocs\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(282): CController->run('articleList')
+#12 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#13 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#15 {main}
+REQUEST_URI=/backyard/article/articleList.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/default/index.html
+---
+2019/03/13 23:44:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:44:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:44:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\software\xampp\htdocs\aaa\protected\models\Articlecatlog.php (21)
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ArticleController.php (16)
+in D:\software\xampp\htdocs\aaa\index.php (55)
+2019/03/13 23:44:12 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\software\xampp\htdocs\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ArticleController.php(16): Articlecatlog::model()
+#3 D:\software\xampp\htdocs\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticlecatalog()
+#4 D:\software\xampp\htdocs\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\software\xampp\htdocs\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\software\xampp\htdocs\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(282): CController->run('articlecatalog')
+#8 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#9 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/article/articlecatalog.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/default/index.html
+---
+2019/03/13 23:44:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:44:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:44:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\software\xampp\htdocs\aaa\protected\models\Articlecatlog.php (21)
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\views\article\articleList.php (108)
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ArticleController.php (435)
+2019/03/13 23:44:17 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\software\xampp\htdocs\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\software\xampp\htdocs\aaa\protected\modules\backyard\views\article\articleList.php(108): Articlecatlog::model()
+#3 D:\software\xampp\htdocs\aaa\framework\web\CBaseController.php(126): require('D:\\software\\xam...')
+#4 D:\software\xampp\htdocs\aaa\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\software\\xam...', Array, true)
+#5 D:\software\xampp\htdocs\aaa\framework\web\CController.php(869): CBaseController->renderFile('D:\\software\\xam...', Array, true)
+#6 D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ArticleController.php(435): CController->renderPartial('articleList', Array)
+#7 D:\software\xampp\htdocs\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticleList()
+#8 D:\software\xampp\htdocs\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\software\xampp\htdocs\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\software\xampp\htdocs\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(282): CController->run('articleList')
+#12 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#13 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#15 {main}
+REQUEST_URI=/backyard/article/articleList.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/default/index.html
+---
+2019/03/13 23:44:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:44:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:44:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaa.zxjy_articlecatlog' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `zxjy_articlecatlog`.
+in D:\software\xampp\htdocs\aaa\protected\models\Articlecatlog.php (21)
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ArticleController.php (351)
+in D:\software\xampp\htdocs\aaa\index.php (55)
+2019/03/13 23:44:22 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Articlecatlog" 对应的 table "{{_articlecatlog}}".' in D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Articlecatlog))
+#1 D:\software\xampp\htdocs\aaa\protected\models\Articlecatlog.php(21): CActiveRecord::model('Articlecatlog')
+#2 D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\ArticleController.php(351): Articlecatlog::model()
+#3 D:\software\xampp\htdocs\aaa\framework\web\actions\CInlineAction.php(49): ArticleController->actionArticleAdd()
+#4 D:\software\xampp\htdocs\aaa\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\software\xampp\htdocs\aaa\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\software\xampp\htdocs\aaa\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(282): CController->run('articleAdd')
+#8 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('backyard/articl...')
+#9 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#11 {main}
+REQUEST_URI=/backyard/article/articleAdd.html
+HTTP_REFERER=http://aaa.jensin.com/backyard/default/index.html
+---
+2019/03/13 23:44:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:44:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/13 23:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/16 19:53:00 [warning] [application] Failed to set unsafe attribute "verifyCode" of "LoginForm".
+in D:\software\xampp\htdocs\aaa\protected\modules\backyard\controllers\UserController.php (38)
+in D:\software\xampp\htdocs\aaa\index.php (55)
+2019/03/16 19:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_both.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_both.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/16 19:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/plugins/datatables/images/sort_asc.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/plug...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/plugins/datatables/images/sort_asc.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/add-ons.min.css
+---
+2019/03/16 20:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "assets/esx/img/select.png"。' in D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\software\xampp\htdocs\aaa\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/esx/img/...')
+#1 D:\software\xampp\htdocs\aaa\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\software\xampp\htdocs\aaa\index.php(55): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/esx/img/select.png
+HTTP_REFERER=http://aaa.jensin.com/assets/esx/css/style.min.css
+---
+2019/03/22 09:07:16 [error] [php] include(Redis.php): failed to open stream: No such file or directory (/Applications/MAMP/htdocs/aaa/framework/YiiBase.php:421)
+Stack trace:
+#0 /Applications/MAMP/htdocs/aaa/protected/extensions/yiiredis/ARedisConnection.php(73): spl_autoload_call()
+#1 /Applications/MAMP/htdocs/aaa/protected/extensions/yiiredis/ARedisConnection.php(187): ARedisConnection->getClient()
+#2 /Applications/MAMP/htdocs/aaa/protected/components/Controller.php(49): ARedisConnection->__call()
+#3 /Applications/MAMP/htdocs/aaa/protected/components/Controller.php(29): SiteController->cacheSqlQuery()
+#4 /Applications/MAMP/htdocs/aaa/framework/web/CWebApplication.php(281): SiteController->init()
+#5 /Applications/MAMP/htdocs/aaa/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/aaa/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/aaa/index.php(55): CWebApplication->run()
+REQUEST_URI=/
+in /Applications/MAMP/htdocs/aaa/protected/extensions/yiiredis/ARedisConnection.php (73)
+in /Applications/MAMP/htdocs/aaa/protected/extensions/yiiredis/ARedisConnection.php (187)
+in /Applications/MAMP/htdocs/aaa/protected/components/Controller.php (49)

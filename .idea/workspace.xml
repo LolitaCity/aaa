@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/protected/controllers/SiteController.php" line="40" mnemonic="4" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40f6ba8d-c75f-4d45-b2c9-4805d3936f76" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/TaskController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="177" column="33" lean-forward="true" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
+              <folding>
+                <element signature="n#actionTaskOne#0;n#TaskController#0;n#!!top" expanded="false" />
+                <element signature="n#actiontaskTwo#0;n#TaskController#0;n#!!top" expanded="false" />
+                <element signature="n#actionEvalTask#0;n#TaskController#0;n#!!top" expanded="false" />
+                <element signature="n#actionEvalTaskList#0;n#TaskController#0;n#!!top" expanded="false" />
+                <element signature="n#actionTbAsk#0;n#TaskController#0;n#!!top" expanded="false" />
+                <element signature="n#actionShopConfirm#0;n#TaskController#0;n#!!top" expanded="false" />
+                <element signature="n#actionComfirmTask#0;n#TaskController#0;n#!!top" expanded="false" />
+                <element signature="n#actionSetfreeEvalTask#0;n#TaskController#0;n#!!top" expanded="false" />
+                <marker date="1511444961755" expanded="true" signature="1976:2390" ph="SELECT utask... ${$tbprefix}" />
+                <marker date="1511444961755" expanded="true" signature="3651:3863" ph="SELECT utask... ${$tbprefix}" />
+                <marker date="1511444961755" expanded="true" signature="5129:5654" ph="SELECT utask... ${$tbprefix}" />
+                <marker date="1511444961755" expanded="true" signature="7686:7751" ph="SELECT remar... ${Yii::app()-&gt;db-&gt;tablePrefix}" />
+                <marker date="1511444961755" expanded="true" signature="8536:9013" ph="SELECT ut.*,... ${$tbprefix}" />
+                <marker date="1511444961755" expanded="true" signature="12550:12881" ph="SELECT ut.ta... ${$tbprefix}" />
+                <marker date="1511444961755" expanded="true" signature="14714:15039" ph="SELECT te.*,... ${$tbprefix}" />
+                <marker date="1511444961755" expanded="true" signature="15569:15668" ph="SELECT shopn... ${$tbprefix}" />
+                <marker date="1511444961755" expanded="true" signature="15736:15843" ph="SELECT commo... ${$tbprefix}" />
+                <marker date="1511444961755" expanded="true" signature="16738:16814" ph="SELECT * FRO... ${Yii::app()-&gt;db-&gt;tablePrefix}" />
+                <marker date="1511444961755" expanded="true" signature="18152:18372" ph="SELECT * FRO... ${$tbprefix}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="679">
+              <caret line="300" column="28" lean-forward="false" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="28" />
+              <folding>
+                <element signature="n#actions#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="e#562#1461#0#PHP" expanded="false" />
+                <element signature="n#actionQueueNum#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="n#actionCancelQueue#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="n#delOverTask#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="n#actionContact#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="n#actionLogin#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="n#actionTaskPublistCode#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="n#actionSms#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="n#NewSms#0;n#SiteController#0;n#!!top" expanded="false" />
+                <marker date="1511407137000" expanded="true" signature="876:907" ph="SELECT useri... ${$cashlog=Cashlog::model()-&gt;findAll(&quot;type='任务佣金' OR type='评价任务佣金' OR type='推广返现' AND userid=&quot;.Yii::app()-&gt;user-&gt;getId())}" />
+                <marker date="1511407137000" expanded="true" signature="876:937" ph="SELECT useri... ${Yii::app()-&gt;user-&gt;getId()}" />
+                <marker date="1511407137000" expanded="true" signature="876:1010" ph="SELECT useri... ${Yii::app()-&gt;user-&gt;getId()}" />
+                <marker date="1511407137000" expanded="true" signature="876:1011" ph="SELECT useri... ${Yii::app()-&gt;user-&gt;getId()}" />
+                <marker date="1511407137000" expanded="true" signature="2023:2052" ph="SELECT value... " />
+                <marker date="1511407137000" expanded="true" signature="2023:2053" ph="SELECT * FRO... ${$system=System::model()-&gt;find(&quot;varname='taskScore' or varname='monthAccount'&quot;)}" />
+                <marker date="1511407137000" expanded="true" signature="2023:2067" ph="SELECT * FRO... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="2023:2070" ph="SELECT * FRO... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="2023:2087" ph="SELECT * FRO... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="2023:2125" ph="SELECT value... ${$tbprefix}." />
+                <marker date="1511407137000" expanded="true" signature="2023:2147" ph="SELECT `valu... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="2023:2159" ph="SELECT * FRO... " />
+                <marker date="1511407137000" expanded="true" signature="2663:2722" ph="..." />
+                <marker date="1511407137000" expanded="true" signature="8704:8858" ph="SELECT DISTI... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="8704:8859" ph="SELECT DISTI... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="8704:8871" ph="SELECT DISTI... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="8704:8872" ph="SELECT DISTI... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="8704:8899" ph="SELECT DISTI... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="8704:8901" ph="SELECT DISTI... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="8704:9085" ph="SELECT DISTI... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="10124:10236" ph="SELECT `id`,... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="10774:11229" ph="SELECT tm.id... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="10774:11305" ph="SELECT tm.id... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="10774:11383" ph="SELECT tm.id... ${$tbprefix}" />
+                <marker date="1511407137000" expanded="true" signature="17198:17331" ph="SELECT COUNT... ${$tbprefix}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>three</find>
+      <find>untransfer</find>
+      <find>投诉任务</find>
+      <find>showzhengju</find>
+      <find>showreason</find>
+      <find>completeHandle</find>
+      <find>startHandle</find>
+      <find>content</find>
+      <find>indexOk</find>
+      <find>function logout</find>
+      <find>qq</find>
+      <find>logout</find>
+      <find>index</find>
+      <find>ok</find>
+      <find>intlet</find>
+      <find>taskmana</find>
+      <find>delunaceept</find>
+      <find>startime</find>
+      <find>showtips</find>
+      <find>$rukou</find>
+      <find>信息确认</find>
+      <find>Timesa</find>
+      <find>btnNext</find>
+      <find>143</find>
+      <find>registe</find>
+      <find>memberlist</find>
+      <find>信用</find>
+      <find>CDbCriteria</find>
+      <find>GetPointsLog</find>
+      <find>selPayMethod</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>images</replace>
+      <replace>/images/</replace>
+      <replace>znlds.com</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\phpstudy\WWW\hudong</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/protected/modules/backyard/views/moneyman/finance.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/controllers/MoneymanController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/controllers/TaskcenterController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/views/taskcenter/tasklist.php" />
+        <option value="$PROJECT_DIR$/myUpload/php/upload.php" />
+        <option value="$PROJECT_DIR$/myUpload/js/myUpload.js" />
+        <option value="$PROJECT_DIR$/protected/controllers/SchedualController.php" />
+        <option value="$USER_HOME$/Desktop/二师兄_files/user_common.css" />
+        <option value="$USER_HOME$/Desktop/二师兄.html" />
+        <option value="$PROJECT_DIR$/source/css/user_common.css" />
+        <option value="$PROJECT_DIR$/protected/views/passport/regist.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/mailer/EMailer.php" />
+        <option value="$PROJECT_DIR$/protected/extensions/mailer/phpmailer/class.phpmailer.php" />
+        <option value="$PROJECT_DIR$/protected/views/passport/forgetPassword.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/PassportController.php" />
+        <option value="$PROJECT_DIR$/protected/views/passport/findPwd.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/controllers/ArticleController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/views/system/baseset.php" />
+        <option value="$PROJECT_DIR$/protected/models/Unaceept.php" />
+        <option value="$PROJECT_DIR$/protected/views/finance/takeOutCash.php" />
+        <option value="$PROJECT_DIR$/protected/views/other/buyerList.php" />
+        <option value="$PROJECT_DIR$/protected/views/user/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/user/inviteFriends.php" />
+        <option value="$PROJECT_DIR$/protected/views/finance/cardManage.php" />
+        <option value="$PROJECT_DIR$/protected/views/other/buyerDetail.php" />
+        <option value="$PROJECT_DIR$/protected/views/finance/readTransferImg.php" />
+        <option value="$PROJECT_DIR$/protected/views/finance/sellerOutCash.php" />
+        <option value="$PROJECT_DIR$/protected/models/Transferschedual.php" />
+        <option value="$PROJECT_DIR$/protected/views/finance/tleKefu.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/FinanceController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/views/baseLayout/mainmenu.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/controllers/CompliancenterController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/views/compliancenter/compliantransfer.php" />
+        <option value="$PROJECT_DIR$/framework/web/auth/CWebUser.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/views/membercenter/buyerlist.php" />
+        <option value="$PROJECT_DIR$/protected/views/other/auxiliaryInfo.php" />
+        <option value="$PROJECT_DIR$/protected/views/task/taskThree.php" />
+        <option value="$PROJECT_DIR$/protected/views/task/taskTwo.php" />
+        <option value="$PROJECT_DIR$/protected/views/task/taskOne.php" />
+        <option value="$USER_HOME$/Desktop/noticeinfo.php" />
+        <option value="D:/应用程序软件/FlashFXPE_xp510.com/FlashFXP 5/Cache/~flashfxp/95B644AF_view.tmp/noticeinfo.php" />
+        <option value="$PROJECT_DIR$/protected/views/task/taskFour.php" />
+        <option value="D:/应用程序软件/FlashFXPE_xp510.com/FlashFXP 5/Cache/~flashfxp/2E33EAB1_view.tmp/memberlist.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/controllers/MembercenterController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/protected/views/other/scoreLog.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/OtherController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/backyard/views/membercenter/memberlist.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/TaskController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="60" />
+    <option name="y" value="272" />
+    <option name="width" value="1906" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hudong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hudong" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hudong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hudong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hudong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hudong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hudong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hudong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hudong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hudong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backyard" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hudong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hudong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backyard" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hudong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hudong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backyard" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="membercenter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hudong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hudong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/css" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/phpstudy/WWW/hudong/protected/modules/backyard/controllers/CompliancenterController.php" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\phpstudy\WWW\hudong\protected\modules\backyard\views\compliancenter" />
+      <recent name="E:\phpstudy\WWW\hudong\protected\models" />
+      <recent name="E:\phpstudy\WWW\hudong\protected\views\finance" />
+      <recent name="E:\phpstudy\WWW\hudong\protected\views\passport" />
+      <recent name="E:\phpstudy\WWW\hudong\protected\views\schedual" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40f6ba8d-c75f-4d45-b2c9-4805d3936f76" name="Default" comment="" />
+      <created>1509067282588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509067282588</updated>
+      <workItem from="1509067287414" duration="27362000" />
+      <workItem from="1509152515071" duration="30217000" />
+      <workItem from="1509325473257" duration="20732000" />
+      <workItem from="1509412811545" duration="1672000" />
+      <workItem from="1509414887543" duration="10543000" />
+      <workItem from="1509445872962" duration="1712000" />
+      <workItem from="1509499485182" duration="5614000" />
+      <workItem from="1509585848960" duration="23701000" />
+      <workItem from="1509670884712" duration="20948000" />
+      <workItem from="1509757620675" duration="30161000" />
+      <workItem from="1509929906283" duration="23696000" />
+      <workItem from="1510017017857" duration="25011000" />
+      <workItem from="1510104071049" duration="17377000" />
+      <workItem from="1510189273625" duration="33239000" />
+      <workItem from="1510276023838" duration="29122000" />
+      <workItem from="1510318802357" duration="9230000" />
+      <workItem from="1510362125634" duration="27521000" />
+      <workItem from="1510455709821" duration="18168000" />
+      <workItem from="1510535760738" duration="27023000" />
+      <workItem from="1510621238365" duration="28961000" />
+      <workItem from="1510708941788" duration="31973000" />
+      <workItem from="1510793840040" duration="35501000" />
+      <workItem from="1510880195296" duration="34462000" />
+      <workItem from="1510966797046" duration="40874000" />
+      <workItem from="1511140820754" duration="36241000" />
+      <workItem from="1511226806808" duration="39939000" />
+      <workItem from="1511313538585" duration="35954000" />
+      <workItem from="1511399670800" duration="26922000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="693876000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26614583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29889297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/FinanceController.php</url>
+          <line>225</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/views/passport/regist.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/modules/backyard/controllers/ArticleController.php</url>
+          <line>270</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/views/user/userExam.php</url>
+          <line>37</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/views/user/userExam.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/modules/backyard/views/membercenter/addScoreCheck.php</url>
+          <line>266</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/SiteController.php</url>
+          <line>52</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/modules/backyard/controllers/SystemController.php</url>
+          <line>102</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/FinanceController.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/modules/backyard/views/moneyman/finance.php</url>
+          <line>102</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/SiteController.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/PassportController.php</url>
+          <line>10</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/TaskController.php</url>
+          <line>370</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/SiteController.php</url>
+          <line>62</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/UserController.php</url>
+          <line>661</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Desktop/wsl/hudong - 副本/BankCardManage.html</url>
+          <line>107</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/myUpload/js/myUpload.js</url>
+          <line>27</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="46" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://E:/工作/刷单/互刷平台源码/999/protected/controllers/PassportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="614" column="54" lean-forward="true" selection-start-line="614" selection-start-column="54" selection-end-line="614" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/passport/forgetPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="104" column="39" lean-forward="false" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/passport/findPwd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="150" column="23" lean-forward="false" selection-start-line="141" selection-start-column="57" selection-end-line="141" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/backyard/controllers/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="229" column="32" lean-forward="true" selection-start-line="229" selection-start-column="32" selection-end-line="229" selection-end-column="32" />
+          <folding>
+            <marker date="1511260457398" expanded="true" signature="1677:1735" ph="..." />
+            <marker date="1511260457398" expanded="true" signature="1736:2803" ph="..." />
+            <marker date="1511260457398" expanded="false" signature="1792:1823" ph="..." />
+            <marker date="1511260457398" expanded="false" signature="1903:1918" ph="..." />
+            <marker date="1511260457398" expanded="false" signature="2083:2114" ph="..." />
+            <marker date="1511260457398" expanded="false" signature="2255:2273" ph="..." />
+            <marker date="1511260457398" expanded="false" signature="2285:2312" ph="..." />
+            <marker date="1511260457398" expanded="false" signature="2407:2425" ph="..." />
+            <marker date="1511260457398" expanded="false" signature="2437:2464" ph="..." />
+            <marker date="1511260457398" expanded="false" signature="2751:2764" ph="..." />
+            <marker date="1511260457398" expanded="true" signature="8714:8804" ph="SELECT id,qu... ${Yii::app()-&gt;db-&gt;tablePrefix}" />
+            <marker date="1511260457398" expanded="true" signature="9120:9172" ph="SELECT * FRO... ${$tbprefix}" />
+            <marker date="1511260457398" expanded="true" signature="10019:10175" ph="INSERT INTO ${$tbprefix}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/backyard/views/system/baseset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Addscore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Unaceept.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/finance/takeOutCash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="59" column="110" lean-forward="false" selection-start-line="59" selection-start-column="110" selection-end-line="59" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="290" column="47" lean-forward="false" selection-start-line="290" selection-start-column="47" selection-end-line="290" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/inviteFriends.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="96" column="54" lean-forward="false" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/finance/cardManage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="392" column="29" lean-forward="true" selection-start-line="392" selection-start-column="29" selection-end-line="392" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#1;n#li#4;n#ul#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#p#1;n#li#4;n#ul#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <marker date="1511334845019" expanded="true" signature="5434:5449" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/other/buyerList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="107" column="79" lean-forward="false" selection-start-line="107" selection-start-column="64" selection-end-line="107" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/other/buyerDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="164" column="16" lean-forward="false" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/finance/readTransferImg.php" />
+    <entry file="file://$PROJECT_DIR$/protected/views/other/lifePhoto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Banklist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/backyard/views/compliancenter/complianlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Transferschedual.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="76" column="28" lean-forward="true" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/other/editPhoneNum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="289" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/工作/刷单/互刷平台源码/999/protected/modules/backyard/views/compliancenter/complianlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="405" column="12" lean-forward="false" selection-start-line="405" selection-start-column="12" selection-end-line="534" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/finance/sellerOutCash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="162" column="18" lean-forward="true" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
+          <folding>
+            <marker date="1511352158035" expanded="true" signature="2174:2203" ph="..." />
+            <marker date="1511352158035" expanded="true" signature="2269:2287" ph="..." />
+            <marker date="1511352158035" expanded="true" signature="2301:2314" ph="..." />
+            <marker date="1511352158035" expanded="true" signature="2360:2377" ph="..." />
+            <marker date="1511352158035" expanded="true" signature="2440:2486" ph="..." />
+            <marker date="1511352158035" expanded="true" signature="2551:2589" ph="..." />
+            <marker date="1511352158035" expanded="true" signature="2887:2900" ph="..." />
+            <marker date="1511352158035" expanded="true" signature="4875:4890" ph="..." />
+            <marker date="1511352158035" expanded="true" signature="5764:5779" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/finance/tleKefu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="78" column="96" lean-forward="false" selection-start-line="78" selection-start-column="89" selection-end-line="78" selection-end-column="96" />
+          <folding>
+            <element signature="n#style#0;n#li#2;n#ul#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/backyard/views/baseLayout/mainmenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/backyard/views/compliancenter/compliantransfer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="117" column="68" lean-forward="false" selection-start-line="117" selection-start-column="68" selection-end-line="117" selection-end-column="68" />
+          <folding>
+            <marker date="1511358370587" expanded="true" signature="10763:10891" ph="..." />
+            <marker date="1511358370587" expanded="true" signature="13924:13994" ph="..." />
+            <marker date="1511358370587" expanded="true" signature="14020:14030" ph="..." />
+            <marker date="1511358370587" expanded="true" signature="14701:14719" ph="..." />
+            <marker date="1511358370587" expanded="true" signature="14965:15035" ph="..." />
+            <marker date="1511358370587" expanded="true" signature="15066:15076" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/backyard/controllers/CompliancenterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="86" column="12" lean-forward="false" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+          <folding>
+            <element signature="n#actionComplianlist#0;n#CompliancenterController#0;n#!!top" expanded="false" />
+            <element signature="e#1833#3208#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/FinanceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="129" column="32" lean-forward="false" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+          <folding>
+            <element signature="n#init#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <element signature="n#actions#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTakeOutCash#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTransferDetailsList#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <element signature="n#actionApplicationTransfer#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUntransfer#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEditBankCard#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <element signature="n#actionDelBankCard#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <element signature="n#actionRecordList#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <element signature="n#actionPayList#0;n#FinanceController#0;n#!!top" expanded="false" />
+            <marker date="1511354076000" expanded="true" signature="3406:3579" ph="SELECT ut.or... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="3406:3625" ph="SELECT ut.or... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="3406:3626" ph="SELECT ut.or... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="3406:3627" ph="SELECT ut.or... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5690" ph="SELECT t.*,b... " />
+            <marker date="1511354076000" expanded="true" signature="5639:5691" ph="SELECT t.*,b... ${$this-&gt;render('transferDetailsList')}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5698" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5726" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5727" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5728" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5736" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5765" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5766" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5776" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5777" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5829" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5831" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5859" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="5639:5860" ph="SELECT t.*,b... ${$db}" />
+            <marker date="1511354076000" expanded="true" signature="13414:13790" ph="SELECT ut.ta... ${$tbprefix}" />
+            <marker date="1511354076000" expanded="true" signature="13414:13818" ph="SELECT ut.ta... ${$tbprefix}" />
+            <marker date="1511354076000" expanded="true" signature="13414:13820" ph="SELECT ut.ta... ${$tbprefix}" />
+            <marker date="1511354076000" expanded="true" signature="13414:13821" ph="SELECT ut.ta... ${$tbprefix}" />
+            <marker date="1511354076000" expanded="true" signature="13414:13828" ph="SELECT ut.ta... ${$tbprefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/web/auth/CWebUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="264" column="30" lean-forward="false" selection-start-line="264" selection-start-column="15" selection-end-line="264" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/other/custom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/task/taskManage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="200" column="81" lean-forward="false" selection-start-line="200" selection-start-column="77" selection-end-line="200" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="106" column="50" lean-forward="true" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+          <folding>
+            <marker date="1511408572557" expanded="true" signature="17220:17324" ph="..." />
+            <marker date="1511408572557" expanded="true" signature="17275:17319" ph="..." />
+            <marker date="1511408572557" expanded="true" signature="17970:18889" ph="{...}" />
+            <marker date="1511408572557" expanded="true" signature="18946:18975" ph="..." />
+            <marker date="1511408572557" expanded="true" signature="19041:19059" ph="..." />
+            <marker date="1511408572557" expanded="true" signature="19073:19086" ph="..." />
+            <marker date="1511408572557" expanded="true" signature="19132:19149" ph="..." />
+            <marker date="1511408572557" expanded="true" signature="19212:19258" ph="..." />
+            <marker date="1511408572557" expanded="true" signature="19323:19361" ph="..." />
+            <marker date="1511408572557" expanded="true" signature="19679:19692" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/backyard/views/membercenter/buyerlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="102" column="132" lean-forward="false" selection-start-line="102" selection-start-column="132" selection-end-line="102" selection-end-column="132" />
+          <folding>
+            <marker date="1511417971000" expanded="true" signature="4330:4399" ph="SELECT * FRO... ${Yii::app()-&gt;db-&gt;tablePrefix}" />
+            <marker date="1511417971000" expanded="true" signature="5748:5828" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="5768:5828" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="6179:6231" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="6721:6797" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="7604:8215" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="7633:8184" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="7664:8151" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="7695:7852" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="7881:7939" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="7970:8141" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="8414:8510" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="8566:8615" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="8763:8891" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="12220:12230" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="12676:12694" ph="..." />
+            <marker date="1511417971000" expanded="true" signature="12725:12740" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <marker date="1510638993982" expanded="true" signature="2686:2787" ph="..." />
+            <marker date="1510638993982" expanded="false" signature="2887:2962" ph="..." />
+            <marker date="1510638993982" expanded="true" signature="2963:3462" ph="..." />
+            <marker date="1510638993982" expanded="false" signature="2985:3095" ph="..." />
+            <marker date="1510638993982" expanded="true" signature="3096:3447" ph="..." />
+            <marker date="1510638993982" expanded="false" signature="3130:3147" ph="..." />
+            <marker date="1510638993982" expanded="true" signature="3148:3432" ph="..." />
+            <marker date="1510638993982" expanded="false" signature="3181:3234" ph="..." />
+            <marker date="1510638993982" expanded="false" signature="3304:3315" ph="..." />
+            <marker date="1510638993982" expanded="false" signature="3364:3394" ph="..." />
+            <marker date="1510638993982" expanded="true" signature="3514:3926" ph="..." />
+            <marker date="1510638993982" expanded="true" signature="3550:3841" ph="{...}" />
+            <marker date="1510638993982" expanded="true" signature="3660:3760" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/task/taskThree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="94" lean-forward="false" selection-start-line="18" selection-start-column="94" selection-end-line="18" selection-end-column="94" />
+          <folding>
+            <marker date="1511421207416" expanded="true" signature="581:734" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="590:734" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="621:734" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="641:734" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="665:723" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="830:1013" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="952:1007" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="1099:1139" ph="{...}" />
+            <marker date="1511421207416" expanded="true" signature="4705:6576" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="4740:4948" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="4757:4933" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="5082:6576" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="5163:5262" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="5183:5244" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="5349:5619" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="5384:5511" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="5551:5601" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="5709:5979" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="5744:5871" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="5911:5961" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="6065:6500" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="6100:6229" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="6269:6482" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="6293:6330" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="6784:7113" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="6826:6967" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="7014:7088" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="7393:7703" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="7432:7580" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="7624:7681" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="7806:8259" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="7826:7873" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="7963:8114" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="8356:8505" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="8391:8487" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="8937:9079" ph="..." />
+            <marker date="1511421207416" expanded="true" signature="8957:9079" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/应用程序软件/FlashFXPE_xp510.com/FlashFXP 5/Cache/~flashfxp/95B644AF_view.tmp/noticeinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="79" column="48" lean-forward="true" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/noticeinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="100" column="49" lean-forward="false" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/task/taskOne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="192" column="32" lean-forward="false" selection-start-line="192" selection-start-column="32" selection-end-line="192" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/task/taskTwo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="130" column="28" lean-forward="false" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/PassportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="161" column="37" lean-forward="false" selection-start-line="161" selection-start-column="29" selection-end-line="161" selection-end-column="37" />
+          <folding>
+            <element signature="n#accessRules#0;n#PassportController#0;n#!!top" expanded="false" />
+            <element signature="n#actionCheckPhoneExist#0;n#PassportController#0;n#!!top" expanded="false" />
+            <element signature="n#actionForgetPwd#0;n#PassportController#0;n#!!top" expanded="false" />
+            <element signature="e#8612#8836#0#PHP" expanded="false" />
+            <element signature="n#actionForgetpasswordnext#0;n#PassportController#0;n#!!top" expanded="false" />
+            <element signature="n#actionPlaceOtherLogin#0;n#PassportController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUserCheckPhoneAndCode#0;n#PassportController#0;n#!!top" expanded="false" />
+            <element signature="n#actionCodePassLogin#0;n#PassportController#0;n#!!top" expanded="false" />
+            <element signature="n#actionLogin#0;n#PassportController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEmailActive#0;n#PassportController#0;n#!!top" expanded="false" />
+            <marker date="1511253298000" expanded="true" signature="3024:3093" ph="SELECT ispro... ${Yii::app()-&gt;db-&gt;tablePrefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/应用程序软件/FlashFXPE_xp510.com/FlashFXP 5/Cache/~flashfxp/2E33EAB1_view.tmp/memberlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="0" column="132" lean-forward="false" selection-start-line="0" selection-start-column="132" selection-end-line="0" selection-end-column="132" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2716#2722#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#div#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5471#5477#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#td#10;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9932#9939#1#HTML" expanded="true" />
+            <marker date="1511428308339" expanded="true" signature="5131:5141" ph="..." />
+            <marker date="1511428308339" expanded="true" signature="5659:5687" ph="..." />
+            <marker date="1511428308339" expanded="true" signature="5713:5743" ph="..." />
+            <marker date="1511428308339" expanded="true" signature="5991:6019" ph="..." />
+            <marker date="1511428308339" expanded="true" signature="6045:6075" ph="..." />
+            <marker date="1511428308339" expanded="true" signature="7080:7110" ph="..." />
+            <marker date="1511428308339" expanded="true" signature="7214:7232" ph="..." />
+            <marker date="1511428308339" expanded="true" signature="7256:7303" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/应用程序软件/FlashFXPE_xp510.com/FlashFXP 5/Cache/~flashfxp/2E33EAB1_view.tmp/sellerlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511428082357" expanded="true" signature="4953:4965" ph="..." />
+            <marker date="1511428082357" expanded="true" signature="4992:5002" ph="..." />
+            <marker date="1511428082357" expanded="true" signature="7815:7945" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/backyard/controllers/MembercenterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="261" column="35" lean-forward="false" selection-start-line="261" selection-start-column="24" selection-end-line="261" selection-end-column="35" />
+          <folding>
+            <element signature="n#accessRules#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionAuthPerson#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionAuthStore#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionAuthStoreUrl#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionInviteFriends#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUserExam#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTaobaoInTask#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTaobaoInTaskAllList#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTaobaoBindBuyer#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTaobaoBindBuyerDel#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTaobaoBindBuyerChangeInfo#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTaobaoBindSeller#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionDeltemplete#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUserAccountCenter#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionChangPassword#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionChangSafepwd#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUserSpreadDetail#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUserPayDetailTX#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUserCashToBank#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionUserTxList#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#actionDeleteWangwang#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#gettaskcount#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#getlastMonthDays#0;n#UserController#0;n#!!top" expanded="false" />
+            <marker date="1511333681000" expanded="true" signature="7774:7819" ph="SELECT ispro... ${Yii::app()-&gt;db-&gt;tablePrefix}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8136" ph="SELECT u.use... " />
+            <marker date="1511333681000" expanded="true" signature="8073:8137" ph="SELECT u.use... ${$tb}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8164" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8165" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8166" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8190" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8193" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8235" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8236" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8237" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8294" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="8073:8295" ph="SELECT u.use... ${$db}" />
+            <marker date="1511333681000" expanded="true" signature="18701:18839" ph="SELECT useri... ${Yii::app()-&gt;db-&gt;tablePrefix}" />
+            <marker date="1511333681000" expanded="true" signature="19067:19097" ph="SELECT `valu... ${Yii::app()-&gt;db-&gt;}" />
+            <marker date="1511333681000" expanded="true" signature="19067:19213" ph="SELECT `valu... ${Yii::app()-&gt;user-&gt;getId()}" />
+            <marker date="1511333681000" expanded="true" signature="39556:39689" ph="SELECT COUNT... ${$tbprefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/finance/payList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="82" column="22" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="82" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/other/scoreLog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="98" column="34" lean-forward="true" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/other/auxiliaryInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/OtherController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="363" column="14" lean-forward="true" selection-start-line="363" selection-start-column="14" selection-end-line="363" selection-end-column="14" />
+          <folding>
+            <element signature="n#actionOpenNews#0;n#OtherController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEditPhoneNum#0;n#OtherController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEditPassword#0;n#OtherController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEditSafepwd#0;n#OtherController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEditQQ#0;n#OtherController#0;n#!!top" expanded="false" />
+            <marker date="1511434245000" expanded="true" signature="4932:5097" ph="SELECT w.use... ${$prefix}" />
+            <marker date="1511434245000" expanded="true" signature="5944:6100" ph="SELECT w.use... ${$prefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/task/taskFour.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="431" column="77" lean-forward="true" selection-start-line="431" selection-start-column="77" selection-end-line="432" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#p#12;n#li#0;n#ul#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1511426044110" expanded="true" signature="1582:1597" ph="..." />
+            <marker date="1511426044110" expanded="true" signature="1654:1663" ph="..." />
+            <marker date="1511426044110" expanded="true" signature="19428:19478" ph="..." />
+            <marker date="1511426044110" expanded="true" signature="20846:20884" ph="..." />
+            <marker date="1511426044110" expanded="true" signature="21105:21145" ph="..." />
+            <marker date="1511426044110" expanded="true" signature="21483:21521" ph="..." />
+            <marker date="1511426044110" expanded="true" signature="21742:21780" ph="..." />
+            <marker date="1511426044110" expanded="true" signature="21952:21979" ph="..." />
+            <marker date="1511426044110" expanded="true" signature="22277:22307" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/backyard/views/membercenter/memberlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="137" column="72" lean-forward="false" selection-start-line="137" selection-start-column="72" selection-end-line="137" selection-end-column="72" />
+          <folding>
+            <marker date="1511443360742" expanded="true" signature="5405:5415" ph="..." />
+            <marker date="1511443360742" expanded="true" signature="6084:6112" ph="..." />
+            <marker date="1511443360742" expanded="true" signature="6138:6168" ph="..." />
+            <marker date="1511443360742" expanded="true" signature="6421:6449" ph="..." />
+            <marker date="1511443360742" expanded="true" signature="6475:6505" ph="..." />
+            <marker date="1511443360742" expanded="true" signature="7523:7553" ph="..." />
+            <marker date="1511443360742" expanded="true" signature="7657:7675" ph="..." />
+            <marker date="1511443360742" expanded="true" signature="7699:7746" ph="..." />
+            <marker date="1511443360742" expanded="true" signature="11591:11719" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="300" column="28" lean-forward="false" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="28" />
+          <folding>
+            <element signature="n#actions#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="e#562#1461#0#PHP" expanded="false" />
+            <element signature="n#actionQueueNum#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#actionCancelQueue#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#delOverTask#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#actionContact#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#actionLogin#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTaskPublistCode#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#actionSms#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#NewSms#0;n#SiteController#0;n#!!top" expanded="false" />
+            <marker date="1511407137000" expanded="true" signature="876:907" ph="SELECT useri... ${$cashlog=Cashlog::model()-&gt;findAll(&quot;type='任务佣金' OR type='评价任务佣金' OR type='推广返现' AND userid=&quot;.Yii::app()-&gt;user-&gt;getId())}" />
+            <marker date="1511407137000" expanded="true" signature="876:937" ph="SELECT useri... ${Yii::app()-&gt;user-&gt;getId()}" />
+            <marker date="1511407137000" expanded="true" signature="876:1010" ph="SELECT useri... ${Yii::app()-&gt;user-&gt;getId()}" />
+            <marker date="1511407137000" expanded="true" signature="876:1011" ph="SELECT useri... ${Yii::app()-&gt;user-&gt;getId()}" />
+            <marker date="1511407137000" expanded="true" signature="2023:2052" ph="SELECT value... " />
+            <marker date="1511407137000" expanded="true" signature="2023:2053" ph="SELECT * FRO... ${$system=System::model()-&gt;find(&quot;varname='taskScore' or varname='monthAccount'&quot;)}" />
+            <marker date="1511407137000" expanded="true" signature="2023:2067" ph="SELECT * FRO... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="2023:2070" ph="SELECT * FRO... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="2023:2087" ph="SELECT * FRO... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="2023:2125" ph="SELECT value... ${$tbprefix}." />
+            <marker date="1511407137000" expanded="true" signature="2023:2147" ph="SELECT `valu... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="2023:2159" ph="SELECT * FRO... " />
+            <marker date="1511407137000" expanded="true" signature="2663:2722" ph="..." />
+            <marker date="1511407137000" expanded="true" signature="8704:8858" ph="SELECT DISTI... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="8704:8859" ph="SELECT DISTI... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="8704:8871" ph="SELECT DISTI... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="8704:8872" ph="SELECT DISTI... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="8704:8899" ph="SELECT DISTI... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="8704:8901" ph="SELECT DISTI... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="8704:9085" ph="SELECT DISTI... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="10124:10236" ph="SELECT `id`,... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="10774:11229" ph="SELECT tm.id... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="10774:11305" ph="SELECT tm.id... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="10774:11383" ph="SELECT tm.id... ${$tbprefix}" />
+            <marker date="1511407137000" expanded="true" signature="17198:17331" ph="SELECT COUNT... ${$tbprefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/TaskController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="177" column="33" lean-forward="true" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
+          <folding>
+            <element signature="n#actionTaskOne#0;n#TaskController#0;n#!!top" expanded="false" />
+            <element signature="n#actiontaskTwo#0;n#TaskController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEvalTask#0;n#TaskController#0;n#!!top" expanded="false" />
+            <element signature="n#actionEvalTaskList#0;n#TaskController#0;n#!!top" expanded="false" />
+            <element signature="n#actionTbAsk#0;n#TaskController#0;n#!!top" expanded="false" />
+            <element signature="n#actionShopConfirm#0;n#TaskController#0;n#!!top" expanded="false" />
+            <element signature="n#actionComfirmTask#0;n#TaskController#0;n#!!top" expanded="false" />
+            <element signature="n#actionSetfreeEvalTask#0;n#TaskController#0;n#!!top" expanded="false" />
+            <marker date="1511444961755" expanded="true" signature="1976:2390" ph="SELECT utask... ${$tbprefix}" />
+            <marker date="1511444961755" expanded="true" signature="3651:3863" ph="SELECT utask... ${$tbprefix}" />
+            <marker date="1511444961755" expanded="true" signature="5129:5654" ph="SELECT utask... ${$tbprefix}" />
+            <marker date="1511444961755" expanded="true" signature="7686:7751" ph="SELECT remar... ${Yii::app()-&gt;db-&gt;tablePrefix}" />
+            <marker date="1511444961755" expanded="true" signature="8536:9013" ph="SELECT ut.*,... ${$tbprefix}" />
+            <marker date="1511444961755" expanded="true" signature="12550:12881" ph="SELECT ut.ta... ${$tbprefix}" />
+            <marker date="1511444961755" expanded="true" signature="14714:15039" ph="SELECT te.*,... ${$tbprefix}" />
+            <marker date="1511444961755" expanded="true" signature="15569:15668" ph="SELECT shopn... ${$tbprefix}" />
+            <marker date="1511444961755" expanded="true" signature="15736:15843" ph="SELECT commo... ${$tbprefix}" />
+            <marker date="1511444961755" expanded="true" signature="16738:16814" ph="SELECT * FRO... ${Yii::app()-&gt;db-&gt;tablePrefix}" />
+            <marker date="1511444961755" expanded="true" signature="18152:18372" ph="SELECT * FRO... ${$tbprefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

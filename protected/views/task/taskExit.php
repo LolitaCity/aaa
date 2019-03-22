@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html><head>
+    <title></title>
+    <link href="<?=S_CSS;?>common.css" rel="stylesheet" type="text/css">
+    <link href="<?=S_CSS;?>open.win.css" rel="stylesheet" type="text/css">
+    <link href="<?=S_CSS;?>index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="<?=S_JS;?>jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="<?=S_JS;?>open.win.js"></script>
+</head>
+<body style="background: #fff;">
+<!--列表 -->
+<!--<div class="htyg_tc">
+    <ul>
+        <li class="htyg_tc_1">
+            退出任务
+        </li>
+        <li class="htyg_tc_2"><a href="javascript:void(0)" id="imgeColse" onclick="javascript:self.parent.$.closeWin()">
+                <img src="<?=S_IMAGES;?>sj-tc.png"></a> </li>
+    </ul>
+</div>-->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var type = $("input[name='reasonType']:checked").val();
+        if (type == "1") {
+            $("#txtRemark").show();
+        }
+        else {
+            $("#txtRemark").val("");
+            $("#txtRemark").hide();
+        }
+        $("input[name=reasonType]").click(function () {
+            var val = $(this).val();
+            if (val == "1") {
+                $("#txtRemark").show();
+            }
+            else {
+                $("#txtRemark").val("");
+                $("#txtRemark").hide();
+            }
+        })
+
+    })
+    function Submit() {
+        var selected = $("input[name='reasonType']:checked").length;
+        var remark = $("#txtRemark").val();
+        if (selected == 0) {
+            $.openAlter("请选择退出任务的理由.", "提示", { width: 250, height: 50 });
+            return false;
+        }
+        if (remark.trim() == '')
+        {
+        	$.openAlter("请填写退出该任务的原因", "提示", { width: 250, height: 50 });
+            return false;
+        }
+        if (remark.length > 200) {
+            $.openAlter("其他退出原因最多输入200个字符。.", "提示", { width: 250, height: 50 });
+            return false;
+        }
+        $("#fm").submit();
+    }
+    function Time(minute, second) {
+        second--;
+        if (second <= -1 && minute > 0) {
+            second = 59;
+            minute--;
+        }
+        if (minute <= 0) {
+            minute = 0;
+        }
+        if (minute <= 0 && second <= 0) {
+            minute = 0;
+            second = 0;
+        }
+        if (minute == 0 && second == 0) {
+        	localStorage.hasStay = 1;  //标志用户已经停留了6分钟
+            $("#radNotFound").attr("disabled", false);
+            $("#radOther").attr("checked", true);
+        }
+        else {
+            $("#radNotFound").attr("disabled", true);
+            $("#radOther").attr("checked", true);
+        }
+    }
+
+    var isValiPass = '';
+
+    function Timesa(minute, second) {
+        second--;
+        if (second <= -1 && minute > 0) {
+            second = 59;
+            minute--;
+        }
+        if (minute <= 0) {
+            minute = 0;
+        }
+        if (minute <= 0 && second <= 0) {
+            minute = 0;
+            second = 0;
+        }
+        if (minute == 0 && second == 0) {
+            if (isValiPass != "" && isValiPass != null && isValiPass != undefined) {
+                isValiPass = isValiPass.toLowerCase();
+                if (isValiPass == "true" || isValiPass == true) {
+                    $("#radNotFound").attr("disabled", true);
+                    $("#radOther").attr("checked", true);
+                }
+
+                else {
+                    $("#radNotFound").attr("disabled", false);
+                    $("#radOther").attr("checked", false);
+                }
+            }
+            else {
+                $("#radNotFound").attr("disabled", false);
+                $("#radOther").attr("checked", false);
+            }
+        }
+        else {
+            $("#radNotFound").attr("disabled", true);
+            setTimeout("Timesa('" + minute + "','" + second + "')", 1000);
+        }
+    }
+</script>
+<style>
+    /*退出任务*/.tc_exit
+    {
+        padding: 8px;
+    }
+    .tc_exit_1
+    {
+        margin: 10px 0px;
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 20px;
+    }
+    .tc_exit
+    {
+        padding: 8px;
+    }
+    .tc_exit h4 b
+    {
+        font-size: 16px;
+    }
+    .tc_exit h5
+    {
+        font-size: 16px;
+        margin-top: 10px;
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 5px;
+    }
+    .tc_exit_1
+    {
+        margin: 10px 0px;
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 20px;
+    }
+    .tc_exit_1 li, .checkbox_css li
+    {
+        height: 35px;
+        line-height: 30px;
+    }
+    .checkbox_css
+    {
+        display: inline-block;
+        width: 100%;
+    }
+    .checkbox_css li
+    {
+        width: 50%;
+        float: left;
+    }
+    .tc_exit_1 li label, .tc_exit_1 li input, .checkbox_css span, .checkbox_css input
+    {
+        float: left;
+    }
+    /*单选按钮样式*/
+    .tc_exit_text
+    {
+        height: 16px;
+        width: 340px;
+        margin-left: 15px;
+        font-family: "微软雅黑";
+    }
+    .tc_exit_1 input
+    {
+
+        border: 1px solid #e9e9e9;
+        padding: 5px;
+    }
+    .tc_exit .left_100
+    {
+        margin: 10px auto !important;
+    }
+    .left_100 a
+    {
+        float: left;
+        margin-right: 20px;
+    }
+    .left_100
+    {
+        width: 280px;
+        margin: 20px auto;
+    }
+</style>
+<!--添加弹窗 取消任务 -->
+<form action="<?php echo $this->createUrl('task/taskexit')?>" enctype="multipart/form-data" id="fm" method="post">
+    <div class="yctc_458 ycgl_tc_1">
+        <input id="TaskID" name="taskid" type="hidden" value="<?=$taskid;?>">
+
+
+        <div class="tc_exit">
+            <h4>
+                今日可退出任务次数剩余<b class="t_red" style="font-size:18px;  font-weight:900"><?php echo $count;?></b>次</h4>
+            <h5 class="t_red">
+                请选择退出任务的理由:</h5>
+            <div class="radio_box" id="radio01">
+                <ul class="tc_exit_1">
+                    <!--<li>
+                        <input style="margin-top:8px" type="radio" id="radNotFound" value="0" name="reasonType">
+                        <label for="radNotFound" style=" margin-left:5px">
+                            找不到目标商品<b style="color:Red">（任务将被隐藏）</b></label>
+                    </li>-->
+                    <li>
+                        <input style="margin-top:8px" type="radio" id="radOther" value="1" name="reasonType">
+                        <label style=" margin-left:5px" for="radOther">其他</label>
+                        <input type="text" id="txtRemark" name="Remark" placeholder="您可在此处输入退出原因，方便平台了解情况" class="tc_exit_text">
+                    </li>
+                </ul>
+            </div>
+            <div class="checkbox_css" id="div1">
+                <ul>
+
+                    <li>
+                        <input data-val="true" data-val-required="BrushIsAbandonShop 字段是必需的。" id="BrushIsAbandonShop" name="notaceeptshop" style="margin-top:8px" type="checkbox" >
+                        <label style=" margin-left:5px" for="BrushIsAbandonShop">今日不再接手此店铺任务</label> </li>
+                </ul>
+            </div>
+            <div class="left_100">
+                <a href="javascript:void(0)" onclick="Submit()" class="f90 anniu_fabe">退出任务</a> <a href="" onclick="Guan()" class="b_4882f0 anniu_fabe">继续任务</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            Timesa('-1', '0')
+           function  Guan(){
+            var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+            parent.layer.close(index);
+            }
+            </script>
+    </div>
+</form>    <!--添加弹窗 取消任务 -->
+
+
+
+</body></html>

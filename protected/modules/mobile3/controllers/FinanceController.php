@@ -1,0 +1,566 @@
+<?php
+class FinanceController extends Controller {
+	public $layout = false;
+	public function init() {
+		parent::init ();
+		$userid = Yii::app ()->user->getId ();
+		if (empty ( $userid )) {
+			$this->redirect ( $this->createUrl ( 'user/login' ) );
+			exit ();
+		}
+	}
+	public function actions() {
+		return array (
+				// captcha action renders the CAPTCHA image displayed on the contact page
+				'captcha' => array (
+						'class' => 'CCaptchaAction',
+						'backColor' => 0xFFFFFF,
+						'width' => 80, // 默认120
+						'height' => 35, // 默认50
+						'padding' => 2, // 文字周边填充大小
+						
+						'foreColor' => 0x2040A0, // 字体颜色
+						'minLength' => 4, // 设置最短为6位
+						'maxLength' => 4, // 设置最长为7位,生成的code在6-7直接rand了
+						'transparent' => true, // 显示为透明,默认中可以看到为false
+						'offset' => - 2 // 设置字符偏移量
+				) 
+		);
+	}
+	
+	// 平台提现管理
+	public function actionTakeOutCash() {
+		
+		$banklist = Banklist::model ()->findAll ( 'userid=' . Yii::app ()->user->getId () );
+		$userinfo = User::model ()->findByPk ( Yii::app ()->user->getId () );
+		$systemset = System::model ()->find ( "varname='outcashmoney'" );
+		$danbaojin = System::model ()->find ( "varname='danbaojin'" );
+		$res = array ();
+		$outcashlist = array ();
+		$outcashlist = Outcash::model ()->findAll ( 'userid=' . Yii::app ()->user->getId () );
+		if (! empty ( $_POST ['money'] ) && is_numeric ( $_POST ['money'] )) {
+			if ($_POST ['money'] > ($userinfo->Money - $danbaojin->value)) {
+				$res ['err_code'] = 1;
+				$res ['msg'] = '保证金不能提出，提现失败！';
+				echo json_encode ( $res );
+				exit ();
+			}
+			if ($_POST ['money'] < $systemset->value) {
+				$res ['err_code'] = 1;
+				$res ['msg'] = '平台提现最低' . $systemset->value . '金币以上';
+				echo json_encode ( $res );
+				exit ();
+			}
+			if ($_POST ['money'] > $userinfo->Money) {
+				$res ['err_code'] = 1;
+				$res ['msg'] = '提现金币不足，提现失败';
+				echo json_encode ( $res );
+				exit ();
+			}
+			if ($userinfo->Status == 1) {
+				$res ['err_code'] = 2;
+				$res ['msg'] = '账户已被冻结，提现失败！';
+				echo json_encode ( $res );
+				exit ();
+			}
+			// 有工单的不能提现，未做
+			
+			$outcash = new Outcash ();
+			$outcash->userid = Yii::app ()->user->getId ();
+			$outcash->money = $_POST ['money'];
+			$outcash->bankaccount = $_POST ['bankaccount'];
+			$outcash->addtime = time ();
+			$outcash->status = '待确认';   
+			
+			
+			$post_data = array (
+					'money' => $_POST ['money'],
+					"bankaccount" => $_POST ['bankaccount'] ,
+					"UserID" => Yii::app ()->user->getId ()
+			);
+			$url = BKC_URL."?ActionTag=Pay_Outcash";  
+			$ch = curl_init ();
+			curl_setopt ( $ch, CURLOPT_URL, $url );
+			curl_setopt ( $ch, CURLOPT_POSTFIELDS, json_encode ( $post_data )  );
+			curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, true );
+			curl_setopt ( $ch, CURLOPT_USERAGENT, "qianyunlai.com's CURL Example beta" );
+			$rs_data = curl_exec ( $ch );
+			$jsonObject = json_decode ( $rs_data );
+			curl_close ( $ch );
+			
+			if ($jsonObject->IsOK == true) {
+				$res ['err_code'] = 0;
+				$res ['msg'] = '提现申请成功';
+				echo json_encode ( $res );
+				exit ();
+			}
+			else {
+				
+				$res ['err_code'] = 0;
+				$res ['msg'] = '提现申请失败：'.$jsonObject->Description ;
+				echo json_encode ( $res );
+				$redis -> delete($mark);
+				exit ();
+			}
+		}
+		$ree = "有";
+		$result = array();
+        foreach ($banklist as $key=>$val){
+            $branch=$val['subbranch'];
+            if(Toole::containcharacter($branch,"支行",-2)){
+//                $result[$key]['err_code'] = 1;
+//                $result[$key]['msg'] ="卡号为：" .$val['bankAccount']."的支行合法";
+            }else{
+                $result[$key]['err_code'] = 2;
+                $result[$key]['bankAccount'] =$val['bankAccount'];
+                $result[$key]['msg'] ="卡号为：" .$val['bankAccount']."的支行不合法";
+                $ree = $ree.":[卡号为：".$val['bankAccount']."的支行不合法]";
+            }
+        }
+		$this->render ( 'takeOutCash', array (
+				'banklist' => $banklist,
+				'userinfo' => $userinfo,
+				'outcashList' => $outcashlist,
+				'systemset' => $systemset,
+				'danbaojin' => $danbaojin,
+				'ree' => $ree,
+                'result'=>$result
+		) );
+	}
+	// 卖家提现
+	public function actionSellerOutCash() {
+		$db = Yii::app ()->db->tablePrefix;
+		
+		$sql = "SELECT ut.ordersn AS osn,ut.orderprice,ut.id AS utaskid,ut.status as ut,t.* FROM " . $db . "_usertask AS ut LEFT JOIN " . $db . "_transfercash AS t " . " ON t.usertaskid=ut.id WHERE ut.userid=" . Yii::app ()->user->getId () . " AND ut.status>0   ORDER BY ut.addtime DESC limit 15 ";
+		$list = Yii::app ()->db->createCommand ( $sql )->queryAll ();
+		
+		$curbank = Banklist::model ()->find ( 'userid=' . Yii::app ()->user->getId () . ' and isdefault=1' );
+		$this->render ( 'sellerOutCash', array (
+				'curbank' => $curbank,
+				'list' => $list 
+		) );
+	}
+	// 提交客服
+	public function actionTelkefu() {
+		$info = array ();
+		$tfinfo = array ();
+		if ($_GET ['id']) {
+			$info = Transfercash::model ()->findByPk ( $_GET ['id'] );
+			$arr = Transferschedual::model ()->find ( 'transferid=' . $_GET ['id'] );
+			if ($arr) {
+				$tfinfo = $arr;
+			}
+		}
+		if ($_POST ['transferid']) {
+			$tf = Transfercash::model ()->findByPk ( $_POST ['transferid'] );
+			$ist = Transferschedual::model ()->find ( 'transferid=' . $_POST ['transferid'] );
+			if ($ist) {
+				echo '<html>';
+				echo '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>';
+				echo "<script>alert('请勿重复提交工单');window.location.href='" . $this->createUrl ( 'finance/telkefu', array (
+						'id' => $_POST ['transferid'] 
+				) ) . "'</script>";
+				exit ();
+				echo '</html>';
+			}
+			$transferschedual = new Transferschedual ();
+			$transferschedual->transferid = $_POST ['transferid'];
+			$transferschedual->content = $_POST ['content'];
+			$transferschedual->img = $_POST ['img1'];
+			$transferschedual->addtime = time ();
+			$transferschedual->merchantid = $tf->merchantid;
+			$transferschedual->buyerid = Yii::app ()->user->getId ();
+			if ($transferschedual->save ()) {
+				echo '<html>';
+				echo '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>';
+				echo "<script>alert('提交成功');window.location.href='" . $this->createUrl ( 'finance/selleroutcash' ) . "'</script>";
+				exit ();
+				echo '</html>';
+			} else {
+				echo '<html>';
+				echo '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>';
+				echo "<script>alert('提交失败');window.location.href='" . $this->createUrl ( 'finance/telkefu', array (
+						'id' => $_POST ['transferid'] 
+				) ) . "'</script>";
+				exit ();
+				echo '</html>';
+			}
+		}
+		$this->layout = false;
+		$this->render ( 'tleKefu', array (
+				'info' => $info,
+				'tfinfo' => $tfinfo 
+		) );
+	}
+	// 提现流水明细
+	public function actionTransferDetailsList() {
+		$criteria = new CDbCriteria ();
+		$db = Yii::app ()->db->tablePrefix;
+		$where = '';
+		$sql = "SELECT t.*,b.bankName,b.bankAccount,ut.ordersn FROM " . $db . "_transfercash AS t LEFT JOIN " . $db . "_banklist AS b ON t.bankid=b.id LEFT JOIN " . $db . "_usertask AS ut ON t.usertaskid=ut.id " . " WHERE t.buyerid=" . Yii::app ()->user->getId ();
+		$list = Yii::app ()->db->createCommand ( $sql )->queryAll ();
+		$pages = new CPagination ( count ( $list ) );
+		$pages->pageSize = 15;
+		$pages->applyLimit ( $criteria );
+		
+		$list = Yii::app ()->db->createCommand ( $sql . " LIMIT :offset,:limit" );
+		$list->bindValue ( ':offset', $pages->currentPage * $pages->pageSize );
+		$list->bindValue ( ':limit', $pages->pageSize );
+		$detailist = $list->queryAll ();
+		$this->render ( 'transferDetailsList', array (
+				'list' => $detailist,
+				'pages' => $pages 
+		) );
+	}
+	// 申请提现
+	public function actionApplicationTransfer() {
+		exit();
+		if ($_GET ['usertaskid']) {
+			$usertask = Usertask::model ()->findByPk ( $_GET ['usertaskid'] );
+			$bank = Banklist::model ()->find ( 'userid=' . Yii::app ()->user->getId () . ' AND isdefault=1' );
+			$transfercash = Transfercash::model ()->find ( 'usertaskid=' . $_GET ['usertaskid'] );
+			$userinfo = User::model ()->findByPk ( Yii::app ()->user->getId () );
+			
+			if (empty ( $transfercash )) {
+				
+				$theTaskMode = Taskmodel::model ()->find ( 'id=' . $usertask->taskmodelid );
+				
+				$transfer = new Transfercash ();
+				$transfer->buyerid = Yii::app ()->user->getId ();
+				$transfer->merchantid = $usertask->merchantid;
+				$transfer->transferstatus = 1;
+				$transfer->ordersn = $usertask->ordersn;
+				$transfer->addtime = time ();
+				$transfer->usertaskid = $_GET ['usertaskid'];
+				$transfer->money = $theTaskMode->price;
+				$transfer->bankid = $bank->id;
+				$transfer->truename = $userinfo->TrueName;
+				if ($transfer->save ()) {
+					$this->redirect ( $this->createUrl ( 'finance/selleroutcash' ) );
+				}
+			}
+		}
+	}
+	// 申请提现但是未到账
+	public function actionUntransfer() {
+		$transfer = Transfercash::model ()->findByPk ( $_POST ['id'] );
+		if ($transfer) {
+			$transfer->transferstatus = 4;
+			if ($transfer->save ()) {
+				$res ['err_code'] = 0;
+				$res ['msg'] = '提交成功';
+			} else {
+				$res ['err_code'] = 1;
+				$res ['msg'] = '提交失败';
+			}
+		} else {
+			$res ['err_code'] = 2;
+			$res ['msg'] = '信息错误';
+		}
+		echo json_encode ( $res );
+		exit ();
+	}
+	// 确认到账
+	public function actionAlreadyArrived() {
+		if ($_POST ['id']) {
+			$transfercash = Transfercash::model ()->findByPk ( $_POST ['id'] );
+			$transfercash->transferstatus = 2;
+			$transfercash->arrivestatus = 1;
+			if ($transfercash->save ()) {
+				$res ['err_code'] = 0;
+				$res ['msg'] = '操作成功！';
+			} else {
+				$res ['err_code'] = 1;
+				$res ['msg'] = '操作失败，请重试！';
+			}
+			echo json_encode ( $res );
+			exit ();
+		}
+	}
+	// 本金提现记录
+	public function actionTransferList() {
+		$db = Yii::app ()->db->tablePrefix;
+		$criteria = new CDbCriteria ();
+		$where = '';
+		if (is_numeric ( $_GET ['type'] )) {
+			$where .= " AND t.transferstatus=$_GET[type] ";
+		}
+		$sql = "SELECT ut.ordersn AS osn,ut.orderprice,ut.id AS utaskid,ut.status as ut,t.* FROM " . $db . "_usertask AS ut LEFT JOIN " . $db . "_transfercash AS t " . " ON t.usertaskid=ut.id WHERE ut.userid=" . Yii::app ()->user->getId () . " AND ut.status>0 $where  ORDER BY ut.addtime DESC ";
+		$list = Yii::app ()->db->createCommand ( $sql )->queryAll ();
+		$pages = new CPagination ( count ( $list ) );
+		$pages->pageSize = 15;
+		$pages->applyLimit ( $criteria );
+		
+		$list = Yii::app ()->db->createCommand ( $sql . "LIMIT :offset,:limit" );
+		$list->bindValue ( ':offset', $pages->currentPage * $pages->pageSize );
+		$list->bindValue ( ':limit', $pages->pageSize );
+		$cashlist = $list->queryAll ();
+		$curbank = Banklist::model ()->find ( 'userid=' . Yii::app ()->user->getId () . ' and isdefault=1' );
+		$this->render ( 'transferlist', array (
+				'curbank' => $curbank,
+				'list' => $cashlist,
+				'pages' => $pages 
+		) );
+	}
+	// 银行卡管理
+	public function actionCardManage() {
+		$userinfo = User::model ()->findByPk ( Yii::app ()->user->getId () );
+		$criteria = new CDbCriteria ();
+		$criteria->addCondition ( 'userid=' . Yii::app ()->user->getId () );
+		$list = Banklist::model ()->findAll ( $criteria );
+		
+		$this->render ( 'cardManage', array (
+				'userinfo' => $userinfo,
+				'banklist' => $list 
+		) );
+	}
+	// 查询是否设为卖家转账账号
+	public function actionCheckCard() {
+		if ($_POST ['id']) {
+			$row = Banklist::model ()->find ( 'id=' . $_POST ['id'] . ' and isdefault=1' );
+			if (! empty ( $row )) {
+				echo 1;
+				exit ();
+			}
+			$row2 = Transfercash::model ()->find ( 'bankid=' . $_POST ['id'] );
+			if (! empty ( $row2 )) {
+				echo 2;
+				exit ();
+			}
+		}
+	}
+	// 修改银行卡号
+	public function actionEditBankCard() {
+		$banklist = Banklist::model ()->findAll ( 'userid=' . Yii::app ()->user->getId () );
+		
+		if (@$_POST ['bankid']) {
+			foreach ( $banklist as $v ) {
+				if ($v->isdefault == 1) {
+					$bk = Banklist::model ()->findByPk ( $v->id );
+					$bk->isdefault = 0;
+					$bk->save ();
+				}
+			}
+			$userinfo = User::model ()->findByPk ( Yii::app ()->user->getId () );
+			if ($_POST ['safePwd'] != $userinfo->SafePwd) {
+				$result ['err_code'] = 1;
+				$result ['msg'] = '安全码错误';
+				echo json_encode ( $result );
+				exit ();
+			}
+			$banklist = Banklist::model ()->findByPk ( $_POST ['bankid'] );
+			$banklist->isdefault = 1;
+			if ($banklist->save ()) {
+				$result ['err_code'] = 0;
+				$result ['msg'] = '设置成功';
+				echo json_encode ( $result );
+				exit ();
+			}
+		}
+	}
+	// 删除银行卡号
+	public function actionDelBankCard() {
+		if ($_POST ['id']) {
+			$userinfo = User::model ()->findByPk ( Yii::app ()->user->getId () );
+			if (md5 ( $_POST ['Pwd'] ) != $userinfo->SafePwd) {
+				$result ['err_code'] = 1;
+				$result ['msg'] = '安全码错误';
+				echo json_encode ( $result );
+				exit ();
+			}
+			$banklist = Banklist::model ()->findByPk ( $_POST ['id'] );
+			if ($banklist->delete ()) {
+				$result ['err_code'] = 0;
+				$result ['msg'] = '删除成功';
+				echo json_encode ( $result );
+				exit ();
+			} else {
+				// $result['err_code']=2;$result['msg']='删除失败'; echo json_encode($result);exit;
+			}
+		}
+	}
+	// 订单信息
+	public function actionPayList() {
+		$tbprefix = Yii::app ()->db->tablePrefix;
+		$criteria = new CDbCriteria ();
+		$where = '';
+		$serchword = array ();
+		if (! empty ( $_GET )) {
+			$begindate = strtotime ( $_GET ['BeginDate'] );
+			$enddate = strtotime ( $_GET ['EndDate'] );
+			if (! empty ( $begindate ) && ! empty ( $enddate )) {
+				$where .= " AND ut.updatetime>'$begindate' AND ut.updatetime<'$enddate'";
+			}
+			if (! empty ( $begindate ) && empty ( $enddate )) {
+				$where .= " AND ut.updatetime>'$begindate' ";
+			}
+			if (empty ( $begindate ) && ! empty ( $enddate )) {
+				$where .= "  AND ut.updatetime<'$enddate'";
+			}
+			$_GET ['BeginDate'] = $begindate;
+			$_GET ['EndDate'] = $enddate;
+			$serchword = $_GET;
+		}
+		$sql = 'SELECT ut.tasksn,ut.updatetime,ut.id AS usertaskid,ut.ordersn,ut.orderprice,s.shopname,tm.price,tm.express,w.wangwang FROM ' . $tbprefix . '_usertask AS ut ' . ' LEFT JOIN ' . $tbprefix . '_shop AS s ON ut.shopid=s.sid LEFT JOIN ' . $tbprefix . '_blindwangwang AS w ON ut.userid=w.userid LEFT JOIN ' . $tbprefix . '_taskmodel AS tm ' . ' ON tm.id=ut.taskmodelid WHERE ut.userid=' . Yii::app ()->user->getId () . " $where ";
+		$model = Yii::app ()->db->createCommand ( $sql )->queryAll ();
+		$countprice = 0;
+		$countorderprice = 0;
+		$diff = 0;
+		foreach ( $model as $val ) {
+			$countprice += $val ['price'] + $val ['express'];
+			$countorderprice += $val ['orderprice'];
+			$diff += $val ['orderprice'] - ($val ['price'] + $val ['express']);
+		}
+		$pages = new CPagination ( count ( $model ) );
+		$pages->pageSize = 15;
+		$pages->applyLimit ( $criteria );
+		$model = Yii::app ()->db->createCommand ( $sql . "LIMIT :offset,:limit" );
+		$model->bindValue ( ':offset', $pages->currentPage * $pages->pageSize );
+		$model->bindValue ( ':limit', $pages->pageSize );
+		$paylist = $model->queryAll ();
+		
+		$this->render ( 'payList', array (
+				'paylist' => $paylist,
+				'pages' => $pages,
+				'countprice' => $countprice,
+				'countorderprice' => $countorderprice,
+				'diff' => $diff,
+				'serchword' => $serchword 
+		) );
+	}
+	// 查看提现详细
+	public function actionLookInfo() {
+		$info = array ();
+		if (! empty ( $_GET ['utaskid'] )) {
+			$info = Usertask::model ()->findByPk ( $_GET ['utaskid'] );
+		}
+		$this->render ( 'lookinfo', array (
+				'info' => $info  
+		) );
+	}
+	// 一键申请提现
+	public function actionCheckedall() {
+	    exit();
+		$res = array ();
+		$usertask = Usertask::model ()->findAll ( 'userid=' . Yii::app ()->user->getId () . ' AND status>0' );
+		$bank = Banklist::model ()->find ( 'userid=' . Yii::app ()->user->getId () . ' AND isdefault=1' );
+		// 没有完成任务提示
+		if (empty ( $usertask )) {
+			$res ['err_code'] = 1;
+			$res ['msg'] = '没有可操作的订单！';
+			echo json_encode ( $res );
+			exit ();
+		}
+		if (empty ( $bank )) {
+			$res ['err_code'] = 2;
+			$res ['msg'] = '您未设置默认提现银行卡，请设置或者添加后再操作！';
+			echo json_encode ( $res );
+			exit ();
+		}
+		
+		$userinfo = User::model ()->findByPk ( Yii::app ()->user->getId () );
+		$count = 0;
+		foreach ( $usertask as $kk => $vv ) {
+			$transfercash = Transfercash::model ()->find ( 'usertaskid=' . $vv->id );
+			if (empty ( $transfercash )) {
+				$transfer = new Transfercash ();
+				$transfer->buyerid = Yii::app ()->user->getId ();
+				$transfer->merchantid = $vv->merchantid;
+				$transfer->transferstatus = 1;
+				$transfer->ordersn = $vv->ordersn;
+				$transfer->addtime = time ();
+				$transfer->usertaskid = $vv->id;
+				
+				$theTaskMode = Taskmodel::model ()->find ( 'id=' . $vv->taskmodelid );
+				$transfer->money = $theTaskMode->price;
+				
+				$transfer->bankid = $bank->id;
+				$transfer->truename = $userinfo->TrueName;
+				if ($transfer->save ()) {
+					$count ++;
+				}
+			}
+		}
+		if ($count > 0) {
+			$res ['err_code'] == 0;
+			$res ['msg'] = '申请提现成功！';
+		} else {
+			$res ['err_code'] == 3;
+			$res ['msg'] = '没有可操作的订单';
+		}
+		echo json_encode ( $res );
+		exit ();
+	}
+	// 添加银行卡
+	public function actionAddBank() {
+		if (@$_POST ['BankName']) {
+			$userinfo = User::model ()->findByPk ( Yii::app ()->user->getId () );
+			if (md5 ( $_POST ['Pwd'] ) != $userinfo->SafePwd) {
+				$result ['err_code'] = 1;
+				$result ['msg'] = '安全码错误';
+				echo json_encode ( $result );
+				exit ();
+			}
+			$banks = Banklist::model ()->findAll ( 'userid=' . Yii::app ()->user->getId () );
+			$total = count ( $banks );
+			if ($total >= 3) {
+				$result ['err_code'] = 2;
+				$result ['msg'] = '最多只能绑定3张银行卡';
+				echo json_encode ( $result );
+				exit ();
+			}
+			
+			$bankAccount = $_POST ['CardNumber'] ;
+			$sql="SELECT  COUNT(1) from zxjy_banklist  WHERE bankAccount='{$bankAccount}'" ;
+			$ckCount=Yii::app()->db->createCommand($sql)->queryScalar();
+			$oo=(int)$ckCount;
+			if($oo !== 0 ){
+				$result ['err_code'] = 3;
+				$result ['msg'] = "银行卡号({$bankAccount})已登记，不可重复使用";
+				echo json_encode ( $result );
+				exit ();
+			}
+			
+            $tmpInfo =Toole::checkBankInfo($bankAccount);
+            if($tmpInfo->validated == false){
+                $result ['err_code'] = 1;
+                $result ['msg'] = '银行卡不合法';
+                echo json_encode ( $result );
+                exit ();
+            }else{
+                if($tmpInfo->bank){
+                    $bank = $tmpInfo->bank;
+                    $str = "{\"CDB\":\"国家开发银行\",\"ICBC\":\"中国工商银行\",\"ABC\":\"中国农业银行\",\"BOC\":\"中国银行\",\"CCB\":\"中国建设银行\",\"PSBC\":\"中国邮政储蓄银行\",\"COMM\":\"交通银行\",\"CMB\":\"招商银行\",\"SPDB\":\"上海浦东发展银行\",\"CIB\":\"兴业银行\",\"HXBANK\":\"华夏银行\",\"GDB\":\"广东发展银行\",\"CMBC\":\"中国民生银行\",\"CITIC\":\"中信银行\",\"CEB\":\"中国光大银行\",\"EGBANK\":\"恒丰银行\",\"CZBANK\":\"浙商银行\",\"BOHAIB\":\"渤海银行\",\"SPABANK\":\"平安银行\",\"SHRCB\":\"上海农村商业银行\",\"YXCCB\":\"玉溪市商业银行\",\"YDRCB\":\"尧都农商行\",\"BJBANK\":\"北京银行\",\"SHBANK\":\"上海银行\",\"JSBANK\":\"江苏银行\",\"HZCB\":\"杭州银行\",\"NJCB\":\"南京银行\",\"NBBANK\":\"宁波银行\",\"HSBANK\":\"徽商银行\",\"CSCB\":\"长沙银行\",\"CDCB\":\"成都银行\",\"CQBANK\":\"重庆银行\",\"DLB\":\"大连银行\",\"NCB\":\"南昌银行\",\"FJHXBC\":\"福建海峡银行\",\"HKB\":\"汉口银行\",\"WZCB\":\"温州银行\",\"QDCCB\":\"青岛银行\",\"TZCB\":\"台州银行\",\"JXBANK\":\"嘉兴银行\",\"CSRCB\":\"常熟农村商业银行\",\"NHB\":\"南海农村信用联社\",\"CZRCB\":\"常州农村信用联社\",\"H3CB\":\"内蒙古银行\",\"SXCB\":\"绍兴银行\",\"SDEB\":\"顺德农商银行\",\"WJRCB\":\"吴江农商银行\",\"ZBCB\":\"齐商银行\",\"GYCB\":\"贵阳市商业银行\",\"ZYCBANK\":\"遵义市商业银行\",\"HZCCB\":\"湖州市商业银行\",\"DAQINGB\":\"龙江银行\",\"JINCHB\":\"晋城银行JCBANK\",\"ZJTLCB\":\"浙江泰隆商业银行\",\"GDRCC\":\"广东省农村信用社联合社\",\"DRCBCL\":\"东莞农村商业银行\",\"MTBANK\":\"浙江民泰商业银行\",\"GCB\":\"广州银行\",\"LYCB\":\"辽阳市商业银行\",\"JSRCU\":\"江苏省农村信用联合社\",\"LANGFB\":\"廊坊银行\",\"CZCB\":\"浙江稠州商业银行\",\"DYCB\":\"德阳商业银行\",\"JZBANK\":\"晋中市商业银行\",\"BOSZ\":\"苏州银行\",\"GLBANK\":\"桂林银行\",\"URMQCCB\":\"乌鲁木齐市商业银行\",\"CDRCB\":\"成都农商银行\",\"ZRCBANK\":\"张家港农村商业银行\",\"BOD\":\"东莞银行\",\"LSBANK\":\"莱商银行\",\"BJRCB\":\"北京农村商业银行\",\"TRCB\":\"天津农商银行\",\"SRBANK\":\"上饶银行\",\"FDB\":\"富滇银行\",\"CRCBANK\":\"重庆农村商业银行\",\"ASCB\":\"鞍山银行\",\"NXBANK\":\"宁夏银行\",\"BHB\":\"河北银行\",\"HRXJB\":\"华融湘江银行\",\"ZGCCB\":\"自贡市商业银行\",\"YNRCC\":\"云南省农村信用社\",\"JLBANK\":\"吉林银行\",\"DYCCB\":\"东营市商业银行\",\"KLB\":\"昆仑银行\",\"ORBANK\":\"鄂尔多斯银行\",\"XTB\":\"邢台银行\",\"JSB\":\"晋商银行\",\"TCCB\":\"天津银行\",\"BOYK\":\"营口银行\",\"JLRCU\":\"吉林农信\",\"SDRCU\":\"山东农信\",\"XABANK\":\"西安银行\",\"HBRCU\":\"河北省农村信用社\",\"NXRCU\":\"宁夏黄河农村商业银行\",\"GZRCU\":\"贵州省农村信用社\",\"FXCB\":\"阜新银行\",\"HBHSBANK\":\"湖北银行黄石分行\",\"ZJNX\":\"浙江省农村信用社联合社\",\"XXBANK\":\"新乡银行\",\"HBYCBANK\":\"湖北银行宜昌分行\",\"LSCCB\":\"乐山市商业银行\",\"TCRCB\":\"江苏太仓农村商业银行\",\"BZMD\":\"驻马店银行\",\"GZB\":\"赣州银行\",\"WRCB\":\"无锡农村商业银行\",\"BGB\":\"广西北部湾银行\",\"GRCB\":\"广州农商银行\",\"JRCB\":\"江苏江阴农村商业银行\",\"BOP\":\"平顶山银行\",\"TACCB\":\"泰安市商业银行\",\"CGNB\":\"南充市商业银行\",\"CCQTGB\":\"重庆三峡银行\",\"XLBANK\":\"中山小榄村镇银行\",\"HDBANK\":\"邯郸银行\",\"KORLABANK\":\"库尔勒市商业银行\",\"BOJZ\":\"锦州银行\",\"QLBANK\":\"齐鲁银行\",\"BOQH\":\"青海银行\",\"YQCCB\":\"阳泉银行\",\"SJBANK\":\"盛京银行\",\"FSCB\":\"抚顺银行\",\"ZZBANK\":\"郑州银行\",\"SRCB\":\"深圳农村商业银行\",\"BANKWF\":\"潍坊银行\",\"JJBANK\":\"九江银行\",\"JXRCU\":\"江西省农村信用\",\"HNRCU\":\"河南省农村信用\",\"GSRCU\":\"甘肃省农村信用\",\"SCRCU\":\"四川省农村信用\",\"GXRCU\":\"广西省农村信用\",\"SXRCCU\":\"陕西信合\",\"WHRCB\":\"武汉农村商业银行\",\"YBCCB\":\"宜宾市商业银行\",\"KSRB\":\"昆山农村商业银行\",\"SZSBK\":\"石嘴山银行\",\"HSBK\":\"衡水银行\",\"XYBANK\":\"信阳银行\",\"NBYZ\":\"鄞州银行\",\"ZJKCCB\":\"张家口市商业银行\",\"XCYH\":\"许昌银行\",\"JNBANK\":\"济宁银行\",\"CBKF\":\"开封市商业银行\",\"WHCCB\":\"威海市商业银行\",\"HBC\":\"湖北银行\",\"BOCD\":\"承德银行\",\"BODD\":\"丹东银行\",\"JHBANK\":\"金华银行\",\"BOCY\":\"朝阳银行\",\"LSBC\":\"临商银行\",\"BSB\":\"包商银行\",\"LZYH\":\"兰州银行\",\"BOZK\":\"周口银行\",\"DZBANK\":\"德州银行\",\"SCCB\":\"三门峡银行\",\"AYCB\":\"安阳银行\",\"ARCU\":\"安徽省农村信用社\",\"HURCB\":\"湖北省农村信用社\",\"HNRCC\":\"湖南省农村信用社\",\"NYNB\":\"广东南粤银行\",\"LYBANK\":\"洛阳银行\",\"NHQS\":\"农信银清算中心\",\"CBBQS\":\"城市商业银行资金清算中心\"}";
+                    $chun =json_decode($str,true);
+                    if($chun[$bank] == $_POST['BankName']){
+
+                    }else{
+                        $result ['err_code'] = 1;
+                        $result ['msg'] = '所选银行不正确';
+                        echo json_encode ( $result );
+                        exit ();
+                    }
+                }
+            }
+			
+			$banklist = new Banklist ();
+			$banklist->userid = Yii::app ()->user->getId ();
+			$banklist->subbranch = $_POST ['branch'];
+			$banklist->truename = $_POST ['AccountName'];
+			$banklist->phone = $userinfo->Phon;
+			$banklist->bankAccount = $_POST ['CardNumber'];
+			$banklist->time = time ();
+			$banklist->bankName = $_POST ['BankName'];
+			$banklist->bankAddress = $_POST ['BankAddress'];
+			if ($banklist->save ()) {
+				$result ['err_code'] = 0;
+				$result ['msg'] = '添加成功';
+				echo json_encode ( $result );
+				exit ();
+			}
+		}
+		$this->render ( 'bandadd' );
+	}
+}
+
+?>

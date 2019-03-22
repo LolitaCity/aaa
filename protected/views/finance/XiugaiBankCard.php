@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>修改银行卡</title>
+    <script src="<?=M_JS_URL;?>jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo S_JS;?>layer/layer.js"></script>
+    <link href="<?=S_JS;?>layui/css/layui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="<?=S_JS?>layui/layui.js"></script> 
+    <script type="text/javascript" src="<?=M_JS_URL?>data.js"></script>
+    <script type="text/javascript" src="<?=M_JS_URL?>province.js"></script>
+    
+</head>
+<body>
+    <div style="height: 35px;line-height:35px;background: rgb(95,184,120);">
+	<img src="<?PHP echo SITE_URL?>/assets/Auth/images/safe.png" style="margin: 0 auto;height: 35px;" />
+	<span style="color: #FFF;font-size: 10px;">修改银行卡支行。</span>
+    </div>
+    </div>
+    <div style="margin-top:10px;"  class="layui-anim layui-anim-scale ">
+        <form class="layui-form layui-form-pane" >
+			<div class="layui-form-item">
+				<label class="layui-form-label"><span style="color: red;">*</span>银行卡号</label>
+				<div class="layui-input-block">
+				  <input type="text" name="bankAccount" lay-verify="title" autocomplete="off" placeholder="请输入买号名称" class="layui-input" id="bankAccount" value="<?=$banklist['bankAccount']?>" disabled = "disabled" >                    
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label"><span style="color: red;">*</span>支行名称</label>
+				<div class="layui-input-block">
+				  <input type="text" name="branch" lay-verify="title" autocomplete="off" placeholder="请输入支行名称" class="layui-input" id="branch" value="<?=$banklist['subbranch']?>" >
+				  <input type="text" name="id"  id="id" hidden="hidden" value="<?=$banklist['id']?>">
+				</div>
+			</div>
+			<div class="layui-form-item">
+			    <div class="layui-inline">
+			      <label class="layui-form-label" id="BankName1">银行</label>
+			      <div class="layui-input-inline">
+			        <select name="BankName" lay-verify="required" lay-search="" id="BankName">
+			            <option value="">选择所属银行</option>
+			            <option value="中国工商银行">中国工商银行</option>
+                        <option value="中国农业银行">中国农业银行</option>
+                        <option value="中国银行">中国银行</option>
+                        <option value="中国建设银行">中国建设银行</option>
+                        <option value="交通银行">交通银行</option>
+						<option value="中信银行">中信银行</option>
+                        <option value="中国光大银行">中国光大银行</option>
+						<option value="华夏银行">华夏银行</option>
+						<option value="中国民生银行">中国民生银行</option>
+                        <option value="广发银行">广发银行</option>
+                        <option value="深圳发展银行">深圳发展银行</option>
+                        <option value="招商银行">招商银行</option>
+                        <option value="上海浦东发展银行">上海浦东发展银行</option>
+                        <option value="兴业银行">兴业银行</option>
+                        <option value="恒丰银行">恒丰银行</option>
+                        <option value="浙商银行">浙商银行</option>
+                        <option value="渤海银行">渤海银行</option>
+                        <option value="平安银行">平安银行</option>
+			        </select>
+			      </div>
+			    </div>
+			</div>
+			<!--<?PHP if(isset($banklist['bankAddress'])){ ?> 
+			 <div style="height: 35px;line-height:35px;background: rgb(95,112,120);text-align: center;margin-bottom: 10px;" >
+			   <span style="color: #FFF;font-size: 14px;">旧地址:<?=$banklist['bankAddress']?></span>
+		    </div>
+			 <?PHP }?>
+
+			<div class="layui-form-item">
+		                <label class="layui-form-label"><span style="color: red;">*</span>请选择省</label>
+		                <div class="layui-input-inline">
+		                    <select name="provid" id="provid" lay-filter="provid">
+		                        <option value="">请选择省</option>
+		                    </select>
+		                </div>
+		                <label class="layui-form-label"><span style="color: red;">*</span>请选择市</label>
+		                <div class="layui-input-inline">
+		                    <select name="cityid" id="cityid" lay-filter="cityid">
+		                        <option value="">请选择市</option>
+		                    </select>
+		                </div>
+		                <label class="layui-form-label"><span style="color: red;">*</span>请选择县/区</label>
+		                <div class="layui-input-inline">
+		                    <select name="areaid" id="areaid" lay-filter="areaid">
+		                        <option value="">请选择县/区</option>
+		                    </select>
+		                </div>
+		   </div>-->
+            <div class="layui-form-item">
+				<label class="layui-form-label"><span style="color: red;">*</span>支付密码</label>
+				<div class="layui-input-block">
+				  <input type="password" name="pad" id="pad" lay-verify="password" autocomplete="off" placeholder="请输入密码" class="layui-input">
+				</div>
+			</div>
+			<div style="text-align: center;"> 
+			    <button class="layui-btn" onclick=" sub();return false;" style="background: rgb(95,184,120);">立即修改</button>
+			</div>
+        </form>
+    </div>
+  <script >
+    	function sub(){
+    		var branch=$("#branch").val();
+			var pad = $("#pad").val();
+			var id = $("#id").val();
+			var provid = $("#provid option:selected").text();
+    		var cityid = $("#cityid option:selected").text();
+    		var areaid = $("#areaid option:selected").text(); 
+    		//var address = provid+cityid+areaid;
+    		var BankName = $("#BankName option:selected").text(); 
+			var bankAccount = $("#bankAccount").val();
+			if(bankAccount ==""){
+            	$("html,body").animate({scrollTop:$("#bankAccount").offset().top-100},300);
+            	layer.tips('卡号不能为空','#bankAccount',{tips:[3,'#b85353']});
+            	return false;
+            }
+			if(branch=="")
+            {
+            	$("html,body").animate({scrollTop: $("#branch").offset().top-100}, 300);
+            	layer.tips('支行不能为空', '#branch',{ tips: [3, '#b85353']});
+                return false;
+            }
+            if(BankName =="选择所属银行"){
+            	$("html,body").animate({scrollTop:$("#BankName1").offset().top-100},300);
+            	layer.tips('选择所属银行','#BankName1',{tips:[3,'#b85353']});
+            	return false;
+            }
+            if(pad=="")
+            {
+                $("html,body").animate({scrollTop: $("#pad").offset().top-100}, 300);
+                layer.tips('密码不能为空', '#pad',{ tips: [3, '#b85353']});
+                return false;
+            }
+            
+            var $arr = {"branch":branch,"Pwd":pad,"id":id,"BankName":BankName,"bankAccount":bankAccount}
+    		$.ajax({
+				type:"POST",
+				url:"<?php echo $this->createUrl('finance/XiugaiBankCardeit');?>",
+				data:$arr,
+				dataType:'json',
+				success:function(data)
+				{
+					layer.confirm(data.msg, {
+								btn: ['知道了'] 
+						},function(index){
+							if(data.err_code == 0){
+								location.reload();
+							}else{
+							parent.layer.close(index); 
+							top.location.reload();
+							}
+							 
+                    });
+				}
+				});
+    	   }
+           layui.use('form', function(){
+			var form = layui.form; 
+			form.render();
+			});
+    </script>
+</body>
+</html>

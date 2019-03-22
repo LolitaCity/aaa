@@ -1,0 +1,314 @@
+<link rel="stylesheet" type="text/css"
+	href="<?php echo S_CSS;?>bindbuyer.css" />
+<div class="content mb30">
+	<div class="notice_box mt30">
+		<h1>买号审核标准</h1>
+
+		<div>
+			<span style="line-height: 2;"> 1、每人只能绑定1个淘宝帐号；&nbsp;&nbsp;</span><br>
+			<span style="line-height: 2;"> 2、淘宝帐号的实名信息与平台信息一致；&nbsp;&nbsp;</span><br>
+			<span style="line-height: 2;">
+				3、信誉级别≥3心、注册时长≥1年、买号周平均信誉值≤3、支付宝关联账户数≤2；&nbsp;&nbsp;</span><br> <span
+				style="line-height: 2;"> 4、淘宝账号所关联支付宝账户已开通蚂蚁花呗。&nbsp;</span>
+		</div>                           
+<?php
+$aaa = array ();
+if (! empty ( $buyer )) {
+	$aaa = unserialize ( $buyer->account_info );
+	$wangwang = Blindwangwang::model ()->findByPk ( $buyer->wangwangid );
+}
+?>
+	</div>
+	<div class="formbox">
+		<form method="POST">
+			<input type="hidden" value="<?=@$buyer->id;?>" name="wangwangid"
+				id="wangwangid">
+			<ul>
+				<li>
+					<div class="Lbox">账户类型：</div>
+					<div class="Rbox">
+						<select id="platform" name="platform">
+							<option value="taobao">淘宝</option>
+						</select>
+					</div>
+				</li>
+				<li>
+					<div class="Lbox">账户名：</div>
+					<div class="Rbox">
+						<input placeholder="例：tb_999999999" type="text"
+							value="<?=@$wangwang->wangwang?>" name="account_name"
+							class="lbinput" />
+					</div>
+				</li>
+
+				<li>
+					<div class="Lbox">信用值：</div>
+					<div class="Rbox">
+						<input type="text" placeholder="例：857"
+							value="<?=@$aaa['xy_val']?>" name="account_info[xy_val]"
+							class="lbinput" /> <input type="text" value="上传截图" id="xy_val"
+							class="upinput" readonly="readonly" /> <input type="hidden"
+							value="<?=substr($aaa['xy_img'],strpos($aaa['xy_img'],'images')-1);?>"
+							id="xy_img" name="account_info[xy_img]" /> <span
+							class="notice_txt">示例
+							<div class="notice_img">
+								<img src="<?php echo S_IMAGES;?>tbdj.jpg" />
+							</div>
+						</span>
+                    <?php if (!empty($aaa['xy_img'])):?><a
+							href="<?=$aaa['xy_img']?>" target="_blank" style="color: blue;">查看已上传图片</a> <?php endif;?>
+                        <span class=" inline-b ml10" id="file_url3"></span>
+					</div>
+				</li>
+				<li>
+					<div class="Lbox">淘气值：</div>
+					<div class="Rbox">
+						<input type="text" placeholder="例：687"
+							value="<?=@$aaa['tqz_val']?>" name="account_info[tqz_val]"
+							class="lbinput" /> <input type="text" value="上传截图" id="tqz_val"
+							class="upinput" readonly="readonly" /> <input type="hidden"
+							value="<?=substr($aaa['tqz_img'],strpos($aaa['tqz_img'],'images')-1);?>"
+							id="tqz_img" name="account_info[tqz_img]" /> <span
+							class="notice_txt">示例
+							<div class="notice_img">
+								<img src="<?php echo S_IMAGES;?>tqz.jpg" />
+							</div>
+						</span>
+                        <?php if (!empty($aaa['tqz_img'])):?><a
+							href="<?=$aaa['tqz_img']?>" target="_blank" style="color: blue;">查看已上传图片</a> <?php endif;?>
+                        <span class=" inline-b ml10" id="file_url3"></span>
+					</div>
+				</li>
+				<li>
+					<div class="Lbox">威客圈截图：</div>
+					<div class="Rbox">
+						<input type="text" value="上传截图" id="upwkq" class="upinput"
+							readonly="readonly" /> <input type="hidden"
+							value="<?=substr($buyer->wkqimg,strpos($buyer->wkqimg,'images')-1);?>"
+							id="wkqimg" name="wkqimg" /> <span class="notice_txt">示例
+							<div class="notice_img">
+								<img src="<?php echo S_IMAGES;?>wkquser.jpg" />
+							</div>
+						</span>
+                        <?php if (!empty($buyer->wkqimg)):?><a
+							href="<?=$buyer->wkqimg?>" target="_blank" style="color: blue;">查看已上传图片</a> <?php endif;?>
+                    <span class=" inline-b ml10" id="file_url3"></span>
+
+					</div>
+				</li>
+				<li>
+					<div class="Lbox">性 别：</div>
+					<div class="Rbox">
+						<lable class="inline-b mr10">
+						<input type="radio"
+							<?php if (empty($buyer->sex)) echo 'checked';?> value="0"
+							name="sex" />男</lable>
+						<lable class="inline-b mr10">
+						<input type="radio" <?php if (@$buyer->sex==1) echo 'checked';?>
+							value="1" name="sex" />女</lable>
+					</div>
+				</li>
+				<li>
+					<div class="Lbox">所属年龄段：</div>
+					<div class="Rbox">
+						<select name="age" id="Age">
+							<option <?php if (@$buyer->age=='younger') echo 'selected';?>
+								value="younger">18-29岁</option>
+							<option <?php if (@$buyer->age=='middle') echo 'selected';?>
+								value="middle">30-39岁</option>
+							<option <?php if (@$buyer->age=='older') echo 'selected';?>
+								value="older">40-49岁</option>
+						</select>
+
+					</div>
+				</li>
+				<li class="region">
+					<table>
+						<tr>
+							<td width="100" rowspan="8">所在区域</td>
+							<td width="420">
+							<input type="radio" name="region" value="huadong"/>
+							<input type="radio" <?php if (@$buyer->region=='huadong') echo 'checked';?> />
+							华东地区（包括山东、江苏、安徽、浙江、福建、上海）</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="region" value="huanan"
+								<?php if (@$buyer->region=='huanan'|| empty($buyer->region)) echo 'checked';?>>华南地区
+								（包括广东、广西、海南）</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="region" value="huazhong"
+								<?php if (@$buyer->region=='huazhong') echo 'checked';?>>华中地区
+								（包括湖北、湖南、河南、江西）</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="region" value="huabei"
+								<?php if (@$buyer->region=='huabei') echo 'checked';?>>华北地区
+								（包括北京、天津、河北、山西、内蒙古）</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="region" value="xibei"
+								<?php if (@$buyer->region=='xibei') echo 'checked';?>>西北地区
+								（包括宁夏、新疆、青海、陕西、甘肃）</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="region" value="xinan"
+								<?php if (@$buyer->region=='xinan') echo 'checked';?>>西南地区
+								（包括四川、云南、贵州、西藏、重庆）</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="region" value="dongbei"
+								<?php if (@$buyer->region=='dongbei') echo 'checked';?>>东北地区
+								（包括辽宁、吉林、黑龙江）</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="region"
+								value="gangaotai <?php if (@$buyer->region=='gangaotai') echo 'checked';?>">台港澳地区
+								（包括台湾、香港、澳门）</td>
+						</tr>
+
+					</table>
+				</li>
+				<li><input onclick="checkdata()" type="button" value="提交审核"
+					class="sub_btn" /></li>
+			</ul>
+		</form>
+	</div>
+	<!--上传图片 S-->
+	<link rel="stylesheet"
+		href="<?php echo ASSET_URL;?>kindeditor/themes/default/default.css" />
+	<script src="<?php echo ASSET_URL;?>kindeditor/kindeditor.js"></script>
+	<script src="<?php echo ASSET_URL;?>kindeditor/lang/zh_CN.js"></script>
+	<script>
+    KindEditor.ready(function(K) {
+		var editor = K.editor({
+			allowFileManager : true
+		});
+		K('#xy_val').click(function() {
+			editor.loadPlugin('image', function() {
+				editor.plugin.imageDialog({
+					showRemote : false,
+					imageUrl : K('#xy_img').val(),
+					clickFn : function(url, title, width, height, border, align) {
+						K('#xy_img').val(url);
+						K('#file_url1').html(url);
+						editor.hideDialog();
+					}
+				});
+
+			});
+
+		});
+		K('#upwkq').click(function() {
+			editor.loadPlugin('image', function() {
+				editor.plugin.imageDialog({
+					showRemote : false,
+					imageUrl : K('#wkqimg').val(),
+					clickFn : function(url, title, width, height, border, align) {
+						K('#wkqimg').val(url);
+						//K('#file_url3').html(url);
+						editor.hideDialog();
+					}
+				});
+
+			});
+
+		});
+        K('#tqz_val').click(function() {
+			editor.loadPlugin('image', function() {
+				editor.plugin.imageDialog({
+					showRemote : false,
+					imageUrl : K('#tqz_img').val(),
+					clickFn : function(url, title, width, height, border, align) {
+						K('#tqz_img').val(url);
+						K('#file_url2').html(url);
+						editor.hideDialog();
+					}
+				});
+			});
+		});     
+        K('#lifephoto,#bt3').click(function() {
+			editor.loadPlugin('image', function() {
+				editor.plugin.imageDialog({
+					showRemote : false,
+					imageUrl : K('#lifephoto').val(),
+					clickFn : function(url, title, width, height, border, align) {
+						K('#lifephoto').val(url);
+						editor.hideDialog();
+					}
+				});
+			});
+		});
+	});
+</script>
+	<!--上传图片 E-->
+	<script>
+	$('.notice_txt').hover(function(){
+		$(this).find('.notice_img').show();		
+	},function(){
+		$(this).find('.notice_img').hide();
+	})
+		
+	function checkdata(){
+		var platform=$('#platform').val();
+		var account_name=$(":input[name='account_name']").val();
+		var xy_val=$(":input[name='account_info[xy_val]']").val();
+		var tqz_val=$(":input[name='account_info[tqz_val]']").val();
+		var xy_img=$(":input[name='account_info[xy_img]']").val();
+		var tqz_img=$(":input[name='account_info[tqz_img]']").val();
+		var sex=$(":input[name='sex']:checked").val();
+		var region=$(":input[name='region']:checked").val();
+		var wkqimg=$(":input[name='wkqimg']").val();
+		var age=$("#Age").val();
+		var wid=$('#wangwangid').val();
+		if (account_name == '') {
+			$.openAlter('账户名不能为空', '提示', { width: 250, height: 50 });
+			return false;}
+		if (xy_val == ''|| xy_img=='') {
+			$.openAlter('信用值或信用值截图为空', '提示', { width: 250, height: 50 });
+			return false;}
+		if (tqz_val == ''|| tqz_img=='') {
+			$.openAlter('淘气值或淘气值截图为空', '提示', { width: 250, height: 50 });
+			return false;}
+			if (wkqimg=='') {
+			$.openAlter('威客圈截图不能为空', '提示', { width: 250, height: 50 });
+			return false;}
+			subdata(platform,account_name,xy_val,tqz_val,xy_img,tqz_img,sex,region,age,wkqimg,wid)
+		}
+	function subdata(p,a,x,t,xi,ti,s,r,age,wkq,wid){
+		 $.ajax({
+			type:"POST",
+			url:"<?php echo $this->createUrl('user/taobaoBindBuyer');?>",
+			data:{"platform":p,"account_name":a,'xy_val':x,'tqz_val':t,'xy_img':xi,'tqz_img':ti,'sex':s,'region':r,'age':age,'wkqimg':wkq,'wid':wid},
+			async:false,
+			dataType:'json',
+			success:function(r)
+			{//alert(r);return false;
+				if(r.err_code==0){
+					$.openAlter(r.msg, '提示', { width: 250, height: 50 },function(){
+			 window.location.href='<?php echo $this->createUrl('site/index');?>'
+		});
+				}else{
+					$.openAlter(r.msg, '提示', { width: 250, height: 50 });
+				}
+        	},error:function(){
+				$.openAlter('提交失败', '提示', { width: 250, height: 50 });
+				return false;
+			}
+			
+        });
+	}	
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</div>

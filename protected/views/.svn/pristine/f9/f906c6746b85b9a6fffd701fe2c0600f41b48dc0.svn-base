@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>亿课在线-打造中国在线教育第一品牌</title>
+<link rel="stylesheet" type="text/css" href="<?php echo ZXJY_CSS_URL;?>css.css"/>
+<script src="<?php echo ZXJY_JS_URL;?>jquery.js" type="text/javascript"></script>
+<script>
+	$(function(){
+		$(".menu ul li").hover(function(){
+			$(this).find("#subMenu").css("display","block");
+			$(this).find("a:first").css("color","red");
+		},function(){
+			$(this).find("#subMenu").css("display","none");
+			$(this).find("a:first").css("color","#666");
+		});
+		
+		$(".subItem ul li").hover(function(){
+			$(this).css({"opacity":"0.8"});	
+		},function(){
+			$(this).css({"opacity":"1"});		
+		});
+		
+		$(".memberList ul li").hover(function(){
+			$(this).css({"border":"3px  solid #3789db","opacity":"0.8"});	
+		},function(){
+			$(this).css({"border":"3px  solid #b4b4b3","opacity":"1"});		
+		});
+		
+		$(".headRight ul li").eq(1).css("background","#6bc30d");
+		$(".headRight ul li a").eq(1).css("color","#fff");
+        
+        $(".top").find("p").eq(0).click(function(){
+              $("html,body").animate({scrollTop: 0}); 
+        });
+		
+	})
+</script>
+</head>
+
+<body>
+	<div class="menuOut"><!--menuOut start-->
+        <div class="head"><!--head start-->
+            <div class="headInside"><!--headInside start-->
+                <div class="headLeft" style="font-size: 16px;">打造IT行业在线教育第一品牌-亿课在线发展理念!  官方QQ群：<font style="color:orange;">132965273(开)</font></div>
+                <?php 
+                    if(Yii::app()->user->getId())
+                    {
+                        $userInfo=User::model()->findByPk(Yii::app()->user->getId());
+                ?>
+                <div class="headRight">
+                	<ul>
+                        <li><a href="<?php echo $this->createUrl('site/loginout');?>">退出系统</a></li>
+                        <li><a href="<?php echo $this->createUrl('user/index');?>">我的亿课空间</a></li>
+                        <li><a href="<?php echo $this->createUrl('user/index');?>" style="padding: 0;"><img src="<?php echo $userInfo->MyPhoto;?>" width="36" height="36" style="border: 2px solid #6bc30d;"></a></li>
+                        <li style="background:none;"><span style="padding-right: 10px;">亲爱的<?php echo Yii::app()->user->getName();?>,欢迎您再次回来</span></li>
+                    </ul>
+              	</div>
+                <?php 
+                    }
+                    else
+                    {
+                ?>
+                <div class="headRight">
+                	<ul>
+                        <li><a href="<?php echo $this->createUrl('passport/login');?>">登录</a></li>
+                        <li><a href="<?php echo $this->createUrl('passport/regist');?>">注册</a></li>
+                    </ul>
+              	</div>
+                <?php
+                    }
+                ?>
+            </div><!--headInside end-->
+        </div><!--head end-->
+        <div class="clear"></div>
+        <div class="menu"><!--menu start-->
+            <div class="menuInside"><!--menuInside start-->
+                <div class="menuLeft"><!--menuLeft start-->
+                    <ul>
+                        <li><a href="<?php echo $this->createUrl('site/index');?>" title="亿课首页" style=" padding:0 2px;"><img src="<?php echo ZXJY_IMG_URL;?>logo.png" width="83" height="50" /></a></li>
+                        <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>218));?>">PHP <img src="<?php echo ZXJY_IMG_URL;?>arrowdown.jpg" /></a>
+                            <div id="subMenu"><!--subMenu start-->
+                                <div class="submenuInside">
+                                    <div class="subItem">
+                                        <ul>
+                                            <p><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>218));?>">PHP视频教学</a></p>
+                                            <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>218));?>"><img src="<?php echo ZXJY_IMG_URL;?>free.jpg" /></a></li>
+                                            <li><a href="#"><img src="<?php echo ZXJY_IMG_URL;?>studynow.jpg" /></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="subItem"><!--subItem start-->
+                                       <img src="<?php echo ZXJY_IMG_URL;?>php.jpg"/>
+                                    </div><!--subItem start-->
+                                    <div class="suInfo"><!--suInfo start-->
+                                    　　2006年互联网的发展伴随着web2.0的升温迎来一轮新的热潮，由于互联网本身的快速发展、不断创新的特点，决定了只有以最快开发速度和最低成本，才能取胜，才能始终保持一个网站的领先性和吸引更多的网民。互联网的企业生存和竞争的核心在于技术，技术/研发人才永远是这些企业不可或缺的关键人物，只有拥有资深的人才和领先的技术，才能在最短的时间内创造出优秀的网络应用。PHP技术和相关的人才，正是迎合目前的互联网的发展趋势，PHP作为非常优秀的、简便的Web开发语言，和Linux，Apache，MySql紧密结合，形成LAMP的开源黄金组合，不仅降低使用成本，还提升了开发速度，满足最新的互动式网络开发的应用-<strong>零度教程网带您轻松进入PHP开发的大门</strong>
+                                    </div><!--suInfo end-->
+                                </div>
+                                <div class="subborder"></div>
+                            </div><!--subMenu end-->
+                        </li>
+                        <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>219));?>">ThinkPHP <img src="<?php echo ZXJY_IMG_URL;?>arrowdown.jpg" /></a>
+                            <div id="subMenu"><!--subMenu start-->
+                                <div class="submenuInside">
+                                    <div class="subItem">
+                                        <ul>
+                                            <p><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>219));?>">TP框架视频教学</a></p>
+                                            <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>219));?>"><img src="<?php echo ZXJY_IMG_URL;?>free.jpg" /></a></li>
+                                            <li><a href="#"><img src="<?php echo ZXJY_IMG_URL;?>studynow.jpg" /></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="subItem"><!--subItem start-->
+                                       <img src="<?php echo ZXJY_IMG_URL;?>tp.jpg" style="margin-left:5px;" />
+                                    </div><!--subItem start-->
+                                    <div class="suInfo"><!--suInfo start-->
+                                    　　ThinkPHP 是一个免费开源的，快速、简单的面向对象的 轻量级PHP开发框架 ，创立于2006年初，遵循Apache2开源协议发布，是为了敏捷WEB应用开发和简化企业应用开发而诞生的。ThinkPHP从诞生以来一直秉承简洁实用的设计原则，在保持出色的性能和至简的代码的同时，也注重易用性。并且拥有众多的原创功能和特性，在社区团队的积极参与下，在易用性、扩展性和性能方面不断优化和改进，已经成长为国内最领先和最具影响力的WEB应用开发框架，众多的典型案例确保可以稳定用于商业以及门户级的开发。
+                                    </div><!--suInfo end-->
+                                </div>
+                                <div class="subborder"></div>
+                            </div><!--subMenu end-->
+                        </li>
+                        <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>220));?>">Yii框架 <img src="<?php echo ZXJY_IMG_URL;?>arrowdown.jpg" /></a>
+                            <div id="subMenu"><!--subMenu start-->
+                                <div class="submenuInside">
+                                    <div class="subItem">
+                                        <ul>
+                                            <p><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>220));?>">Yii框架视频教学</a></p>
+                                            <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>220));?>"><img src="<?php echo ZXJY_IMG_URL;?>free.jpg" /></a></li>
+                                            <li><a href="#"><img src="<?php echo ZXJY_IMG_URL;?>studynow.jpg" /></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="subItem"><!--subItem start-->
+                                       <img src="<?php echo ZXJY_IMG_URL;?>yii.jpg"/>
+                                    </div><!--subItem start-->
+                                    <div class="suInfo"><!--suInfo start-->
+                                    　　快速，安全，专业的PHP框架。Yii是一个高性能的，适用于开发WEB2.0应用的PHP框架。Yii是一个基于组件、用于开发大型 Web 应用的 高性能 PHP 框架。Yii 几乎拥有了 所有的特性 ，包括 MVC、DAO/ActiveRecord、I18N/L10N、caching、基于 JQuery 的 AJAX 支持、用户认证和基于角色的访问控制、脚手架、输入验证、部件、事件、主题化以及 Web 服务等等。Yii 采用严格的 OOP 编写，Yii 使用简单，非常灵活，具有很好的可扩展性。
+                                    </div><!--suInfo end-->
+                                </div>
+                                <div class="subborder"></div>
+                            </div><!--subMenu end-->
+                        </li>
+                        <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>221));?>">DEDECMS<img src="<?php echo ZXJY_IMG_URL;?>arrowdown.jpg" /></a>
+                            <div id="subMenu"><!--subMenu start-->
+                                <div class="submenuInside">
+                                    <div class="subItem">
+                                        <ul>
+                                            <p><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>221));?>">DEDE视频教学</a></p>
+                                            <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>221));?>"><img src="<?php echo ZXJY_IMG_URL;?>free.jpg" /></a></li>
+                                            <li><a href="#"><img src="<?php echo ZXJY_IMG_URL;?>studynow.jpg" /></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="subItem"><!--subItem start-->
+                                       <img src="<?php echo ZXJY_IMG_URL;?>dedecms.jpg"/>
+                                    </div><!--subItem start-->
+                                    <div class="suInfo"><!--suInfo start-->
+                                    　　DedeCMS内容管理系统软件简介:国内比较流行的PHP网站内容管理系统-织梦内容管理系统，他将是您轻松建站的首选利器。采用XML名字空间风格核心模板：模板全部使用文件形式保存，对用户设计模板、网站升级转移均提供很大的便利，健壮的模板标签为站长DIY 自己的网站提供了强有力的支持。高效率标签缓存机制：允许对类同的标签进行缓存，在生成 HTML的时候，有利于提高系统反应速度，降低系统消耗的资源。模型与模块概念并存：在模型不能满足用户所有需求的情况下，DedeCMS推出一些互动的模块对系统进行补充，尽量满足用户的需求。众多的应用支持：为用户提供了各类网站建设的一体化解决方案，在本版本中，增加了分类、书库、黄页、圈子、问答等模块，补充一些用户的特殊要求。
+                                    </div><!--suInfo end-->
+                                </div>
+                                <div class="subborder"></div>
+                            </div><!--subMenu end-->
+                        </li>
+                        <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>222));?>">JQUERY <img src="<?php echo ZXJY_IMG_URL;?>arrowdown.jpg" /></a>
+                            <div id="subMenu"><!--subMenu start-->
+                                <div class="submenuInside">
+                                    <div class="subItem">
+                                        <ul>
+                                            <p><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>222));?>">Jquery视频教学</a></p>
+                                            <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>222));?>"><img src="<?php echo ZXJY_IMG_URL;?>free.jpg" /></a></li>
+                                            <li><a href="#"><img src="<?php echo ZXJY_IMG_URL;?>studynow.jpg" /></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="subItem"><!--subItem start-->
+                                       <img src="<?php echo ZXJY_IMG_URL;?>jquery.jpg"/>
+                                    </div><!--subItem start-->
+                                    <div class="suInfo"><!--suInfo start-->
+                                    　　jQuery是一个兼容多浏览器的javascript框架，核心理念是write less,do more(写得更少,做得更多)。jQuery在2006年1月由美国人John Resig在纽约的barcamp发布，吸引了来自世界各地的众多JavaScript高手加入，由Dave Methvin率领团队进行开发。如今，jQuery已经成为最流行的javascript框架，在世界前10000个访问最多的网站中，有超过55%在使用jQuery。<br />　　jQuery是免费、开源的，使用MIT许可协议。jQuery的语法设计可以使开发者更加便捷，例如操作文档对象、选择DOM元素、制作动画效果、事件处理、使用Ajax以及其他功能。除此以外，jQuery提供API让开发者编写插件。其模块化的使用方式使开发者可以很轻松的开发出功能强大的静态或动态网页。
+                                    </div><!--suInfo end-->
+                                </div>
+                                <div class="subborder"></div>
+                            </div><!--subMenu end-->
+                        </li>
+                        <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>223));?>">DIV+CSS <img src="<?php echo ZXJY_IMG_URL;?>arrowdown.jpg" /></a>
+                            <div id="subMenu"><!--subMenu start-->
+                                <div class="submenuInside">
+                                    <div class="subItem">
+                                        <ul>
+                                            <p><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>223));?>">DIV+CSS视频教学</a></p>
+                                            <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>223));?>"><img src="<?php echo ZXJY_IMG_URL;?>free.jpg" /></a></li>
+                                            <li><a href="#"><img src="<?php echo ZXJY_IMG_URL;?>studynow.jpg" /></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="subItem"><!--subItem start-->
+                                       <img src="<?php echo ZXJY_IMG_URL;?>css.jpg"/>
+                                    </div><!--subItem start-->
+                                    <div class="suInfo"><!--suInfo start-->
+                                    　　级联样式表（Cascading Style Sheet）简称"CSS"，通常又称为"风格样式表（Style Sheet）"，它是用来进行网页风格设计的。比如，如果想让链接字未点击时是蓝色的，当鼠标移上去后字变成红色的且有下划线，这就是一种风格。通过设立样式表，可以统一地控制HTML中各标志的显示属性。级联样式表可以使人更能有效地控制网页外观。使用级联样式表，可以扩充精确指定网页元素位置，外观以及创建特殊效果的能力。
+                                    </div><!--suInfo end-->
+                                </div>
+                                <div class="subborder"></div>
+                            </div><!--subMenu end-->
+                        </li>
+                        <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>224));?>">SEO <img src="<?php echo ZXJY_IMG_URL;?>arrowdown.jpg" /></a>
+                            <div id="subMenu"><!--subMenu start-->
+                                <div class="submenuInside">
+                                    <div class="subItem">
+                                        <ul>
+                                            <p><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>224));?>">SEO视频教学</a></p>
+                                            <li><a href="<?php echo $this->createUrl('course/index',array('Cataid'=>224));?>"><img src="<?php echo ZXJY_IMG_URL;?>free.jpg" /></a></li>
+                                            <li><a href="#"><img src="<?php echo ZXJY_IMG_URL;?>studynow.jpg" /></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="subItem"><!--subItem start-->
+                                       <img src="<?php echo ZXJY_IMG_URL;?>seo.jpg"/>
+                                    </div><!--subItem start-->
+                                    <div class="suInfo"><!--suInfo start-->
+                                    　　SEO（Search Engine Optimization），汉译为搜索引擎优化。搜索引擎优化是一种利用搜索引擎的搜索规则来提高目的网站在有关搜索引擎内的排名的方式。SEO目的理解是：为网站提供生态式的自我营销解决方案，让网站在行业内占据领先地位，从而获得品牌收益。SEO可分为站外SEO和站内SEO两种。
+                                    </div><!--suInfo end-->
+                                </div>
+                                <div class="subborder"></div>
+                            </div><!--subMenu end-->
+                        </li>
+                        <li><a href="<?php echo $this->createUrl('technology/index');?>">软件使用视频教程<font style="color: red;">[免费]</font></a></li>
+                        <li><a href="<?php echo $this->createUrl('technology/index');?>">源码下载<font style="color: red;">[免费]</font></a></li>
+                        <li><a href="<?php echo $this->createUrl('technology/index');?>">技术资料</a></li>
+                        <!--<li><a href="#">亿课图册</a></li>
+                        <li><a href="#">站长语录</a></li>
+                        <li><a href="#">站长日志</a></li>-->
+                        <li><a href="<?php echo $this->createUrl('news/DeatailInfo',array("catlogid"=>5));?>">关于亿课</a></li>
+                        <li><a href="<?php echo $this->createUrl('partner/index');?>">合作伙伴</a></li>
+                    </ul>
+                </div><!--menuLeft right-->
+            </div><!--menuInside end-->
+        </div><!--menu end-->
+    </div><!--menuOut end-->
+    <div class="clear"></div>
+    <?php echo $content;?>
+    <div class="clear"></div>
+    <div class="clear"></div>
+    <div class="onlineHelp"><!--onlineHelp start-->
+    <div class="headInside">
+    	<div class="helpItem"><!--helpItem start-->
+        	<div class="helpTitle">关于我们</div>
+            <div class="helpItemList"><!--helpItemList start-->
+            	<ul>
+                	<li><a href="#">公司介绍</a></li>
+                    <li><a href="#">企业文化</a></li>
+                    <li><a href="#">办学宗旨</a></li>
+                    <li><a href="#">招贤纳士</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div><!--helpItemList end-->
+        </div><!--helpItem end-->
+        <div class="helpItem"><!--helpItem start-->
+        	<div class="helpTitle">新手上路</div>
+            <div class="helpItemList"><!--helpItemList start-->
+            	<ul>
+                	<li><a href="#">学习指南</a></li>
+                    <li><a href="#">学习咨询</a></li>
+                </ul>
+            </div><!--helpItemList end-->
+        </div><!--helpItem end-->
+         <div class="helpItem"><!--helpItem start-->
+        	<div class="helpTitle">就业指导</div>
+            <div class="helpItemList"><!--helpItemList start-->
+            	<ul>
+                	<li><a href="#">就业指导处</a></li>
+                    <li><a href="#">推荐企业</a></li>
+                    <li><a href="#">招聘企业</a></li>
+                </ul>
+            </div><!--helpItemList end-->
+        </div><!--helpItem end-->
+        <div class="helpItem"><!--helpItem start-->
+        	<img src="<?php echo ZXJY_IMG_URL;?>promiess.jpg" />
+        </div><!--helpItem end-->
+        <div class="helpItem"><!--helpItem start-->
+        	<div class="helpTitle">消费才保障</div>
+            <div class="helpItemList"><!--helpItemList start-->
+            	<ul>
+                	<li><a href="#">保障范围</a></li>
+                    <li><a href="#">退货退款流程</a></li>
+                    <li><a href="#">我要发起维权</a></li>
+                    <li><a href="#">更多特色服务</a></li>
+                    <li><a href="#">服务中心</a></li>
+                </ul>
+            </div><!--helpItemList end-->
+        </div><!--helpItem end-->
+        <div class="helpItem"><!--helpItem start-->
+        	<div class="helpTitle">合作企业</div>
+            <div class="helpItemList"><!--helpItemList start-->
+            	<ul>
+                	<li><a href="#">奔月传媒</a></li>
+                    <li><a href="#">上海百尊科技</a></li>
+                    <li><a href="#">新普培训</a></li>
+                    <li><a href="#">通杰培训</a></li>
+                    <li><a href="#">更多>></a></li>
+                </ul>
+            </div><!--helpItemList end-->
+        </div><!--helpItem end-->
+        <div class="clear"></div>
+        </div>
+    </div><!--onlineHelp end-->
+    <div class="friendlink"><!--friendlink start-->
+        <div class="frendInside"><span>友情链接：</span><a href="#">嫦娥奔月传媒有限公司</a><a href="#">上海百尊科技</a><a href="#">上海复旦大学</a><a href="#">通杰信息科技有限公司</a><a href="#">PHP100</a><a href="#">上海交通大学</a><a href="#">新东方在线</a><a href="#">岛乐网</a><a href="#">聚美优品</a><a href="#">苏宁易购</a></div>
+    </div><!--friendlink end-->
+    <div class="foot"><!--foot start-->
+		<div class="footInside"><!--footInside start-->
+            <div class="CopyRight"><!--CopyRight start-->
+            	<div class="copyRightLeft">CopyRight &copy; 2012-2028 版权所有 All Rights Reserved by 亿课在线-打造中国在线教育第一品牌</div>
+                <div class="copyRightRight">亿课站长：<a href="#" target="_blank">东启哲明</a></div>
+            </div><!--CopyRight end-->
+            <div class="clear"></div>
+            <div class="top" style="position:absolute; right:-40px; top:-150px;">
+                <p><img src="<?php echo ZXJY_IMG_URL;?>top.jpg" title="返回顶部" style="cursor: pointer;" /></p>
+                <p class="advice"><img src="<?php echo ZXJY_IMG_URL;?>advice.jpg" title="反馈意见" style="cursor: pointer;" /></p>
+            </div>
+        </div><!--footInside end-->
+    </div><!--foot end-->
+ <!---->
+ <div class="boxOut"><!--boxOut start-->
+    <div class="bookBox"><!--bookBox start-->
+        <div class="bookTitle">
+            <div class="titleWarning"><font>反馈意见</font></div>
+            <div class="closeBox"><img src="<?php echo ZXJY_IMG_URL ;?>dialog_close2.png"  style="cursor:pointer;"/></div>
+        </div>
+        <div class="clear"></div>
+        <div class="filledForm"><!--filledForm start-->
+            <table style="width: 100%;">
+                <tr>
+                    <td colspan="2">
+                        <input id="dis_contactA" name="data[contact]" type="text" onblur="if(this.value=='')this.value='联系方式';" onfocus="if(this.value=='联系方式')this.value='';" value="联系方式" style="width: 410px; height:20px; line-height:20px; margin:10px auto ;color: #666;border:1px solid #e8e8e8; padding:5px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top">
+                        <textarea id="dis_contentA" name="data[content]" style="width: 410px; height: 110px; border:1px solid #e8e8e8; color: #666; margin:0 auto; padding:5px;" onblur="if(this.value=='')this.value='反馈内容';" onfocus="if(this.value=='反馈内容')this.value='';">反馈内容</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>感谢您给我们的建议，我们将努力做到最好</span></td>
+                    <td><input type="submit" style=" width:55px; height:25px; border: none; color:#fff; background:#78b10a; cursor:pointer; margin-right:20px;" value="反馈" /></td>
+                </tr>
+            </table>
+        </div>
+        <!--filledForm end-->
+    </div><!--bookBox end-->
+</div><!--boxOut end-->
+
+<style>
+.boxOut{ width:100%; height:1000px; background:url(<?php echo ZXJY_IMG_URL ;?>boxOut.png); position:fixed; z-index:1000; left:0; top:0; display:none; font-family: "微软雅黑";}
+.bookBox{ width:442px; height:auto; text-align:center; font-size:14px; color:#ff8100; line-height:60px; border:6px solid #c1bfbf; background:#fff; position:fixed; _position:absolute;}
+.bookTitle{ width:100%; height:34px; line-height:34px; background:#666; text-align:left; background:url(<?php echo ZXJY_IMG_URL ;?>dialog_tc2.gif);}
+.bookTitle font{ color:#666; font-size:14px; font-weight:bold; padding-left:10px;}
+.titleWarning{ width:50%; float:left;}
+.closeBox{ width:auto; float:right; position: relative; top: 10px; right:10px;}
+.bookBox span{ text-align:left; color:#666; font-size:14px;}
+</style>
+ <!---->
+<script src="<?php echo WEB_SITE_JS_URL?>loginWindow.js" type="text/javascript"></script><!--登录弹窗JS-->
+<!--注册登录检测-->
+<link rel="stylesheet" href="<?php echo FORM_CSS_URL;?>style.css" type="text/css" media="all" />
+<script type="text/javascript" src="<?php echo FORM_JS_URL;?>Validform_v5.3.2_min.js"></script>
+<script type="text/javascript" src="<?php echo ASSET_URL;?>/checkForm/plugin/passwordStrength/passwordStrength-min.js"></script>
+<script type="text/javascript">
+$(function(){
+    /*用户意见建议*/
+    $(".advice").click(function(){
+		$(".boxOut").show();
+		var boxHeight=$(".bookBox").height();
+		var boxWidth=$(".bookBox").width();
+		var topVal=($(window).height()-boxHeight)/2;
+		var leftVal=($(window).width()-boxWidth)/2;
+		$(".bookBox").css({"top":topVal,"left":leftVal});
+	});
+    /*关闭弹出窗*/
+    $(".closeBox").click(function(){
+		$(".boxOut").fadeOut(500);
+	});
+	/*$(".registerform").Validform({
+		tiptype:2,
+		callback:function(form){
+			if(check=1){
+				form[0].submit();
+			}
+			return false;
+		}
+	});*/
+    $(".registerform").Validform({
+		tiptype:2,    
+        usePlugin:{
+			passwordstrength:{
+				minLen:6,
+				maxLen:20
+			}
+		},
+		datatype:{//传入自定义datatype类型【方式二】;
+			"idcard":function(gets,obj,curform,datatype){
+				//该方法由佚名网友提供;
+			
+				var Wi = [ 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1 ];// 加权因子;
+				var ValideCode = [ 1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2 ];// 身份证验证位值，10代表X;
+			
+				if (gets.length == 15) {   
+					return isValidityBrithBy15IdCard(gets);   
+				}else if (gets.length == 18){   
+					var a_idCard = gets.split("");// 得到身份证数组   
+					if (isValidityBrithBy18IdCard(gets)&&isTrueValidateCodeBy18IdCard(a_idCard)) {   
+						return true;   
+					}   
+					return false;
+				}
+				return false;
+				
+				function isTrueValidateCodeBy18IdCard(a_idCard) {   
+					var sum = 0; // 声明加权求和变量   
+					if (a_idCard[17].toLowerCase() == 'x') {   
+						a_idCard[17] = 10;// 将最后位为x的验证码替换为10方便后续操作   
+					}   
+					for ( var i = 0; i < 17; i++) {   
+						sum += Wi[i] * a_idCard[i];// 加权求和   
+					}   
+					valCodePosition = sum % 11;// 得到验证码所位置   
+					if (a_idCard[17] == ValideCode[valCodePosition]) {   
+						return true;   
+					}
+					return false;   
+				}
+				
+				function isValidityBrithBy18IdCard(idCard18){   
+					var year = idCard18.substring(6,10);   
+					var month = idCard18.substring(10,12);   
+					var day = idCard18.substring(12,14);   
+					var temp_date = new Date(year,parseFloat(month)-1,parseFloat(day));   
+					// 这里用getFullYear()获取年份，避免千年虫问题   
+					if(temp_date.getFullYear()!=parseFloat(year) || temp_date.getMonth()!=parseFloat(month)-1 || temp_date.getDate()!=parseFloat(day)){   
+						return false;   
+					}
+					return true;   
+				}
+				
+				function isValidityBrithBy15IdCard(idCard15){   
+					var year =  idCard15.substring(6,8);   
+					var month = idCard15.substring(8,10);   
+					var day = idCard15.substring(10,12);
+					var temp_date = new Date(year,parseFloat(month)-1,parseFloat(day));   
+					// 对于老身份证中的你年龄则不需考虑千年虫问题而使用getYear()方法   
+					if(temp_date.getYear()!=parseFloat(year) || temp_date.getMonth()!=parseFloat(month)-1 || temp_date.getDate()!=parseFloat(day)){   
+						return false;   
+					}
+					return true;
+				}
+				
+			},
+		"z2-4" : /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/,
+		}
+	});
+    
+    //登录表单检测
+    $(".loginArea").Validform({
+		 tiptype:2,
+         /*ajaxPost:true,
+         callback:function(data){
+			if(data.status=="y"){
+				location.reload();//如果登录成功刷新当前页面
+			}
+            if(data.status=="n"){
+                alert("ok");
+				$(".warning").show().html("帐号或密码错误");
+                setTimeout(function(){
+                    $(".warning").fadeOut();
+                },1000);
+			}
+		}  */  
+	});
+})
+    //登录输入检测
+    /*function checkLoginForm()
+    {
+        return true;
+        if($(".loginUsername").val()=="")
+        {
+            alert('用户名不能为空！');
+            $(".loginPassWord").focus();
+            return false;
+        } 
+        
+        if($(".loginPassWord").val()=="")  
+        {
+            alert('密码不能为空！');
+            $(".loginUsername").focus();
+            return false;
+        }
+        
+        if($(".loginUsername").val()=="" && ".loginPassWord").val()!="")  
+        {
+            return false;
+        }
+    }*/
+    
+</script>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0&amp;btn=r1.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</body>
+</html>

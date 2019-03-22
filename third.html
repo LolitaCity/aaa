@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="/Content/css/common.css?v=4.19" rel="stylesheet" type="text/css">
+    <link href="/Content/css/open.win.css?v=4.1" rel="stylesheet" type="text/css">
+    <link href="/Content/css/index.css?t=4.7" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/Scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/Scripts/open.win.js?v=4.1"></script>
+</head>
+<body style="background: #fff;">
+<!--列表 -->
+<div class="htyg_tc">
+    <ul>
+        <li class="htyg_tc_1">
+            <label>
+                <label>
+                    任务编号: V6955020050</label>(淘宝APP二维码)
+            </label>
+        </li>
+        <li class="htyg_tc_2"><a href="javascript:void(0)" id="imgeColse" onclick="javascript:self.parent.$.closeWin()">
+            <img src="/Content/images/sj-tc.png"></a> </li>
+    </ul>
+</div>
+
+
+<script type="text/javascript" src="/Scripts/ajaxfileupload.js"></script>
+<script src="/Scripts/jquery.jBox-2.3.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/Content/css/Blue/jbox.css" />
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($("#serviceValidation").length > 0) {
+            $.openAlter($("#serviceValidation").text(), "提示");
+        }
+        var check = $("#ulCheck [type='checkbox']").length;
+        if (check > 0) {
+            var isChecked = $("#ulCheck [type='checkbox']:checked").length;
+            if (isChecked != check) {
+                $("#btnSubmit").attr("disabled", "disabled");
+                $("#btnSubmit").attr("class", "input-butto100-xshs");
+            }
+        }
+        $("#ulCheck [type='checkbox']").click(function () {
+            var nowChecked = $("#ulCheck [type='checkbox']:checked").length;
+            if (nowChecked == check) {
+                var minute = $("#lblMinute").text();
+                var second = $("#lblSecond").text();
+                if (minute == "0" && second == "0") {
+                    $("#btnSubmit").attr("disabled", false);
+                    $("#btnSubmit").attr("class", "input-butto100-ls");
+                }
+                else {
+                    $("#btnSubmit").attr("disabled", "disabled");
+                    $("#btnSubmit").attr("class", "input-butto100-xshs");
+                }
+            }
+            else {
+                $("#btnSubmit").attr("disabled", "disabled");
+                $("#btnSubmit").attr("class", "input-butto100-xshs");
+            }
+        });
+    })
+    function Submit(taskID) {
+        var err = "";
+        $("input[type='checkbox']").each(function () {
+            if ($(this).is(":checked") == false || $(this).is(":checked") == "false") {
+                err += $(this).val() + ";";
+            }
+        });
+        if (err != "") {
+            $.openAlter("请勾选 " + err, "提示");
+            return;
+        }
+        $("#fm").submit();
+    }
+
+    function Timesa(minute, second) {
+        second--;
+        if (second <= -1 && minute > 0) {
+            second = 59;
+            minute--;
+        }
+        if (minute <= 0) {
+            minute = 0;
+        }
+        if (minute <= 0 && second <= 0) {
+            minute = 0;
+            second = 0;
+        }
+        var check = $("#ulCheck [type='checkbox']").length;
+        var nowChecked = $("#ulCheck [type='checkbox']:checked").length;
+        var valiProductPassTime = "2017/10/26 16:40:34";
+        if (valiProductPassTime != null) {
+            if (minute == 0 && second == 0) {
+                if (nowChecked == check) {
+                    $("#lblMinute").text("0");
+                    $("#lblSecond").text("0");
+                    $("#btnSubmit").attr("disabled", false);
+                    $("#btnSubmit").attr("class", "input-butto100-ls");
+                }
+                else {
+                    $("#lblMinute").text(minute);
+                    $("#lblSecond").text(second);
+                }
+            }
+            else {
+                $("#lblMinute").text(minute);
+                $("#lblSecond").text(second);
+                setTimeout("Timesa('" + minute + "','" + second + "')", 1000);
+            }
+        }
+    }
+
+    function Timesb(minute, second) {
+        second--;
+        if (second <= -1 && minute > 0) {
+            second = 59;
+            minute--;
+        }
+        if (minute <= 0) {
+            minute = 0;
+        }
+        if (minute <= 0 && second <= 0) {
+            minute = 0;
+            second = 0;
+        }
+        if (minute == 0 && second == 0) {
+            $("#lblMinute2").text("0");
+            $("#lblSecond2").text("0");
+        }
+        else {
+            $("#lblMinute2").text(minute);
+            $("#lblSecond2").text(second);
+            setTimeout("Timesb('" + minute + "','" + second + "')", 1000);
+        }
+    }
+
+</script>
+<style type="text/css">
+    .fpgl-tc-drp_4
+    {
+        margin-top: 15px;
+    }
+</style>
+<style type="text/css">
+    #ulCheck li label
+    {
+        cursor: pointer;
+    }
+</style>
+<form action="/Task/BrushFTask/BeginTaskThree" enctype="multipart/form-data" id="fm" method="post">    <!--列表 -->
+    <div class="yctc_800 ycgl_tc_1" style="font-family: 微软雅黑">
+        <div class="person-level">
+            <ul>
+                <li class="m">进入购物平台</li>
+                <li class="m">找到目标商品</li>
+                <li class="end">模拟购物过程</li>
+                <li>下单付款</li>
+            </ul>
+        </div>
+        <input id="TaskID" name="TaskID" type="hidden" value="V6955020050" />
+        <ul class="fpgl-tc-drp_3" id="ulCheck">
+            <li class="fpgl-tc-drp_4" style="width: 400px; margin-left: -50px;">
+                <p>
+                    请完成以下操作，并在完成后勾选对应按钮
+                </p>
+            </li>
+            <li class="fpgl-tc-drp_4">
+                <p class="jsgl_7">
+                    <input type="checkbox" id="checkbox2" name="checkbox" style="width: 20px; height: 20px;"
+                           value="收藏商品" /></p>
+                <label for="checkbox2">
+                    收藏商品
+                </label>
+            </li>
+            <li class="fpgl-tc-drp_4">
+                <p class="jsgl_7">
+                    <input type="checkbox" id="checkbox3" name="checkbox" style="width: 20px; height: 20px;"
+                           value="买前咨询聊天" /></p>
+                <label for="checkbox3">
+                    <p>
+                        买前咨询聊天 :</p>
+                    <span style="float: left; width: 160px; margin-left: 4px;">与店铺旺旺对话几句，聊天内容<span style="color: Red;">严禁出现平台任务字眼</span></span></label>
+            </li>
+            <li class="fpgl-tc-drp_4">
+                <p class="jsgl_7">
+                    <input type="checkbox" id="checkbox4" name="checkbox" style="width:20px;height:20px;" value="浏览店内一款其他商品" /></p>
+                <label for="checkbox4">
+                    浏览店内一款其他商品</label>
+            </li>
+            <li class="fpgl-tc-drp_4" style="width: 400px; margin-left: -50px;">
+                <p>
+                    任务说明:
+                <div style="word-break: break-all;">
+                    （无）</div>
+                </p>
+            </li>
+            <li class="fpgl-tc-drp_4" style="width: 570px; margin-left: -150px; margin-top:2px">
+                <p class="jsgl_7">
+                    <span style="color: red">温馨提示：</span>请勿在此步骤下单，需要在第四步对商品型号等信息进行确认后再下单付款。</p>
+            </li>
+            <li class="fpgl-tc-qxjs_4" style="position: fixed; bottom:55px; width: 264px; text-align: center;
+                margin-left: 0px;">主产品停留倒计时：<label id="lblMinute" style="margin: 0px 5px; color: Red;">0</label>分<label
+                    id="lblSecond" style="margin: 0px 5px; color: Red;">0</label>秒 </li>
+            <li class="fpgl-tc-qxjs_4" style="position: fixed; bottom: 10px; text-align: center;
+                margin-left: 0px;">
+                <p>
+                    <input class="input-butto100-hs" type="button" value="上一步 " onclick="javascript:window.location.href='/Task/BrushFTask/BeginTaskTwo?taskID=V6955020050'" />
+                </p>
+                <p>
+                    <input title="亲,商品停留十分钟并且勾选以上对应按钮后方可激活该按钮" style="width:128px;height:35px;" onclick="Submit('V6955020050')" class="input-butto100-xshs" type="button" id="btnSubmit" disabled="disabled" value="下一步 " />
+                </p>
+            </li>
+            <li style="position: fixed; bottom: 20px; right: 30px;"><span>任务释放倒计时：<label id="lblMinute2"
+                                                                                         style="color: Red;">0</label>
+                分
+                <label id="lblSecond2" style="color: Red;">
+                    0</label>
+                秒</span> </li>
+        </ul>
+        <div>
+            <script type="text/javascript">
+                Timesa('7', '43')</script>
+            <script type="text/javascript">
+                Timesb('57', '42')</script>
+        </div>
+    </div>
+</form>
+</body>
+</html>

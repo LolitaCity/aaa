@@ -1,0 +1,47 @@
+.yyzx_1 {
+  width: 280px;
+  height: 40px;
+  margin-top: 15px;
+  line-height: 28px;
+  float: right;
+}
+.yyzx_1 p {
+  float: left;
+}
+.yyzx_2 a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url(../images/ymfw-left_5.png) no-repeat;
+}
+.yyzx_3 a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url(../images/ymfw-left_5_1.png) no-repeat;
+}
+.yyzx_2 a:hover {
+  background: url(../images/ymfw-left_5_3.png) no-repeat;
+}
+.yyzx_3 a:hover {
+  background: url(../images/ymfw-left_5_4.png) no-repeat;
+}
+.input_58 {
+  width: 58px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #ddd;
+}
+.ymfw-right-zgj_7 a {
+  width: 58px;
+  height: 28px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.ymfw-right-zgj_7 a:hover {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #333;
+}

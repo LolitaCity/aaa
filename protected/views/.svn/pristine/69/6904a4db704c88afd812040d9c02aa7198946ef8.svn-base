@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html><head>
+    <title></title>
+    <link href="<?=S_CSS;?>common.css" rel="stylesheet" type="text/css">
+    <link href="<?=S_CSS;?>open.win.css" rel="stylesheet" type="text/css">
+    <link href="<?=S_CSS;?>index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="<?=S_JS;?>jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="<?=S_JS;?>open.win.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?=S_IMAGES;?>weui.css">
+    <link rel="stylesheet" type="text/css" href="<?=SITE_URL;?>myUpload/css/upimg.css">
+    <script type="text/javascript" src="<?=SITE_URL;?>myUpload/js/jquery.form.js"></script>
+    <script type="text/javascript" src="<?=SITE_URL;?>myUpload/js/myUpload.js"></script>
+</head>
+<body style="background: #fff;">
+<!--列表 -->
+<div class="htyg_tc">
+    <ul>
+        <li class="htyg_tc_1">
+            评价任务 <?=$info['tasksn']?>
+        </li>
+        <li class="htyg_tc_2"><a href="javascript:void(0)" id="imgeColse" onclick="javascript:self.parent.$.closeWin()">
+                <img src="<?=S_IMAGES;?>sj-tc.png"></a> </li>
+    </ul>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($("#serviceValidation").length > 0) {
+            $.openAlter($("#serviceValidation").text(), "提示");
+        }
+
+        $('#uploadify').change(function () {
+            $("#txtfilename").val($("#uploadify").val());
+            if ($.trim($("#txtfilename").val()) != "" && $("#txtfilename").val() != null) {
+                $("#aShowImg").text("");
+            }
+        });
+    })
+
+    function openBrowse() {
+        document.getElementById("uploadify").click();
+        document.getElementById("txtfilename").value = document.getElementById("uploadify").value;
+    }
+
+
+    function Submit() {
+        var lj = $(":input[name=img1]").val();
+        if (lj == "" || lj == null) {
+            $.openAlter("请上传图片", "提示");
+            return false;
+        }
+        $("#fm").submit();
+    }
+    var su= 0;
+    //选择图片
+    function showPic($url,$id,$sow,$lang){
+        var pic = $(""+$id+"").get(0).files[0];
+        su =$sow;
+        if(pic){
+            if(pic['size']>=2097152){
+                $(""+$sow+"").html("不能超过1M");
+            }else{
+                $(""+$lang+"").prop("src" , window.URL.createObjectURL(pic) );
+                $(""+$sow+"").html( 0 +"%" );
+                uploadFile($url,$id,$sow);
+            }
+        }
+    }
+    //上传图片
+    function uploadFile($url,$id,$sow){
+        var pic = $(""+$id+"").get(0).files[0];
+        var formData = new FormData();
+        var u = $url;
+        formData.append("file" , pic);
+        /**
+            * 必须false才会避开jQuery对 formdata 的默认处理
+            * XMLHttpRequest会对 formdata 进行正确的处理
+            */
+        $.ajax({
+            type: "POST",
+            url: u,
+            data: formData ,
+            processData : false,
+            //必须false才会自动加上正确的Content-Type
+            contentType : false ,
+            xhr: function(){
+                var xhr = $.ajaxSettings.xhr();
+                if(onprogress && xhr.upload) {
+                    xhr.upload.addEventListener("progress" , onprogress, false);
+                    return xhr;
+                }
+            },success: function(data) {
+                var obj = JSON.parse(data);
+                if(obj.status ==1){
+                    alert(obj.content);
+                    $("#tu").val("<?php echo SITE_URL ?>"+obj.url);
+                }else{
+                    alert(obj.content);
+                }
+                $(""+$sow+"").html(obj.content);
+                $(""+$sow+"").css({"color":"#00FF00","border":"10px 10px 5px #888888"});
+            },
+            error:function(xhr){ //上传失败
+                alert("上传失败");
+                $(""+$sow+"").html("上传失败" );
+                $(""+$sow+"").css({"color":"red","border":"10px 10px 5px #888888"});
+            }
+        });
+    }
+    /**
+       * 侦查附件上传情况 ,这个方法大概0.05-0.1秒执行一次
+       */
+    function onprogress(evt){
+        var loaded = evt.loaded;     //已经上传大小情况
+        var tot = evt.total;      //附件总大小
+        var per = Math.floor(100*loaded/tot);  //已经上传的百分比
+        $(""+su+"").html( per +"%" );
+    }
+
+</script>
+<style type="text/css">
+.fpgl-tc-qxjs_6{margin-top:8px!important;}
+    .tooltip
+    {
+        width: 98px;
+        background: #fceeda;
+        float: left;
+        margin-right: 5px;
+        display: block;
+        overflow: hidden;
+    }
+    #tooltip
+    {
+        width: 290px;
+        position: fixed;
+        z-index: 9999;
+    }
+    #tooltip img
+    {
+        width: 290px;
+        height: auto;
+    }
+
+    .sk-hygl_7
+    {
+        width: 430px;
+    }
+    .sk-hygl_7_r
+    {
+        width: 120px;
+        text-align: right;
+    }
+    .fpgl-tc-qxjs_6 p
+    {
+        line-height: 15px;
+    }
+    .input-butto100-ls
+    {
+        background: #4882f0 none repeat scroll 0 0;
+        border-radius: 28px;
+        color: #fff;
+        cursor: pointer;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 0;
+        text-align: center;
+        width: 128px;
+    }
+
+    #aAnswer a:hover
+    {
+        color: Black !important;;
+    }
+    .showimg a{float: left;margin-right: 8px;margin-bottom: 10px;}
+    .showimg img{width: 100px;height: 70px}
+</style>
+
+<form action="<?php echo $this->createUrl('task/evaltask')?>" enctype="multipart/form-data" id="fm" method="post">        <!--列表 -->
+    <div class="yctc_458 ycgl_tc_1" style="margin-top: 10px; width: 580px;">
+
+        <ul>
+
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_7_r">
+                    店铺名称：</p>
+                <input id="TaskID" name="usertaskid" type="hidden" value="<?=$info['usertaskid']?>">
+                <input id="PlatformOrderNumber" name="taskevalid" type="hidden" value="<?=$info['id'];?>">
+                <p class="sk-hygl_7"><?=$info['shopname']?></p>
+            </li>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_7_r">
+                    商品名称：</p>
+                <p class="sk-hygl_7" style="max-height: 40px;">
+                    <?=$info['commodity_title']?>
+                </p>
+            </li>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_7_r">
+                    订单编号：</p>
+                <p class="sk-hygl_7"><?=$info['ordersn']?></p>
+            </li>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_7_r">
+                    佣金：</p>
+                <p class="sk-hygl_7"><?=$info['iscommission']-1;?>元</p>
+            </li>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_7_r" style="margin-top: 14px;">
+                    评价内容要求：</p>
+                <p class="sk-hygl_7">
+                    <textarea readonly class="input_44"  cols="20" data-val="true" id="Question" maxlength="40" name="Question" rows="2" style="height: 80px; width: 400px;"><?=$info['content']?></textarea>
+                </p>
+            </li>
+            <?php if ($info['status']==1):?>
+            <li class="fpgl-tc-qxjs_6" style="margin-top: 10px;">
+                <p class="sk-hygl_7_r" style="position: relative; margin-top: 30px;">好评图片：</p>
+                <p class="sjzc_6_tu showimg" style="width: 450px">
+                    <?php foreach ($info['imgcontent'] as $v):?>
+                    <a target="_blank" href="<?=$v?>"><img src="<?=$v?>"></a>
+                    <?php endforeach;?>
+                </p>
+            </li>
+            <?php endif;?>
+            <li class="fpgl-tc-drp3">
+                <p class="sk-hygl_7_r" style="position: relative; margin-top: 30px;">
+                    上传评价图片：</p>
+                <p class="sjzc_6_tu_3" style="margin-left: -1px;margin-right: 10px;">
+                    <a target="_blank" href="" class="tooltip"></a>
+                </p>
+                <p class="sjzc_6_tu" style="margin-left: 10px;">
+                <div id="upimg1">
+                    <div class="myupload-container">
+                        <div class="table" role="myupload-file-input-btn"><div class="content table-cell defalut" style="">
+                                <input type="file" id="pic02" name="pic02" onchange="showPic('<?php echo SITE_URL.'task/TasktestOne01';?>','#pic02','#son02','#lang02')" style="background：red;width:88px;height:60px;opacity: 0"/>
+                            </div>
+                        </div>
+                        <input type="file" name="file" role="myupload-file-input" accept="image/*" style="display:none;">
+                        <div class="table" style="position:relative;"><div class="content table-cell" style="">
+                                <img class="simg" width="100" height="70" role="myupload-picture-show" id="lang02">
+                                <input type="hidden" name="img1" role="myupload-picture-input" value="" id="tu">
+                                <span id="son02" style="position:relative;bottom:20px;"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </p>
+            </li>
+
+
+            <li class="fpgl-tc-qxjs_6">
+                <p style="width: 50%;">
+                    <input class="input-butto100-hs" type="button" id="btnSubmint" value="提交" onclick="Submit();" style="float: right; margin-right: 5px; width: 127px; height: 35px;">
+                </p>
+                <p style="width: 50%;">
+                    <input onclick="self.parent.$.closeWin()" class="input-butto100-ls" type="button" style="height: 35px; float: left; margin-left: 5px;" value="返回"></p>
+            </li>
+        </ul>
+    </div>
+    <div id="sUpload1" class="weui_loading_toast" style="display: none;">
+        <div class="weui_mask_transparent">
+        </div>
+        <div class="weui_toast">
+            <div class="weui_loading">
+                <!-- :) -->
+                <div class="weui_loading_leaf weui_loading_leaf_0">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_1">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_2">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_3">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_4">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_5">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_6">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_7">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_8">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_9">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_10">
+                </div>
+                <div class="weui_loading_leaf weui_loading_leaf_11">
+                </div>
+            </div>
+            <p class="weui_toast_content">
+                图片上传中</p>
+        </div>
+    </div>
+    <div id="sUpload1Success" style="display: none;">
+        <div class="weui_mask_transparent">
+        </div>
+        <div class="weui_toast">
+            <i class="weui_icon_toast"></i>
+            <p class="weui_toast_content">
+                上传完成</p>
+        </div>
+    </div>
+</form>
+
+
+</body></html>

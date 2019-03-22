@@ -1,0 +1,314 @@
+<!--修改安全码-->
+<div id="light2" class="ycgl_tc yctc_498" style="top: 31%; left: 32%; display: none;">
+    <!--列表 -->
+    <div class="htyg_tc">
+        <ul>
+            <li class="htyg_tc_1">安全码修改</li>
+            <li class="htyg_tc_2"><a href="javascript:void(0)" onclick="document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">
+                    <img src="<?php echo S_IMAGES;?>sj-tc.png"></a> </li>
+        </ul>
+    </div>
+    <!--列表 -->
+    <div class="yctc_458 ycgl_tc_1">
+        <ul>
+            <li>
+                <p class="sk-hygl_7">
+                    设置密码：</p>
+                <p>
+                    <input type="password" maxlength="18" placeholder="请输入新的安全码" class="input_305" id="txtNewPwds" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" value=""></p>
+            </li>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_7">
+                    确认密码：</p>
+                <p>
+                    <input type="password" maxlength="18" name="textfield" placeholder="请输入确认新的安全码" class="input_305" id="txtReNewPwds" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" value=""></p>
+            </li>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_7">
+                    身份验证：</p>
+                <p>
+                    <input type="password" maxlength="18" name="textfield" placeholder="请输入登录密码" class="input_305" id="txtTsPwd2" value=""></p>
+            </li>
+            <li class="fpgl-tc-qxjs_4">
+                <p>
+                    <input class="input-butto100-hs" type="button" id="btnTsPwd" value="确定提交">
+                </p>
+                <p>
+                    <input onclick="document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'" class="input-butto100-ls" type="button" value="返回修改"></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="fade" class="black_overlay">
+</div>
+<!--修改QQ-->
+<div id="light3" class="ycgl_tc yctc_498" style="top: 31%; left: 32%; display: none;">
+    <!--列表 -->
+    <div class="htyg_tc">
+        <ul>
+            <li class="htyg_tc_1">QQ修改</li>
+            <li class="htyg_tc_2"><a href="javascript:void(0)" onclick="document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">
+                    <img src="<?php echo S_IMAGES;?>sj-tc.png"></a> </li>
+        </ul>
+    </div>
+    <!--列表 -->
+    <div class="yctc_458 ycgl_tc_1">
+        <ul>
+            <li>
+                <p class="sk-hygl_8">
+                    原有联系QQ：</p>
+                <p>
+                    <input type="text" placeholder="请设置你的QQ号码" class="input_305" id="txtQQ" maxlength="15" value="<?php echo $userInfo->QQToken;?>" readonly="readonly" onkeyup="value=value.replace(/[^0-9]/g,'')"></p>
+            </li>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_8">
+                    改后联系QQ：</p>
+                <p>
+                    <input type="text" placeholder="请输入新的QQ号码" class="input_305" id="txtNewQQ" maxlength="15" onkeyup="value=value.replace(/[^0-9]/g,'')" value=""></p>
+            </li>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_8">
+                    身份验证：</p>
+                <p>
+                    <input type="password" maxlength="18" placeholder="请输入安全码" class="input_305" id="txtTsPwd3" value=""></p>
+            </li>
+            <li class="fpgl-tc-qxjs_4">
+                <p>
+                    <input class="input-butto100-hs" type="button" id="btnQQ" value="确定提交">
+                </p>
+                <p>
+                    <input onclick="document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'" class="input-butto100-ls" type="button" value="返回修改"></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="fade" class="black_overlay">
+</div>
+<!--修改微信号-->
+<div id="light4" class="ycgl_tc yctc_498" >
+    <!--列表 -->
+    <div class="htyg_tc">
+        <ul>
+            <li class="htyg_tc_1">微信修改</li>
+            <li class="htyg_tc_2"><a href="javascript:void(0)" onclick="document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'">
+                    <img src="<?=S_IMAGES;?>sj-tc.png"></a> </li>
+        </ul>
+    </div>
+    <!--列表 -->
+    <div class="yctc_458 ycgl_tc_1">
+        <ul>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_8">
+                    新微信号：</p>
+                <p>
+                    <input type="text" placeholder="请设置你的微信号" class="input_305" id="txtNewWx" maxlength="18"></p>
+            </li>
+            <li class="fpgl-tc-qxjs_6">
+                <p class="sk-hygl_8">
+                    身份验证：</p>
+                <p>
+                    <input type="password" maxlength="18" placeholder="请输入安全码" class="input_305" id="txtTsPwd4"></p>
+            </li>
+            <li class="fpgl-tc-qxjs_4">
+                <p>
+                    <input class="input-butto100-hs" type="button" value="确定提交" id="bntWx">
+                </p>
+                <p>
+                    <input onclick="document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'" class="input-butto100-ls" type="button" value="返回修改"></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="fade" class="black_overlay">
+</div>
+<style>
+    .fpgl-tc-qxjs_6{margin-top: 20px!important;}
+</style>
+
+
+<script>
+$(function () {
+$("#btnTsPwd").click(function () {
+var msg = '';
+if ($("#txtNewPwds").val() == '') {
+msg = "新密码不能为空", "提示";
+}
+else if ($("#txtReNewPwds").val() == '') {
+msg = "确认新密码不能为空", "提示";
+}
+else if ($("#txtTsPwd2").val() == '') {
+msg = "登录密码不能为空", "提示";
+}
+else if ($.trim($("#txtNewPwds").val()) != $.trim($("#txtReNewPwds").val())) {
+msg = " 登录密码和确认登录密码必须一致";
+}
+if (msg != '') {
+$.openAlter(msg, "提示");
+}
+else {
+var safepwd = $("#txtNewPwds").val();
+var pwd = $("#txtTsPwd2").val();
+$.post('<?php echo $this->createUrl('other/editSafepwd');?>', { safepwd: safepwd, pwd: pwd }, function (data) {
+if (data.err_code == 1) {
+$.openAlter("修改成功", "提示",{ width: 250,height: 50 }, function () { window.parent.location = "<?php echo $this->createUrl('user/index');?>"; }, "关闭");
+}
+else {
+$.openAlter(data.msg, "提示");
+}
+}, 'json');
+}
+});
+$("#btnQQ").click(function () {
+    var msg = '';
+    if ($("#txtQQ").val() == '') {
+        msg = "QQ号码不能为空", "提示";
+    }
+    else if ($("#txtNewQQ").val() == '') {
+        msg = "新的QQ号码不能为空", "提示";
+    }
+    else if ($("#txtTsPwd3").val() == '') {
+        msg = "身份验证不正确", "提示";
+    }
+    if (msg != '') {
+        $.openAlter(msg, "提示");
+    }
+    else {
+        var qq = $("#txtNewQQ").val();
+        var sfpw = $("#txtTsPwd3").val();
+        $.post('<?php echo $this->createUrl('other/editQQ');?>', { qq: qq, safePwd: sfpw }, function (data) {
+            if (data.err_code == 1) {
+                $.openAlter("修改成功", "提示",{ width: 250,height: 50 }, function () { window.parent.location = "<?php echo $this->createUrl('user/index');?>"; }, "关闭");
+            }
+            else {
+                $.openAlter(data.msg, "提示");
+            }
+        }, 'json');
+    }
+});
+    var textWx='';
+$("#bntWx").click(function () {
+        var msg = '';
+        if ($("#txtWx").val() == '') {
+            msg = "微信号不能为空", "提示";
+        }
+        else if ($("#txtNewWx").val() == '') {
+            msg = "新的微信号不能为空", "提示";
+        }
+        else if ($("#txtTsPwd4").val() == '') {
+            msg = "身份验证不正确", "提示";
+        }
+        if (msg != '') {
+            $.openAlter(msg, "提示");
+        }
+        else {
+            var wx = $("#txtNewWx").val();
+            var sfpw = $("#txtTsPwd4").val();
+            $.post('<?=$this->createUrl('other/editwxchat')?>', { newWeChat: wx, safePwd: sfpw }, function (data) {
+                if (data.err_code ==0) {
+                    $.openAlter("修改成功", "提示", {width: 250, height: 50}, function () {
+                        window.parent.location = "<?=$this->createUrl('user/index')?>";
+                    }, "关闭");
+                }else {
+                    $.openAlter(data.msg, "提示");
+                }
+            },'json');
+        }
+});
+
+
+
+});
+</script>
+
+
+<div class="sj-zjgl">
+    <!--会员中心-->
+    <?php
+        echo $this->renderPartial('/user/usercenterTopNav');
+        $uid = Yii::app()->user->getId() ;
+        $userInfo=User::model()->findByPk($uid);
+        
+        $sql = "SELECT  SUM(increase) FROM zxjy_cashlog WHERE userid='{$uid}' ;" ;
+        $usermoney= Yii::app ()->db->createCommand ( $sql )->queryScalar ();
+        if($usermoney == false) $usermoney =0 ;
+    ?>
+    <div class="zjgl-right">
+        <div class="sk-hygl">
+            <div class="sk-hygl_1" style="width: 550px;">
+                <ul>
+                    <li>
+                        <p>
+                            会员名：<?php echo Yii::app()->user->getName();?></p>
+                    </li>
+                    <li>
+                        <p class="sk-hygl_4">
+                            手机号：
+                            <?php echo $userInfo->Phon;?></p>
+                        <p class="sk-hygl_3">
+                            <input id="btnEditPhoneNumber" class="input-butto62-zls" type="button" value="修改" />
+                        </p>
+                    </li>
+                    <li>
+                        <p class="sk-hygl_4">登录密码： 已设置</p>
+                        <p class="sk-hygl_3">
+
+                            <input id="btnEditPassword" class="input-butto62-zls" type="button" value="修改" />
+                        </p>
+                    </li>
+                    <li>
+                        <p class="sk-hygl_4">
+                            安全码：<?php if ($userInfo->SafePwd){?>
+                                <span>已设置</span>
+                            <?php }else{?>
+                            <span>未设置</span><span style="font-size: 12px">(支付密码为初始登录密码)</span>
+                            <?php }?>
+                        </p>
+                        <p class="sk-hygl_3">
+                            <input onclick="document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'"
+                                   class="input-butto62-zls" type="button" value="设置" />
+                        </p>
+                    </li>
+                    <li>
+                        <p class="sk-hygl_4">
+                            QQ：<?php echo $userInfo->QQToken;?></p>
+                        <p class="sk-hygl_3">
+                            <input onclick="document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'"
+                                   class="input-butto62-zls" type="button" value="修改" />
+                        </p>
+                    </li>
+                   <li>
+                        <p class="sk-hygl_4">
+                            微信：<?php echo $userInfo->wechat;?></p>
+                        <p class="sk-hygl_3">
+                            <input onclick="document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'"
+                                   class="input-butto62-zls" type="button" value="设置" />
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="sk-hygl_2">
+                <div class="sk-hygl_5">
+                    <p class="sk-hygl_6" style="padding: 20px 30px;">
+                        账户金币：<em><?=$usermoney ?></em>元<br />
+                        累计赚取金币：<em><?=$countprice?$countprice:0;?></em>元<br />
+                        淘宝接手机会：<em><?=$count?></em>个<br />
+                        预计可得金币：<em><?=$count*20?></em>元
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#btnEditPhoneNumber").click(function () {
+            $.openWin(430, 500, '<?php echo $this->createUrl('other/editPhoneNum');?>');
+        });
+        $("#btnEditPassword").click(function () {
+            $.openWin(320, 500, '<?php echo $this->createUrl('other/editPassword');?>');
+        });
+    });
+</script>

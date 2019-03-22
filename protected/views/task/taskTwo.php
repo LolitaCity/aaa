@@ -1,0 +1,566 @@
+<html>
+<head>
+<title></title>
+<link href="<?=S_CSS;?>common.css" rel="stylesheet" type="text/css">
+<link href="<?=S_CSS;?>open.win.css" rel="stylesheet" type="text/css">
+<link href="<?=S_CSS;?>index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?=S_JS;?>jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="<?=S_JS;?>open.win.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="<?=SITE_URL;?>myUpload/css/upimg.css">
+<script type="text/javascript"
+	src="<?=SITE_URL;?>myUpload/js/jquery.form.js"></script>
+<script type="text/javascript"
+	src="<?=SITE_URL;?>myUpload/js/myUpload.js"></script>
+</head>
+<style>
+.rbtn {
+	padding: 8px;
+	border-radius: 10px;
+}
+
+.bgred {
+	background: #bb0a0a;
+	color: #fff;
+}
+
+#light1 {
+	display: none
+}
+</style>
+<body style="background: #fff;">
+
+	<!--弹框确认-->
+	<div id="light1" class="ycgl_tc yctc_498">
+		<!--列表 -->
+		<div class="htyg_tc">
+			<ul>
+				<li class="htyg_tc_1">核对商品价格</li>
+				<li class="htyg_tc_2"><a href="javascript:void(0)"
+					onclick="document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">
+						<img src="<?=S_IMAGES;?>sj-tc.png">
+				</a></li>
+			</ul>
+		</div>
+		<!--列表 -->
+		<div class="yctc_458 ycgl_tc_1">
+			<ul>
+				<li>
+					<p style="text-align: left">
+						任务担保金额(单件)：<label style="font-weight: bolder; color: Red;"><?=$taskinfo['modelprice']?></label>元<?php if ($taskinfo['express']){?>(运费:<?=$taskinfo['express'];?>)<?php }?><br>
+						<label> 拍下件数：<label style="font-weight: bolder; color: Red;"><?=$taskinfo['auction']?></label><label
+							style="margin-left: 20px;">型号：</label> <label title=""> <label
+								style="font-weight: bolder; color: Red;"><?=$taskinfo['modelname']?$taskinfo['modelname']:'默认'?></label>
+						</label> <br> <label> 请核对担保金额与目标商品价格是否一致。若两者<em
+								style="text-decoration: underline">差价≥50元</em>，请找客服投诉。请务必认真核对！
+						</label></label>
+					</p>
+
+				</li>
+
+				<li class="fpgl-tc-qxjs_4 hd_anniu">
+					<p>
+						<input id="btnNext" type="button" value="核对无问题，下一步"
+							class="rbtn bgred">
+					</p>
+					<p>
+						<input id="btnSubPrice" type="button" value="差价过大，找客服投诉"
+							class="rbtn bg_888">
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="fade" class="black_overlay"></div>
+
+	<!--列表 -->
+<?php $rukou=$this->liuliangrukou($taskinfo['intlet'],$taskinfo['order']);?>
+<div class="htyg_tc">
+		<ul>
+			<li class="htyg_tc_1"><label> <label>
+                    任务编号: <?=$taskinfo['tasksn']?></label>(<?=$rukou['intletarr'][$taskinfo['intlet']]?>)
+            </label></li>
+			<li class="htyg_tc_2"><a href="javascript:void(0)" id="imgeColse"
+				onclick="javascript:self.parent.$.closeWin()"> <img
+					src="<?=S_IMAGES;?>sj-tc.png"></a></li>
+		</ul>
+	</div>
+	<style>
+body {
+
+}
+
+td {
+	width: 150px;
+	height: 150px;
+}
+</style>
+	<style>
+.tooltip {
+	width: 98px;
+	background: #fceeda;
+	float: left;
+	margin-right: 5px;
+	display: block;
+	overflow: hidden;
+}
+
+#tooltip {
+	width: 290px;
+	position: fixed;
+	z-index: 9999;
+}
+
+#tooltip img {
+	width: 290px;
+	height: auto;
+}
+</style>
+	<script type="text/javascript">
+    var searchType="<?=$taskinfo['intlet']?>";
+    if(searchType!="淘宝APP淘口令")
+    {
+
+        document.oncontextmenu = function (e) { return false; }
+    }
+    $(document).ready(function () {
+        var height=$("#lblSearchKey").height();
+        $("#pSearchKey").height(height);
+
+        if(searchType.indexOf("PC")>-1)
+        {
+            $('#txtValidateValue').focus(function() {
+                document.oncontextmenu = function (e) { return ture; }
+            });
+            $('#txtValidateValue').focusout(function() {
+                document.oncontextmenu = function (e) { return false; }
+            });
+        }
+
+    })
+    function showtips() {
+        var intlet='<?=$taskinfo['intlet'];?>';
+        if($("#txtValidateValue").attr('checkstatus')!=1){
+            $.openAlter('请验证后再操作！','提示');return false;
+        }
+        if(!$(':input[name="img1"]').val() && intlet!=6){
+            $.openAlter('请上传截图！','提示');
+            return false;
+        }
+        $('#light1,#fade').show()
+    }
+    $('#btnNext').click(function(){
+        var img=$(':input[name="img1"]').val();
+        var intlet='<?=$taskinfo['intlet'];?>';
+        $.ajax({
+            type: "post",
+            url: "<?php echo $this->createUrl('task/taskTwo');?>",
+            data: { usertaskid: '<?=$taskinfo['id']?>', tasktwoimg: img,intlet:intlet},
+            success: function (data) {
+            }
+        });
+        $('#light1,#fade').hide();
+        $.openWin(560,840,'<?=$this->createUrl('task/taskthree',array('usertaskid'=>$taskinfo['id']));?>')
+    })
+
+    function Confirm(taskID) {
+        var validateValue = $("#txtValidateValue").val();
+        if ($.trim(validateValue) == "" || $.trim(validateValue) == null) {
+            $.openAlter('验证栏请输入', '提示');
+            return;
+        }
+        var type='<?=$taskinfo['intlet']?>';
+        $.ajax({
+            type: "post",
+            url: "<?php echo $this->createUrl('task/shopconfirm');?>",
+            dataType: "json",
+            data: { taskid: taskID, val: validateValue,type:type },
+            error: function () {
+                $.openAlter('验证失败', "提示");
+            },
+            success: function (data) {
+                if(data.err_code==0){
+                    $(':input[name="textfield"]').attr('checkstatus',1);
+                }else {
+                    $(':input[name="textfield"]').attr('checkstatus',2);
+                }
+                $.openAlter(data.msg, "提示",{ width: 250,height: 50 });
+            }
+        });
+    }
+
+    function Timesb(minute, second) {
+        second--;
+        if (second <= -1 && minute > 0) {
+            second = 59;
+            minute--;
+        }
+        if (minute <= 0) {
+            minute = 0;
+        }
+        if (minute <= 0 && second <= 0) {
+            minute = 0;
+            second = 0;
+        }
+        if (minute == 0 && second == 0) {
+            $("#lblMinute").text("0");
+            $("#lblSecond").text("0");
+        }
+        else {
+            $("#lblMinute").text(minute);
+            $("#lblSecond").text(second);
+            setTimeout("Timesb('" + minute + "','" + second + "')", 1000);
+        }
+    }
+    //获取又拍云上的示例图
+    $(function () {
+        var type="<?=$taskinfo['intlet']?>";
+        var type1="<?=$rukou['terminal']?>";
+        var type2='销量任务';
+        var x = 10;
+        var y = -300;
+        $("a.tooltip").mouseover(function (e) {
+            this.myTitle = this.title;
+            this.title = "";
+            var imgTitle = this.myTitle ? +this.myTitle : "";
+            var tooltip = "";
+
+             if (type2 =="销量任务" && type =="2")
+            {
+                tooltip = "<div id='tooltip'> <img src='<?=S_IMAGES;?>MyBuySearchPC.png'/></div>";
+            }
+            else if (type2== "浏览推送任务" && type== "1")
+            {
+                tooltip = "<div id='tooltip'> <img src='<?=S_IMAGES;?>LLSearchAPP.png'/></div>";
+            } 
+			else if (type== "3")
+            {
+                tooltip = "<div id='tooltip'> <img src='<?=S_IMAGES;?>ll_ztc.png'/></div>";
+            }
+            else if (type2 =="销量任务" && type == "4")
+            {
+                tooltip = "<div id='tooltip'> <img src='<?=S_IMAGES;?>APPZTC.png'/></div>";
+            }
+            else if ((type2 == "商品复购推送任务" || type2 == "店铺复购推送任务") && type=="淘宝PC自然搜索")
+            {
+                tooltip = "<div id='tooltip'>  <img src='/Content/images/BuyCourse/MyBuySearchPC.png'/></div>";
+            }
+            else if ((type2 =="商品复购推送任务" || type2=="店铺复购推送任务") && type=="1")
+            {
+                tooltip = "<div id='tooltip'>  <img src='<?=S_IMAGES;?>appfugoutuisong.jpg'/></div>";
+            }
+            else if ((type2 == "商品复购推送任务" || type2 == "店铺复购推送任务") && type =="淘宝APP直通车")
+            {
+                tooltip = "<div id='tooltip'> <img src='/Content/images/BuyCourse/淘宝APP直通车复购推送.jpg'/></div>";
+            }
+            else if (type2=="加购物车推送任务" && type=="淘宝PC自然搜索")
+            {
+                tooltip = "<div id='tooltip'> <img src='/Content/images/BuyCourse/MyShopCartSearchPC.png'/></div>";
+            }
+            else if (type2 =="加购物车推送任务" && type=="1")
+            {
+                tooltip = "<div id='tooltip'>  <img src='<?=S_IMAGES;?>MyShopCartSearchAPP.png'/></div>";
+            }
+            else if (type2 =="加购物车推送任务" && type =="淘宝APP直通车")
+            {
+                tooltip = "<div id='tooltip'> <img src='/Content/images/BuyCourse/gwc_ztc.png'/></div>";
+            }
+            else if (type2== "收藏商品推送任务" && type== "淘宝PC自然搜索")
+            {
+                tooltip = "<div id='tooltip'> <img src='/Content/images/BuyCourse/MyCollectSearchPC.png'/></div>";
+            }
+            else if (type2 =="收藏商品推送任务" && type=="1")
+            {
+                tooltip = "<div id='tooltip'> <img src='<?=S_IMAGES;?>MyCollectSearchAPP.png'/></div>";
+            }
+            else if (type2=="收藏商品推送任务" && type =="淘宝APP直通车")
+            {
+                tooltip = "<div id='tooltip'> <img src='/Content/images/BuyCourse/sc_ztc.png'/></div>";
+            }
+            else if (type =="淘宝PC购物车")
+            {
+                tooltip = "<div id='tooltip'> <img src='/Content/images/BuyCourse/MyShopCartPC.png'/></div>";
+            }
+            else if (type =="淘宝APP购物车")
+            {
+
+                tooltip = "<div id='tooltip'> <img src='/Content/images/BuyCourse/MyShopCartAPP.png'/></div>";
+            }
+            else if (type =="淘宝PC我的收藏")
+            {
+
+                tooltip = "<div id='tooltip'><img src='/Content/images/BuyCourse/MyCollectPC.png'/></div>";
+            }
+            else if (type=="淘宝APP我的收藏")
+            {
+                tooltip = "<div id='tooltip'><img src='/Content/images/BuyCourse/MyCollectAPP.png'/></div>";
+            }
+            else if (type =="淘宝PC已买过的宝贝")
+            {
+                tooltip = "<div id='tooltip'> <img src='/Content/images/BuyCourse/MyBuyPC.png'/></div>";
+            }
+            else if (type== "淘宝APP已买过的宝贝")
+            {
+                tooltip = "<div id='tooltip'><img src='/Content/images/BuyCourse/MyBuyAPP.png'/></div>";
+            }
+            else if (type == "天猫APP搜索")
+            {
+                tooltip = "<div id='tooltip'><img src='/Content/images/BuyCourse/tm_ss.png'/></div>";
+            }
+            else if (type == "天猫PC搜索")
+            {
+                tooltip = "<div id='tooltip'><img src='/Content/images/SearchImg/天猫PC搜索示例图.jpg'/></div>";
+            }
+            else{
+                if (type1 =="PC")
+                {
+
+                    tooltip = "<div id='tooltip'> <img src='<?=S_IMAGES;?>1.jpg' /></div>";
+                }
+                else if (type1 == "手机" && type=="1" && type2 =="销量任务")
+                {
+                    tooltip = "<div id='tooltip'><img src='<?=S_IMAGES;?>taobaoappziran.jpg'/></p></div>";
+                }
+                else if (type1 == "手机" )
+                {
+                        tooltip = "<div id='tooltip'><img src='/Content/images/SearchImg/4.jpg'/></p></div>";
+
+                }
+                else
+                {
+                    tooltip = "<div id='tooltip'> <img src='<?=S_IMAGES;?>1.jpg' /></div>";
+                }
+            }
+            $(".tooltip").append(tooltip);
+            var imgurl=$('#tooltip').find('img').attr('src');
+            $(".tooltip").attr('href',imgurl)
+            $("#tooltip")
+                .css({
+                    "top": (e.pageY + y) + "px",
+                    "left": (e.pageX + x) + "px"
+                }).show("fast");   //设置x坐标和y坐标，并且显示  B
+        }).mouseout(function () {
+            this.title = this.myTitle;
+            $("#tooltip").remove();  //移除
+        }).mousemove(function (e) {
+            $("#tooltip")
+                .css({
+                    "top": (e.pageY + y) + "px",
+                    "left": (e.pageX + x) + "px"
+                });
+        });
+
+    })
+</script>
+	<style type="text/css">
+.fpgl-tc-drp3 {
+	margin-bottom: 15px;
+}
+
+.tooltip {
+	width: 98px;
+	background: #fceeda;
+	float: left;
+	margin-right: 5px;
+	display: block;
+	overflow: hidden;
+	margin-right: 5px;
+}
+
+#tooltip {
+	width: 350px;
+	position: fixed;
+	z-index: 9999;
+	height: auto;
+}
+
+.hot_icon {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 0;
+	top: 0;
+	background: url('<?=S_IMAGES;?>/hot_icon.png') no-repeat;
+	background-size: contain;
+}
+
+#tooltip img {
+	width: 350px;
+	height: 400px;
+}
+</style>
+	<form action="<?php echo $this->createUrl('task/tasktwo');?>"
+		enctype="multipart/form-data" id="fm" method="post">
+		<!--列表 -->
+		<div class="yctc_800 ycgl_tc_1" id="divBody" style="font-family: 微软雅黑">
+
+			<div class="person-level">
+				<ul>
+					<li class="m">进入购物平台</li>
+					<li class="end">找到目标商品</li>
+					<li>模拟购物过程</li>
+					<li>下单付款</li>
+				</ul>
+			</div>
+			<input id="TaskID" name="taskid" type="hidden"
+				value="<?=$taskinfo['id'];?>"> <input id="TaskSearchType"
+				name="taskintlet" type="hidden" value="<?=$taskinfo['intlet'];?>"> <input
+				id="SearchImgs" name="proimg" type="hidden"
+				value="<?=$taskinfo['commodity_image'];?>"> <input id="TaskType"
+				name="TaskType" type="hidden" value="<?=$rukou['terminal']?>"> <input
+				id="FineTaskCategroy" name="tasktype" type="hidden"
+				value="<?=$taskinfo['tasktype']?>">
+
+			<div class="fpgl-tc-drp">
+
+				<ul>
+                <?php if ($taskinfo['intlet']!=6):?>
+                <li class="fpgl-tc-drp3">
+						<p class="fpgl-tc-drp2" id="pSearchKey" style="height: 20px;">
+                        <?php if ($taskinfo['intlet']==3){echo'APP淘口令';}else{echo '搜索关键字';}?>：</p>
+						<label id="lblSearchKey">
+                            <?php if ($taskinfo['intlet']==3){ ?>
+                            <textarea rows="1" id="biao1" readonly="readonly" style="width: 300px; padding: 0;" ><?=$taskinfo['keyword']?></textarea>
+							<a onclick="copyUrl2()" href="javascript:;"
+							style="color: blue; font-weight: bold">复制</a>
+
+                        <?php }else{?>
+                                <?=$taskinfo['keyword']?>
+                                <a onclick="copyUrl2()" href="javascript:;" style="color: blue; font-weight: bold">复制</a>
+                                <textarea rows="1" id="biao1" readonly="readonly" style="width: 300px; padding: 0; opacity:0;"><?=$taskinfo['keyword']?></textarea>
+
+                        <?php }?>
+
+                        </label>
+					</li>
+					<li class="fpgl-tc-drp3">
+						<p class="fpgl-tc-drp2">排序方式选择：</p>
+						<p><?php if ($taskinfo['order']){ echo $rukou['stype'][$taskinfo['order']];}else{?>（无）<?php }?></p>
+					</li>
+					<li class="fpgl-tc-drp3">
+						<p class="fpgl-tc-drp2">价格区间设置：</p>
+						<p>
+                        <?php if ($taskinfo['price']){ echo $taskinfo['price'];}else{?>（无）<?php }?></p>
+					</li>
+					<li class="fpgl-tc-drp3">
+						<p class="fpgl-tc-drp2">发货地：</p>
+						<p><?php if ($taskinfo['sendaddress']){ echo $taskinfo['sendaddress'];}else{?>（无）<?php }?></p>
+					</li>
+					<li class="fpgl-tc-drp3">
+						<p class="fpgl-tc-drp2">其他筛选条件：</p>
+						<p>
+                        <?php if ($taskinfo['other']){ echo $taskinfo['other'];}else{?>（无）<?php }?></p>
+					</li>
+					<li class="fpgl-tc-drp3" style="text-align: left">
+						<p style="width: 65px; margin-left: 36px;">任务类型:</p> <label
+						id="lblSearch"><a href="" target="_blank"><?=$rukou['intletarr'][$taskinfo['intlet']]?></a></label>
+					</li>
+					<li class="fpgl-tc-drp3">
+						<p class="fpgl-tc-drp2">寻找目标商品：</p>
+						<p>
+                        根据右侧图片找到店铺名为“<?php echo $this->substr_cut($taskinfo['shopname']);?>”的商品</p>
+					</li>
+                <?php else:?>
+                    <li class="fpgl-tc-drp3 mt20 mb20">
+						<p style="text-align: center; width: 100%">
+							<img width="200" src="<?=$taskinfo['qrcode'];?>">
+						</p>
+					</li>
+					<li class="fpgl-tc-drp3">
+						<p class="fpgl-tc-drp2">第一步：</p>
+						<p>打开淘宝app扫描上面的二维码</p>
+					</li>
+					<li class="fpgl-tc-drp3">
+						<p class="fpgl-tc-drp2">第二步：</p>
+						<p>进入到商品详情页中</p>
+					</li>
+                <?php endif;?>
+                <li class="fpgl-tc-drp3" style="line-height: 30px;">
+						<p class="fpgl-tc-drp2">
+                        <?php if ($taskinfo['intlet']==1||$taskinfo['intlet']==3||$taskinfo['intlet']==4||$taskinfo['intlet']==6){?> 验证店铺名：<?php }else{?>验证商品ID：<?php }?></p>
+						<p>
+							<input type="text" name="textfield"
+								checkstatus="
+								<?php
+								$coo = Yii::app ()->request->getCookies ();
+								if ($coo ['comfirmcookie' . $taskinfo ['id']]->value) {
+									echo 1;
+								} else {
+									echo 2;
+								}
+								?>"
+								class="input_170" id="txtValidateValue" style="width: 194px;">
+						</p>
+						<p style="margin-left: 10px;">
+							<input class="input-butto100-xls" type="button" value="验证"
+								onclick="Confirm('<?=$taskinfo['id']?>')">
+						</p>
+                    <?php if ($taskinfo['intlet']==2||$taskinfo['intlet']==5):?>
+                    <p style="margin-left: 100px;">
+							<a href="<?=S_IMAGES;?>goodsid.jpg" style="color: red">查看示例</a>
+						</p>
+                    <?php endif;?>
+                </li>
+
+                <?php if ($taskinfo['intlet']!=6):?>
+                <li class="fpgl-tc-drp3">
+						<p class="fpgl-tc-drp2"
+							style="position: relative; margin-top: 30px;">上传图片：</p>
+						<p class="sjzc_6_tu_3"
+							style="margin-left: -1px; margin-right: 10px;">
+							<a target="_blank" href="" class="tooltip"></a>
+						</p>
+						<p class="sjzc_6_tu" style="margin-left: 10px;">
+						
+						<div id="upimg1"></div> <script language="javascript">
+                        $("#upimg1").upload({isMulti:true, pictureInputName:'img1',defaultimg:"<?=@$taskinfo['tasktwoimg']?>"});
+                    </script>
+						</p>
+					</li>
+                <?php endif;?>
+            </ul>
+			</div>
+			<div class="fpgl-tc-drp_2">
+				<a href="<?=$taskinfo['commodity_image']?>"
+					onclick="javascript:void(0)" target="_blank" title="点击查看原图"> <img
+					style="width: 350px; height: 370px;"
+					src="<?=$taskinfo['commodity_image']?>">
+				</a>
+			</div>
+			<ul>
+				<li class="fpgl-tc-qxjs_4"
+					style="position: fixed; bottom: 10px; left: 186px;">
+					<p>
+						<input class="input-butto100-hs" type="button" value="上一步 "
+							onclick="javascript:window.location.href='<?php echo $this->createUrl('task/taskone',array('taskid'=>$taskinfo['id']));?>'">
+					</p>
+					<p>
+						<input onclick="showtips()" class="input-butto100-ls"
+							type="button" value="下一步">
+					</p>
+				</li>
+				<li style="position: fixed; bottom: 20px; right: 30px;"><span>任务释放倒计时：<label
+						id="lblMinute" style="color: Red;">7</label> 分 <label
+						id="lblSecond" style="color: Red;">20</label> 秒
+				</span></li>
+			</ul>
+			<script type="text/javascript">
+            var m='<?=floor($setfreetime/60);?>';
+            var s='<?=$setfreetime%60;?>';
+            Timesb(m, s)</script>
+		</div>
+	</form>
+	<script>
+
+        function copyUrl2()
+        {
+            var Url2=document.getElementById("biao1");
+            Url2.select(); // 选择对象
+            document.execCommand("Copy"); // 执行浏览器复制命令
+            alert("已复制好，可贴粘。");
+        }
+
+</script>
+
+</body>
+</html>

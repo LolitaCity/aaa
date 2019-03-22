@@ -1,0 +1,164 @@
+<?php
+    if ($schedual){
+        $usertask=Usertask::model()->findByPk($schedual->usertaskid);
+        $schedualtype1=Schedualtype::model()->findByPk($schedual->typeid);
+        $schedualtype2=Schedualtype::model()->findByPk($schedual->questionid);
+        $scheduallog=Scheduallog::model()->findAll('schedualid='.$schedual->id.' AND status=1');
+    }
+?>
+<script>
+    //查看任务详情
+    function GetTaskDatailInfo(taskID) {
+        var url='/schedual/gettaskinfo/usertaskid/'+taskID+'.html';
+        $.openWin(680, 700, url);
+    }
+    function ShowPunishResult() {
+        $.openWin(680, 750, '<?=$this->createUrl('other/opennews',array('gid'=>270));?>');
+    }
+    function GetPictureInfo(taskID) {
+        var url='/schedual/getpictureinfo/usertaskid/'+taskID+'.html';
+        $.openWin(680, 600, url);
+    }
+
+</script>
+<form action="" enctype="multipart/form-data" id="fm" method="post">        <!--表格内容 END-->
+    <!--添加商品-->
+    <div class="yctc_458 ycgl_tc_22" style="width: 950px;">
+
+        <ul id="ulDetail">
+            <li class="fpgl-tc-qxjs" style="text-align: left; color: Black;">
+                <label>
+                    工单详情</label><input onclick="window.history.go(-1);" class="input-butto100-ls" type="button" style="height: 35px;
+                            margin-left: 15px;" value="返回列表"><br>
+            </li>
+            <li id="liDetail" style="margin-top: 10px;">
+                <table style="border-bottom-width: 1px; border-left-width: 1px; border-top-width: 1px;
+                        border-right-width: 1px;">
+                    <tbody><tr>
+                        <th width="120">任务编号：</th>
+                        <th width="180"><?=@$usertask->tasksn;?></th>
+                        <th width="180">订单编号：</th>
+                        <th width="180"><?=@$usertask->ordersn;?></th>
+                        <th width="180">工单状态：</th>
+                        <th width="180"><?php switch ($schedual->status){
+                                case 0:echo '待处理';break;
+                                case 1:echo '跟进中';break;
+                                case 2:echo '待执行';break;
+                                case 3:echo '处理完成';break;
+                                case 4:echo '已撤销';break;
+                                case 5:echo '拒绝处理';break;
+                            }?>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="180">
+                            工单类型：
+                        </th>
+                        <th width="180"><?=@$schedualtype1->typename;?></th>
+                        <th width="180">问题分类：</th>
+                        <th width="250"><?=@$schedualtype2->typename;?></th>
+                        <th width="180">提交时间：</th>
+                        <th width="180"><?=date('Y-m-d H:i:s',$schedual->addtime);?></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            处罚金额：
+                        </th>
+                        <th colspan="5" style="padding-left: 25px; text-align: left;"><?=@$schedual->penaltymoney?>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="160">
+                            处理结果：
+                        </th>
+                        <th colspan="5" style="padding-left: 25px; text-align: left;"><?php
+                            if ($schedual->status==5){
+                                echo '平台拒绝处理';
+                            }elseif ($schedual->status==4){
+                                echo '商家已经撤销投诉';
+                            }else{
+                                switch ($schedual->seriousness){
+                                    case 0:$sstr='轻度违规';break;
+                                    case 1:$sstr='中度违规';break;
+                                    case 2:$sstr='严重违规';break;
+                                }
+                                if (!empty($schedual->penaltymoney) && !empty($schedual->penaltyscore)){
+                                    echo '经核实，会员确实违规，属于'.$sstr.',处罚金额：'.$schedual->penaltymoney.'元并扣积分:'.$schedual->penaltyscore.'分';
+                                }
+                                if (!empty($schedual->penaltymoney) && empty($schedual->penaltyscore)){
+                                    echo '经核实，会员确实违规，属于'.$sstr.',处罚金额：'.$schedual->penaltymoney.'元';
+                                }
+                                if (empty($schedual->penaltymoney) && !empty($schedual->penaltyscore)){
+                                    echo '经核实，会员确实违规，属于'.$sstr.',扣积分:'.$schedual->penaltyscore.'分';
+                                }
+                            }
+                            ?></th>
+                    </tr>
+
+                    </tbody></table>
+            </li>
+            <li style="margin-top: 10px;">
+                <table id="tbCommit" style="border-width: 1px 1px; text-align: left;">
+                    <tbody><tr>
+                        <th>
+                            <input onclick="GetTaskDatailInfo('<?=$schedual->usertaskid;?>')" class="input-butto100-hs" type="button" style="height: 35px;  margin-left: 5px;" value="查看任务详情">
+                            <input onclick="ShowPunishResult()" class="input-butto100-hs" type="button" style="height: 35px;  margin-left: 5px;" value="工单处理标准">
+                            <input onclick="GetPictureInfo('<?=$schedual->usertaskid;?>')" class="input-butto100-hs" type="button" style="height: 35px;  margin-left: 5px;" value="查看我的截图">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;">
+                            沟通记录
+                        </th>
+                    </tr>
+
+                    <tr class="trCommit">
+                        <th style="text-align: left; word-break: break-all;">
+                            管理员： <span style="word-break: break-all;">
+                               <?php
+                               if ($schedual->status==5){
+                                   echo '平台拒绝处理';
+                               }elseif ($schedual->status==4){
+                                   echo '商家已经撤销投诉';
+                               }else{
+                                   switch ($schedual->seriousness){
+                                       case 0:$sstr='轻度违规';break;
+                                       case 1:$sstr='中度违规';break;
+                                       case 2:$sstr='严重违规';break;
+                                   }
+                                   if (!empty($schedual->penaltymoney) && !empty($schedual->penaltyscore)){
+                                       echo '经核实，会员确实违规，属于'.$sstr.',处罚金额：'.$schedual->penaltymoney.'元并扣积分:'.$schedual->penaltyscore.'分';
+                                   }
+                                   if (!empty($schedual->penaltymoney) && empty($schedual->penaltyscore)){
+                                       echo '经核实，会员确实违规，属于'.$sstr.',处罚金额：'.$schedual->penaltymoney.'元';
+                                   }
+                                   if (empty($schedual->penaltymoney) && !empty($schedual->penaltyscore)){
+                                       echo '经核实，会员确实违规，属于'.$sstr.',扣积分:'.$schedual->penaltyscore.'分';
+                                   }
+                               }
+                               ?>
+
+                            </span><br>
+                            <?php if (!empty($schedual->returnimg)):?>
+                                <a href="<?=$schedual->returnimg?>" target="_blank">
+                                    <img src="<?=$schedual->returnimg?>" width="300" height="150">
+                                </a>
+                            <?php endif;?>
+                            <br>
+                            <?=date('Y-m-d H:i:s',$schedual->updatetime);?>
+                        </th>
+
+                    </tr>
+                    <tr class="trCommit">
+                        <th style="text-align: left; word-break: break-all;">
+                            管理员： <span style="word-break: break-all;">处理中</span><br>
+                            <br>
+                            <?=date('Y-m-d H:i:s',$schedual->addtime);?>
+                        </th>
+                    </tr>
+
+                    </tbody></table>
+            </li>
+        </ul>
+    </div>
+</form>

@@ -1,0 +1,56 @@
+﻿.jsgl_pptt_3{ width:110px; float:right;}
+.jsgl_pptt_3 a{ width:110px; height:28px; line-height:28px; text-align: center; background:#666; display:block; color:#fff;
+		  border-radius: 15px; 
+		  -webkit-border-radius:15px;
+		  -moz-border-radius: 15px;
+		  -ms-border-radius: 15px;
+		  -o-border-radius: 15px;
+}
+.jsgl_pptt_3 a:hover{ background:#333;}
+.w-nav {
+  height: 40px;
+  background: #bb0a0a;
+}
+.w-sj-nav {
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  font-family: "微软雅黑";
+  font-size: 14px;
+}
+.w-sj-nav li {
+  float: left;
+}
+.w-sj-nav li a {
+  width: 100%;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+.w-sj-nav li a:hover {
+  background: #ff9900;
+}
+.w-sj-nav li a:focus {
+  background: #ff9900;
+}
+
+.login_4G{ margin-top:40px;}
+.login_4G a{ width:100%; height:50px; line-height:50px; text-align:center; background:#666; display:block; color:#fff; font-size:18px;
+		  border-radius: 25px; 
+		  -webkit-border-radius: 25px;
+		  -moz-border-radius: 25px;
+		  -ms-border-radius: 25px;
+		  -o-border-radius: 25px;
+}
+.login_4G a:hover{ background:#333;}
+.jsgl_pt_1g { float:left; width:90px;}
+.jsgl_pt_1g a{ width:90px; height:28px; line-height:28px; text-align: center; background:#666; display:block; color:#fff;
+		  border-radius: 15px; 
+		  -webkit-border-radius:15px;
+		  -moz-border-radius: 15px;
+		  -ms-border-radius: 15px;
+		  -o-border-radius: 15px;
+}
+.jsgl_pt_1g a:hover{ background:#333;}
